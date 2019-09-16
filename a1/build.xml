@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+
+<project name="a1" default="all" basedir=".">
+
+  <presetdef name="javac">
+    <javac includeantruntime="false" />
+  </presetdef>
+  
+  <!-- build the compiler, build the API, and compile all test files -->
+
+  <target name="all" depends="src,api,tests"/>
+
+  <!-- build the compiler -->
+
+  <target name="src">
+    <ant dir="src"/>
+  </target>
+
+  <!-- build the API documentation -->
+
+  <target name="api" depends="src">
+    <ant dir="api">
+    </ant>
+  </target>
+
+  <!-- run all the test files through the compiler -->
+
+  <target name="tests" depends="src">
+    <ant dir="tests"/>
+  </target>
+
+  <!-- clean up the project -->
+  <target name="clean">
+    <ant dir="api" target="clean"/>
+    <ant dir="src" target="clean"/>
+    <ant dir="tests" target="clean"/>
+
+    <delete>
+      <fileset dir ="." defaultexcludes="no">
+	<include name="*.asm"/>
+	<include name="*.s"/>
+	<include name="*.bin"/>
+	<include name="*.class"/>
+	<include name="*.jar"/>
+	<include name="*.j"/>
+	<include name="*~"/>
+	<include name="*.o"/>
+	<include name="*#*"/>
+	<include name="a.out"/>
+      </fileset>
+    </delete>  
+  </target>
+
+</project>
