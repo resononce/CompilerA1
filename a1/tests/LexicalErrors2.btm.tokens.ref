@@ -77,6 +77,14 @@
 <INT_CONST, 7>
 # line 10
 <;, >
+# line 11
+<ID, x>
+# line 11
+<=, >
+# line 11
+<INT_CONST, 8>
+# line 11
+<;, >
 # line 12
 <ID, x>
 # line 12
