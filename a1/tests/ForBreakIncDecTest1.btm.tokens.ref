@@ -1,0 +1,419 @@
+# ForBreakIncDecTest1.btm
+# line 1
+<CLASS, >
+# line 1
+<ID, Main>
+# line 1
+<{, >
+# line 2
+<ID, void>
+# line 2
+<ID, main>
+# line 2
+<(, >
+# line 2
+<), >
+# line 2
+<{, >
+# line 3
+<ID, int>
+# line 3
+<[, >
+# line 3
+<], >
+# line 3
+<ID, array>
+# line 3
+<=, >
+# line 3
+<NEW, >
+# line 3
+<ID, int>
+# line 3
+<[, >
+# line 3
+<INT_CONST, 10>
+# line 3
+<], >
+# line 3
+<;, >
+# line 4
+<ID, int>
+# line 4
+<ID, n>
+# line 4
+<=, >
+# line 4
+<INT_CONST, 100>
+# line 4
+<;, >
+# line 5
+<ID, int>
+# line 5
+<ID, i>
+# line 5
+<=, >
+# line 5
+<INT_CONST, 0>
+# line 5
+<;, >
+# line 6
+<FOR, >
+# line 6
+<(, >
+# line 6
+<ID, i>
+# line 6
+<=, >
+# line 6
+<INT_CONST, 0>
+# line 6
+<;, >
+# line 6
+<ID, i>
+# line 6
+<<, >
+# line 6
+<INT_CONST, 100>
+# line 6
+<;, >
+# line 6
+<++, >
+# line 6
+<ID, i>
+# line 6
+<), >
+# line 6
+<{, >
+# line 7
+<ID, array>
+# line 7
+<[, >
+# line 7
+<INT_CONST, 0>
+# line 7
+<], >
+# line 7
+<--, >
+# line 7
+<;, >
+# line 8
+<--, >
+# line 8
+<ID, array>
+# line 8
+<[, >
+# line 8
+<INT_CONST, 1>
+# line 8
+<], >
+# line 8
+<;, >
+# line 9
+<ID, print>
+# line 9
+<(, >
+# line 9
+<++, >
+# line 9
+<ID, i>
+# line 9
+<), >
+# line 9
+<;, >
+# line 10
+<ID, print>
+# line 10
+<(, >
+# line 10
+<ID, n>
+# line 10
+<++, >
+# line 10
+<), >
+# line 10
+<;, >
+# line 11
+<ID, int>
+# line 11
+<ID, z>
+# line 11
+<=, >
+# line 11
+<INT_CONST, 10>
+# line 11
+<;, >
+# line 12
+<ID, int>
+# line 12
+<ID, j>
+# line 12
+<=, >
+# line 12
+<INT_CONST, 0>
+# line 12
+<;, >
+# line 13
+<ID, int>
+# line 13
+<ID, w>
+# line 13
+<=, >
+# line 13
+<INT_CONST, 5>
+# line 13
+<;, >
+# line 14
+<WHILE, >
+# line 14
+<(, >
+# line 14
+<ID, j>
+# line 14
+<<, >
+# line 14
+<INT_CONST, 10>
+# line 14
+<), >
+# line 14
+<{, >
+# line 15
+<ID, int>
+# line 15
+<ID, a>
+# line 15
+<=, >
+# line 15
+<INT_CONST, 2>
+# line 15
+<;, >
+# line 16
+<ID, int>
+# line 16
+<ID, b>
+# line 16
+<=, >
+# line 16
+<INT_CONST, 3>
+# line 16
+<;, >
+# line 17
+<IF, >
+# line 17
+<(, >
+# line 17
+<ID, i>
+# line 17
+<>=, >
+# line 17
+<INT_CONST, 24>
+# line 17
+<), >
+# line 17
+<{, >
+# line 18
+<ID, int>
+# line 18
+<ID, c>
+# line 18
+<=, >
+# line 18
+<INT_CONST, 5>
+# line 18
+<;, >
+# line 19
+<BREAK, >
+# line 19
+<;, >
+# line 20
+<}, >
+# line 21
+<ID, j>
+# line 21
+<=, >
+# line 21
+<ID, j>
+# line 21
+<+, >
+# line 21
+<INT_CONST, 1>
+# line 21
+<;, >
+# line 22
+<}, >
+# line 23
+<IF, >
+# line 23
+<(, >
+# line 23
+<ID, i>
+# line 23
+<>=, >
+# line 23
+<INT_CONST, 49>
+# line 23
+<), >
+# line 23
+<{, >
+# line 24
+<ID, int>
+# line 24
+<ID, c>
+# line 24
+<=, >
+# line 24
+<INT_CONST, 4>
+# line 24
+<;, >
+# line 25
+<BREAK, >
+# line 25
+<;, >
+# line 26
+<}, >
+# line 27
+<}, >
+# line 28
+<(, >
+# line 28
+<NEW, >
+# line 28
+<ID, TextIO>
+# line 28
+<(, >
+# line 28
+<), >
+# line 28
+<), >
+# line 28
+<., >
+# line 28
+<ID, putInt>
+# line 28
+<(, >
+# line 28
+<ID, array>
+# line 28
+<[, >
+# line 28
+<INT_CONST, 0>
+# line 28
+<], >
+# line 28
+<), >
+# line 28
+<., >
+# line 28
+<ID, putString>
+# line 28
+<(, >
+# line 28
+<STRING_CONST, "\n", [length: 1] >
+# line 28
+<), >
+# line 28
+<;, >
+# line 29
+<(, >
+# line 29
+<NEW, >
+# line 29
+<ID, TextIO>
+# line 29
+<(, >
+# line 29
+<), >
+# line 29
+<), >
+# line 29
+<., >
+# line 29
+<ID, putInt>
+# line 29
+<(, >
+# line 29
+<ID, array>
+# line 29
+<[, >
+# line 29
+<INT_CONST, 1>
+# line 29
+<], >
+# line 29
+<), >
+# line 29
+<., >
+# line 29
+<ID, putString>
+# line 29
+<(, >
+# line 29
+<STRING_CONST, "\n", [length: 1] >
+# line 29
+<), >
+# line 29
+<;, >
+# line 30
+<RETURN, >
+# line 30
+<;, >
+# line 31
+<}, >
+# line 33
+<ID, void>
+# line 33
+<ID, print>
+# line 33
+<(, >
+# line 33
+<ID, int>
+# line 33
+<ID, n>
+# line 33
+<), >
+# line 33
+<{, >
+# line 34
+<(, >
+# line 34
+<NEW, >
+# line 34
+<ID, TextIO>
+# line 34
+<(, >
+# line 34
+<), >
+# line 34
+<), >
+# line 34
+<., >
+# line 34
+<ID, putInt>
+# line 34
+<(, >
+# line 34
+<ID, n>
+# line 34
+<), >
+# line 34
+<., >
+# line 34
+<ID, putString>
+# line 34
+<(, >
+# line 34
+<STRING_CONST, "\n", [length: 1] >
+# line 34
+<), >
+# line 34
+<;, >
+# line 35
+<RETURN, >
+# line 35
+<;, >
+# line 36
+<}, >
+# line 37
+<}, >
+# line 37
+<EOF, >

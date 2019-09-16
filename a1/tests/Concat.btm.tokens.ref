@@ -1,0 +1,405 @@
+# Concat.btm
+# line 1
+<CLASS, >
+# line 1
+<ID, Main>
+# line 1
+<{, >
+# line 2
+<ID, void>
+# line 2
+<ID, main>
+# line 2
+<(, >
+# line 2
+<), >
+# line 2
+<{, >
+# line 3
+<ID, String>
+# line 3
+<ID, star>
+# line 3
+<=, >
+# line 3
+<STRING_CONST, "*", [length: 1] >
+# line 3
+<;, >
+# line 4
+<ID, String>
+# line 4
+<ID, s1>
+# line 4
+<=, >
+# line 4
+<ID, star>
+# line 4
+<., >
+# line 4
+<ID, substring>
+# line 4
+<(, >
+# line 4
+<INT_CONST, 0>
+# line 4
+<,, >
+# line 4
+<INT_CONST, 1>
+# line 4
+<), >
+# line 4
+<;, >
+# line 5
+<ID, String>
+# line 5
+<ID, s2>
+# line 5
+<=, >
+# line 5
+<STRING_CONST, "", [length: 0] >
+# line 5
+<;, >
+# line 6
+<ID, int>
+# line 6
+<ID, i>
+# line 6
+<=, >
+# line 6
+<INT_CONST, 1>
+# line 6
+<;, >
+# line 8
+<WHILE, >
+# line 8
+<(, >
+# line 8
+<ID, i>
+# line 8
+<*, >
+# line 8
+<INT_CONST, 2>
+# line 8
+<<, >
+# line 8
+<INT_CONST, 5000>
+# line 8
+<), >
+# line 8
+<{, >
+# line 9
+<ID, s1>
+# line 9
+<=, >
+# line 9
+<ID, s1>
+# line 9
+<., >
+# line 9
+<ID, concat>
+# line 9
+<(, >
+# line 9
+<ID, s1>
+# line 9
+<), >
+# line 9
+<;, >
+# line 10
+<(, >
+# line 10
+<NEW, >
+# line 10
+<ID, TextIO>
+# line 10
+<(, >
+# line 10
+<), >
+# line 10
+<), >
+# line 10
+<., >
+# line 10
+<ID, putString>
+# line 10
+<(, >
+# line 10
+<STRING_CONST, "i: ", [length: 3] >
+# line 10
+<), >
+# line 10
+<., >
+# line 10
+<ID, putInt>
+# line 10
+<(, >
+# line 10
+<ID, i>
+# line 10
+<), >
+# line 10
+<., >
+# line 10
+<ID, putString>
+# line 10
+<(, >
+# line 10
+<STRING_CONST, ", s1=", [length: 5] >
+# line 10
+<), >
+# line 10
+<., >
+# line 10
+<ID, putString>
+# line 10
+<(, >
+# line 10
+<ID, s1>
+# line 10
+<), >
+# line 10
+<., >
+# line 10
+<ID, putString>
+# line 10
+<(, >
+# line 10
+<STRING_CONST, "\n", [length: 1] >
+# line 10
+<), >
+# line 10
+<;, >
+# line 11
+<ID, i>
+# line 11
+<=, >
+# line 11
+<ID, i>
+# line 11
+<*, >
+# line 11
+<INT_CONST, 2>
+# line 11
+<;, >
+# line 12
+<}, >
+# line 14
+<WHILE, >
+# line 14
+<(, >
+# line 14
+<ID, i>
+# line 14
+<<, >
+# line 14
+<INT_CONST, 5000>
+# line 14
+<), >
+# line 14
+<{, >
+# line 15
+<ID, s2>
+# line 15
+<=, >
+# line 15
+<ID, s2>
+# line 15
+<., >
+# line 15
+<ID, concat>
+# line 15
+<(, >
+# line 15
+<ID, star>
+# line 15
+<), >
+# line 15
+<;, >
+# line 16
+<ID, i>
+# line 16
+<=, >
+# line 16
+<ID, i>
+# line 16
+<+, >
+# line 16
+<INT_CONST, 1>
+# line 16
+<;, >
+# line 17
+<}, >
+# line 19
+<ID, s1>
+# line 19
+<=, >
+# line 19
+<ID, s1>
+# line 19
+<., >
+# line 19
+<ID, concat>
+# line 19
+<(, >
+# line 19
+<ID, s2>
+# line 19
+<), >
+# line 19
+<;, >
+# line 20
+<(, >
+# line 20
+<NEW, >
+# line 20
+<ID, TextIO>
+# line 20
+<(, >
+# line 20
+<), >
+# line 20
+<), >
+# line 20
+<., >
+# line 20
+<ID, putString>
+# line 20
+<(, >
+# line 20
+<STRING_CONST, "i: ", [length: 3] >
+# line 20
+<), >
+# line 20
+<., >
+# line 20
+<ID, putInt>
+# line 20
+<(, >
+# line 20
+<ID, i>
+# line 20
+<), >
+# line 20
+<., >
+# line 20
+<ID, putString>
+# line 20
+<(, >
+# line 20
+<STRING_CONST, ", s1=", [length: 5] >
+# line 20
+<), >
+# line 20
+<., >
+# line 20
+<ID, putString>
+# line 20
+<(, >
+# line 20
+<ID, s1>
+# line 20
+<), >
+# line 20
+<., >
+# line 20
+<ID, putString>
+# line 20
+<(, >
+# line 20
+<STRING_CONST, "\n", [length: 1] >
+# line 20
+<), >
+# line 20
+<;, >
+# line 22
+<ID, s1>
+# line 22
+<=, >
+# line 22
+<ID, s1>
+# line 22
+<., >
+# line 22
+<ID, concat>
+# line 22
+<(, >
+# line 22
+<ID, star>
+# line 22
+<), >
+# line 22
+<;, >
+# line 23
+<(, >
+# line 23
+<NEW, >
+# line 23
+<ID, TextIO>
+# line 23
+<(, >
+# line 23
+<), >
+# line 23
+<), >
+# line 23
+<., >
+# line 23
+<ID, putString>
+# line 23
+<(, >
+# line 23
+<STRING_CONST, "i: ", [length: 3] >
+# line 23
+<), >
+# line 23
+<., >
+# line 23
+<ID, putInt>
+# line 23
+<(, >
+# line 23
+<ID, i>
+# line 23
+<), >
+# line 23
+<., >
+# line 23
+<ID, putString>
+# line 23
+<(, >
+# line 23
+<STRING_CONST, ", s1=", [length: 5] >
+# line 23
+<), >
+# line 23
+<., >
+# line 23
+<ID, putString>
+# line 23
+<(, >
+# line 23
+<ID, s1>
+# line 23
+<), >
+# line 23
+<., >
+# line 23
+<ID, putString>
+# line 23
+<(, >
+# line 23
+<STRING_CONST, "\n", [length: 1] >
+# line 23
+<), >
+# line 23
+<;, >
+# line 25
+<RETURN, >
+# line 25
+<;, >
+# line 26
+<}, >
+# line 27
+<}, >
+# line 27
+<EOF, >

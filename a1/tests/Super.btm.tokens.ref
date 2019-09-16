@@ -1,0 +1,323 @@
+# Super.btm
+# line 1
+<CLASS, >
+# line 1
+<ID, A>
+# line 1
+<{, >
+# line 2
+<ID, TextIO>
+# line 2
+<ID, io>
+# line 2
+<=, >
+# line 2
+<NEW, >
+# line 2
+<ID, TextIO>
+# line 2
+<(, >
+# line 2
+<), >
+# line 2
+<;, >
+# line 3
+<ID, String>
+# line 3
+<ID, name>
+# line 3
+<;, >
+# line 4
+<ID, void>
+# line 4
+<ID, setName>
+# line 4
+<(, >
+# line 4
+<), >
+# line 4
+<{, >
+# line 5
+<ID, this>
+# line 5
+<., >
+# line 5
+<ID, name>
+# line 5
+<=, >
+# line 5
+<STRING_CONST, "A", [length: 1] >
+# line 5
+<;, >
+# line 6
+<RETURN, >
+# line 6
+<;, >
+# line 7
+<}, >
+# line 8
+<ID, void>
+# line 8
+<ID, foo>
+# line 8
+<(, >
+# line 8
+<), >
+# line 8
+<{, >
+# line 9
+<ID, io>
+# line 9
+<., >
+# line 9
+<ID, putString>
+# line 9
+<(, >
+# line 9
+<STRING_CONST, "Static type = A, dynamic type = ", [length: 32] >
+# line 9
+<), >
+# line 9
+<., >
+# line 9
+<ID, putString>
+# line 9
+<(, >
+# line 9
+<ID, name>
+# line 9
+<), >
+# line 9
+<., >
+# line 9
+<ID, putString>
+# line 9
+<(, >
+# line 9
+<STRING_CONST, "\n", [length: 1] >
+# line 9
+<), >
+# line 9
+<;, >
+# line 10
+<RETURN, >
+# line 10
+<;, >
+# line 11
+<}, >
+# line 12
+<}, >
+# line 14
+<CLASS, >
+# line 14
+<ID, B>
+# line 14
+<EXTENDS, >
+# line 14
+<ID, A>
+# line 14
+<{, >
+# line 15
+<ID, String>
+# line 15
+<ID, name>
+# line 15
+<;, >
+# line 16
+<ID, void>
+# line 16
+<ID, setName>
+# line 16
+<(, >
+# line 16
+<), >
+# line 16
+<{, >
+# line 17
+<ID, super>
+# line 17
+<., >
+# line 17
+<ID, name>
+# line 17
+<=, >
+# line 17
+<STRING_CONST, "B", [length: 1] >
+# line 17
+<;, >
+# line 18
+<RETURN, >
+# line 18
+<;, >
+# line 19
+<}, >
+# line 20
+<ID, void>
+# line 20
+<ID, foo>
+# line 20
+<(, >
+# line 20
+<), >
+# line 20
+<{, >
+# line 21
+<ID, io>
+# line 21
+<., >
+# line 21
+<ID, putString>
+# line 21
+<(, >
+# line 21
+<STRING_CONST, "Static type = B, dynamic type = ", [length: 32] >
+# line 21
+<), >
+# line 21
+<., >
+# line 21
+<ID, putString>
+# line 21
+<(, >
+# line 21
+<ID, name>
+# line 21
+<), >
+# line 21
+<., >
+# line 21
+<ID, putString>
+# line 21
+<(, >
+# line 21
+<STRING_CONST, "\n", [length: 1] >
+# line 21
+<), >
+# line 21
+<;, >
+# line 22
+<ID, super>
+# line 22
+<., >
+# line 22
+<ID, foo>
+# line 22
+<(, >
+# line 22
+<), >
+# line 22
+<;, >
+# line 23
+<RETURN, >
+# line 23
+<;, >
+# line 24
+<}, >
+# line 25
+<}, >
+# line 27
+<CLASS, >
+# line 27
+<ID, C>
+# line 27
+<EXTENDS, >
+# line 27
+<ID, B>
+# line 27
+<{, >
+# line 28
+<ID, void>
+# line 28
+<ID, setName>
+# line 28
+<(, >
+# line 28
+<), >
+# line 28
+<{, >
+# line 29
+<ID, this>
+# line 29
+<., >
+# line 29
+<ID, name>
+# line 29
+<=, >
+# line 29
+<STRING_CONST, "C", [length: 1] >
+# line 29
+<;, >
+# line 30
+<RETURN, >
+# line 30
+<;, >
+# line 31
+<}, >
+# line 32
+<}, >
+# line 34
+<CLASS, >
+# line 34
+<ID, Main>
+# line 34
+<{, >
+# line 35
+<ID, void>
+# line 35
+<ID, main>
+# line 35
+<(, >
+# line 35
+<), >
+# line 35
+<{, >
+# line 36
+<ID, C>
+# line 36
+<ID, c>
+# line 36
+<=, >
+# line 36
+<NEW, >
+# line 36
+<ID, C>
+# line 36
+<(, >
+# line 36
+<), >
+# line 36
+<;, >
+# line 37
+<ID, c>
+# line 37
+<., >
+# line 37
+<ID, setName>
+# line 37
+<(, >
+# line 37
+<), >
+# line 37
+<;, >
+# line 38
+<ID, c>
+# line 38
+<., >
+# line 38
+<ID, foo>
+# line 38
+<(, >
+# line 38
+<), >
+# line 38
+<;, >
+# line 39
+<RETURN, >
+# line 39
+<;, >
+# line 40
+<}, >
+# line 41
+<}, >
+# line 41
+<EOF, >

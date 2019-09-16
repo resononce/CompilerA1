@@ -1,0 +1,1703 @@
+# InstanceofCastTest2.btm
+# line 1
+<CLASS, >
+# line 1
+<ID, Main>
+# line 1
+<{, >
+# line 2
+<ID, void>
+# line 2
+<ID, main>
+# line 2
+<(, >
+# line 2
+<), >
+# line 2
+<{, >
+# line 3
+<ID, TextIO>
+# line 3
+<ID, io>
+# line 3
+<=, >
+# line 3
+<NEW, >
+# line 3
+<ID, TextIO>
+# line 3
+<(, >
+# line 3
+<), >
+# line 3
+<;, >
+# line 4
+<ID, Object>
+# line 4
+<[, >
+# line 4
+<], >
+# line 4
+<ID, objects>
+# line 4
+<=, >
+# line 4
+<NEW, >
+# line 4
+<ID, Object>
+# line 4
+<[, >
+# line 4
+<INT_CONST, 10>
+# line 4
+<], >
+# line 4
+<;, >
+# line 5
+<ID, TextIO>
+# line 5
+<[, >
+# line 5
+<], >
+# line 5
+<ID, ios>
+# line 5
+<=, >
+# line 5
+<NEW, >
+# line 5
+<ID, TextIO>
+# line 5
+<[, >
+# line 5
+<INT_CONST, 10>
+# line 5
+<], >
+# line 5
+<;, >
+# line 6
+<ID, String>
+# line 6
+<[, >
+# line 6
+<], >
+# line 6
+<ID, strings>
+# line 6
+<=, >
+# line 6
+<NEW, >
+# line 6
+<ID, String>
+# line 6
+<[, >
+# line 6
+<INT_CONST, 10>
+# line 6
+<], >
+# line 6
+<;, >
+# line 7
+<ID, Sys>
+# line 7
+<[, >
+# line 7
+<], >
+# line 7
+<ID, sys>
+# line 7
+<=, >
+# line 7
+<NEW, >
+# line 7
+<ID, Sys>
+# line 7
+<[, >
+# line 7
+<INT_CONST, 10>
+# line 7
+<], >
+# line 7
+<;, >
+# line 8
+<ID, int>
+# line 8
+<[, >
+# line 8
+<], >
+# line 8
+<ID, ints>
+# line 8
+<=, >
+# line 8
+<NEW, >
+# line 8
+<ID, int>
+# line 8
+<[, >
+# line 8
+<INT_CONST, 10>
+# line 8
+<], >
+# line 8
+<;, >
+# line 9
+<ID, boolean>
+# line 9
+<[, >
+# line 9
+<], >
+# line 9
+<ID, bools>
+# line 9
+<=, >
+# line 9
+<NEW, >
+# line 9
+<ID, boolean>
+# line 9
+<[, >
+# line 9
+<INT_CONST, 10>
+# line 9
+<], >
+# line 9
+<;, >
+# line 11
+<IF, >
+# line 11
+<(, >
+# line 11
+<ID, objects>
+# line 11
+<INSTANCEOF, >
+# line 11
+<ID, Object>
+# line 11
+<), >
+# line 11
+<{, >
+# line 12
+<ID, io>
+# line 12
+<., >
+# line 12
+<ID, putString>
+# line 12
+<(, >
+# line 12
+<STRING_CONST, "Object[] object instance of Object\n", [length: 35] >
+# line 12
+<), >
+# line 12
+<;, >
+# line 13
+<ID, io>
+# line 13
+<., >
+# line 13
+<ID, putString>
+# line 13
+<(, >
+# line 13
+<STRING_CONST, "Casting Object[] object to Object object...", [length: 43] >
+# line 13
+<), >
+# line 13
+<;, >
+# line 14
+<ID, Object>
+# line 14
+<ID, x>
+# line 14
+<=, >
+# line 14
+<(, >
+# line 14
+<ID, Object>
+# line 14
+<), >
+# line 14
+<(, >
+# line 14
+<ID, objects>
+# line 14
+<), >
+# line 14
+<;, >
+# line 15
+<ID, io>
+# line 15
+<., >
+# line 15
+<ID, putString>
+# line 15
+<(, >
+# line 15
+<STRING_CONST, " successful\n", [length: 12] >
+# line 15
+<), >
+# line 15
+<;, >
+# line 16
+<}, >
+# line 17
+<ELSE, >
+# line 18
+<ID, io>
+# line 18
+<., >
+# line 18
+<ID, putString>
+# line 18
+<(, >
+# line 18
+<STRING_CONST, "Object[] object not instance of Object\n", [length: 39] >
+# line 18
+<), >
+# line 18
+<;, >
+# line 19
+<IF, >
+# line 19
+<(, >
+# line 19
+<ID, objects>
+# line 19
+<INSTANCEOF, >
+# line 19
+<ID, Object>
+# line 19
+<[, >
+# line 19
+<], >
+# line 19
+<), >
+# line 19
+<{, >
+# line 20
+<ID, io>
+# line 20
+<., >
+# line 20
+<ID, putString>
+# line 20
+<(, >
+# line 20
+<STRING_CONST, "Object[] object instance of Object[]\n", [length: 37] >
+# line 20
+<), >
+# line 20
+<;, >
+# line 21
+<ID, io>
+# line 21
+<., >
+# line 21
+<ID, putString>
+# line 21
+<(, >
+# line 21
+<STRING_CONST, "Casting Object[] object to Object[] object...", [length: 45] >
+# line 21
+<), >
+# line 21
+<;, >
+# line 22
+<ID, Object>
+# line 22
+<[, >
+# line 22
+<], >
+# line 22
+<ID, x>
+# line 22
+<=, >
+# line 22
+<(, >
+# line 22
+<ID, Object>
+# line 22
+<[, >
+# line 22
+<], >
+# line 22
+<), >
+# line 22
+<(, >
+# line 22
+<ID, objects>
+# line 22
+<), >
+# line 22
+<;, >
+# line 23
+<ID, io>
+# line 23
+<., >
+# line 23
+<ID, putString>
+# line 23
+<(, >
+# line 23
+<STRING_CONST, " successful\n", [length: 12] >
+# line 23
+<), >
+# line 23
+<;, >
+# line 24
+<}, >
+# line 25
+<ELSE, >
+# line 26
+<ID, io>
+# line 26
+<., >
+# line 26
+<ID, putString>
+# line 26
+<(, >
+# line 26
+<STRING_CONST, "Object[] object not instance of Object[]\n", [length: 41] >
+# line 26
+<), >
+# line 26
+<;, >
+# line 30
+<IF, >
+# line 30
+<(, >
+# line 30
+<ID, ios>
+# line 30
+<INSTANCEOF, >
+# line 30
+<ID, Object>
+# line 30
+<), >
+# line 30
+<{, >
+# line 31
+<ID, io>
+# line 31
+<., >
+# line 31
+<ID, putString>
+# line 31
+<(, >
+# line 31
+<STRING_CONST, "TextIO[] object instance of Object\n", [length: 35] >
+# line 31
+<), >
+# line 31
+<;, >
+# line 32
+<ID, io>
+# line 32
+<., >
+# line 32
+<ID, putString>
+# line 32
+<(, >
+# line 32
+<STRING_CONST, "Casting TextIO[] object to Object object...", [length: 43] >
+# line 32
+<), >
+# line 32
+<;, >
+# line 33
+<ID, Object>
+# line 33
+<ID, x>
+# line 33
+<=, >
+# line 33
+<(, >
+# line 33
+<ID, Object>
+# line 33
+<), >
+# line 33
+<(, >
+# line 33
+<ID, ios>
+# line 33
+<), >
+# line 33
+<;, >
+# line 34
+<ID, io>
+# line 34
+<., >
+# line 34
+<ID, putString>
+# line 34
+<(, >
+# line 34
+<STRING_CONST, " successful\n", [length: 12] >
+# line 34
+<), >
+# line 34
+<;, >
+# line 35
+<}, >
+# line 36
+<ELSE, >
+# line 37
+<ID, io>
+# line 37
+<., >
+# line 37
+<ID, putString>
+# line 37
+<(, >
+# line 37
+<STRING_CONST, "TextIO[] object not instance of Object\n", [length: 39] >
+# line 37
+<), >
+# line 37
+<;, >
+# line 38
+<IF, >
+# line 38
+<(, >
+# line 38
+<ID, ios>
+# line 38
+<INSTANCEOF, >
+# line 38
+<ID, Object>
+# line 38
+<[, >
+# line 38
+<], >
+# line 38
+<), >
+# line 38
+<{, >
+# line 39
+<ID, io>
+# line 39
+<., >
+# line 39
+<ID, putString>
+# line 39
+<(, >
+# line 39
+<STRING_CONST, "TextIO[] object instance of Object[]\n", [length: 37] >
+# line 39
+<), >
+# line 39
+<;, >
+# line 40
+<ID, io>
+# line 40
+<., >
+# line 40
+<ID, putString>
+# line 40
+<(, >
+# line 40
+<STRING_CONST, "Casting TextIO[] object to Object[] object...", [length: 45] >
+# line 40
+<), >
+# line 40
+<;, >
+# line 41
+<ID, Object>
+# line 41
+<[, >
+# line 41
+<], >
+# line 41
+<ID, x>
+# line 41
+<=, >
+# line 41
+<(, >
+# line 41
+<ID, Object>
+# line 41
+<[, >
+# line 41
+<], >
+# line 41
+<), >
+# line 41
+<(, >
+# line 41
+<ID, ios>
+# line 41
+<), >
+# line 41
+<;, >
+# line 42
+<ID, io>
+# line 42
+<., >
+# line 42
+<ID, putString>
+# line 42
+<(, >
+# line 42
+<STRING_CONST, " successful\n", [length: 12] >
+# line 42
+<), >
+# line 42
+<;, >
+# line 43
+<}, >
+# line 44
+<ELSE, >
+# line 45
+<ID, io>
+# line 45
+<., >
+# line 45
+<ID, putString>
+# line 45
+<(, >
+# line 45
+<STRING_CONST, "TextIO[] object not instance of Object[]\n", [length: 41] >
+# line 45
+<), >
+# line 45
+<;, >
+# line 46
+<IF, >
+# line 46
+<(, >
+# line 46
+<ID, ios>
+# line 46
+<INSTANCEOF, >
+# line 46
+<ID, TextIO>
+# line 46
+<[, >
+# line 46
+<], >
+# line 46
+<), >
+# line 46
+<{, >
+# line 47
+<ID, io>
+# line 47
+<., >
+# line 47
+<ID, putString>
+# line 47
+<(, >
+# line 47
+<STRING_CONST, "TextIO[] object instance of TextIO[]\n", [length: 37] >
+# line 47
+<), >
+# line 47
+<;, >
+# line 48
+<ID, io>
+# line 48
+<., >
+# line 48
+<ID, putString>
+# line 48
+<(, >
+# line 48
+<STRING_CONST, "Casting TextIO[] object to TextIO[] object...", [length: 45] >
+# line 48
+<), >
+# line 48
+<;, >
+# line 49
+<ID, TextIO>
+# line 49
+<[, >
+# line 49
+<], >
+# line 49
+<ID, x>
+# line 49
+<=, >
+# line 49
+<(, >
+# line 49
+<ID, TextIO>
+# line 49
+<[, >
+# line 49
+<], >
+# line 49
+<), >
+# line 49
+<(, >
+# line 49
+<ID, ios>
+# line 49
+<), >
+# line 49
+<;, >
+# line 50
+<ID, io>
+# line 50
+<., >
+# line 50
+<ID, putString>
+# line 50
+<(, >
+# line 50
+<STRING_CONST, " successful\n", [length: 12] >
+# line 50
+<), >
+# line 50
+<;, >
+# line 51
+<}, >
+# line 52
+<ELSE, >
+# line 53
+<ID, io>
+# line 53
+<., >
+# line 53
+<ID, putString>
+# line 53
+<(, >
+# line 53
+<STRING_CONST, "TextIO[] object not instance of TextIO[]\n", [length: 41] >
+# line 53
+<), >
+# line 53
+<;, >
+# line 57
+<IF, >
+# line 57
+<(, >
+# line 57
+<ID, strings>
+# line 57
+<INSTANCEOF, >
+# line 57
+<ID, Object>
+# line 57
+<), >
+# line 57
+<{, >
+# line 58
+<ID, io>
+# line 58
+<., >
+# line 58
+<ID, putString>
+# line 58
+<(, >
+# line 58
+<STRING_CONST, "String[] object instance of Object\n", [length: 35] >
+# line 58
+<), >
+# line 58
+<;, >
+# line 59
+<ID, io>
+# line 59
+<., >
+# line 59
+<ID, putString>
+# line 59
+<(, >
+# line 59
+<STRING_CONST, "Casting String[] object to Object object...", [length: 43] >
+# line 59
+<), >
+# line 59
+<;, >
+# line 60
+<ID, Object>
+# line 60
+<ID, x>
+# line 60
+<=, >
+# line 60
+<(, >
+# line 60
+<ID, Object>
+# line 60
+<), >
+# line 60
+<(, >
+# line 60
+<ID, strings>
+# line 60
+<), >
+# line 60
+<;, >
+# line 61
+<ID, io>
+# line 61
+<., >
+# line 61
+<ID, putString>
+# line 61
+<(, >
+# line 61
+<STRING_CONST, " successful\n", [length: 12] >
+# line 61
+<), >
+# line 61
+<;, >
+# line 62
+<}, >
+# line 63
+<ELSE, >
+# line 64
+<ID, io>
+# line 64
+<., >
+# line 64
+<ID, putString>
+# line 64
+<(, >
+# line 64
+<STRING_CONST, "String[] object not instance of Object\n", [length: 39] >
+# line 64
+<), >
+# line 64
+<;, >
+# line 65
+<IF, >
+# line 65
+<(, >
+# line 65
+<ID, strings>
+# line 65
+<INSTANCEOF, >
+# line 65
+<ID, Object>
+# line 65
+<[, >
+# line 65
+<], >
+# line 65
+<), >
+# line 65
+<{, >
+# line 66
+<ID, io>
+# line 66
+<., >
+# line 66
+<ID, putString>
+# line 66
+<(, >
+# line 66
+<STRING_CONST, "String[] object instance of Object[]\n", [length: 37] >
+# line 66
+<), >
+# line 66
+<;, >
+# line 67
+<ID, io>
+# line 67
+<., >
+# line 67
+<ID, putString>
+# line 67
+<(, >
+# line 67
+<STRING_CONST, "Casting String[] object to Object[] object...", [length: 45] >
+# line 67
+<), >
+# line 67
+<;, >
+# line 68
+<ID, Object>
+# line 68
+<[, >
+# line 68
+<], >
+# line 68
+<ID, x>
+# line 68
+<=, >
+# line 68
+<(, >
+# line 68
+<ID, Object>
+# line 68
+<[, >
+# line 68
+<], >
+# line 68
+<), >
+# line 68
+<(, >
+# line 68
+<ID, strings>
+# line 68
+<), >
+# line 68
+<;, >
+# line 69
+<ID, io>
+# line 69
+<., >
+# line 69
+<ID, putString>
+# line 69
+<(, >
+# line 69
+<STRING_CONST, " successful\n", [length: 12] >
+# line 69
+<), >
+# line 69
+<;, >
+# line 70
+<}, >
+# line 71
+<ELSE, >
+# line 72
+<ID, io>
+# line 72
+<., >
+# line 72
+<ID, putString>
+# line 72
+<(, >
+# line 72
+<STRING_CONST, "String[] object not instance of Object[]\n", [length: 41] >
+# line 72
+<), >
+# line 72
+<;, >
+# line 73
+<IF, >
+# line 73
+<(, >
+# line 73
+<ID, strings>
+# line 73
+<INSTANCEOF, >
+# line 73
+<ID, String>
+# line 73
+<[, >
+# line 73
+<], >
+# line 73
+<), >
+# line 73
+<{, >
+# line 74
+<ID, io>
+# line 74
+<., >
+# line 74
+<ID, putString>
+# line 74
+<(, >
+# line 74
+<STRING_CONST, "String[] object instance of String[]\n", [length: 37] >
+# line 74
+<), >
+# line 74
+<;, >
+# line 75
+<ID, io>
+# line 75
+<., >
+# line 75
+<ID, putString>
+# line 75
+<(, >
+# line 75
+<STRING_CONST, "Casting String[] object to String[] object...", [length: 45] >
+# line 75
+<), >
+# line 75
+<;, >
+# line 76
+<ID, String>
+# line 76
+<[, >
+# line 76
+<], >
+# line 76
+<ID, x>
+# line 76
+<=, >
+# line 76
+<(, >
+# line 76
+<ID, String>
+# line 76
+<[, >
+# line 76
+<], >
+# line 76
+<), >
+# line 76
+<(, >
+# line 76
+<ID, strings>
+# line 76
+<), >
+# line 76
+<;, >
+# line 77
+<ID, io>
+# line 77
+<., >
+# line 77
+<ID, putString>
+# line 77
+<(, >
+# line 77
+<STRING_CONST, " successful\n", [length: 12] >
+# line 77
+<), >
+# line 77
+<;, >
+# line 78
+<}, >
+# line 79
+<ELSE, >
+# line 80
+<ID, io>
+# line 80
+<., >
+# line 80
+<ID, putString>
+# line 80
+<(, >
+# line 80
+<STRING_CONST, "String[] object not instance of String[]\n", [length: 41] >
+# line 80
+<), >
+# line 80
+<;, >
+# line 84
+<IF, >
+# line 84
+<(, >
+# line 84
+<ID, sys>
+# line 84
+<INSTANCEOF, >
+# line 84
+<ID, Object>
+# line 84
+<), >
+# line 84
+<{, >
+# line 85
+<ID, io>
+# line 85
+<., >
+# line 85
+<ID, putString>
+# line 85
+<(, >
+# line 85
+<STRING_CONST, "Sys[] object instance of Object\n", [length: 32] >
+# line 85
+<), >
+# line 85
+<;, >
+# line 86
+<ID, io>
+# line 86
+<., >
+# line 86
+<ID, putString>
+# line 86
+<(, >
+# line 86
+<STRING_CONST, "Casting Sys[] object to Object object...", [length: 40] >
+# line 86
+<), >
+# line 86
+<;, >
+# line 87
+<ID, Object>
+# line 87
+<ID, x>
+# line 87
+<=, >
+# line 87
+<(, >
+# line 87
+<ID, Object>
+# line 87
+<), >
+# line 87
+<(, >
+# line 87
+<ID, sys>
+# line 87
+<), >
+# line 87
+<;, >
+# line 88
+<ID, io>
+# line 88
+<., >
+# line 88
+<ID, putString>
+# line 88
+<(, >
+# line 88
+<STRING_CONST, " successful\n", [length: 12] >
+# line 88
+<), >
+# line 88
+<;, >
+# line 89
+<}, >
+# line 90
+<ELSE, >
+# line 91
+<ID, io>
+# line 91
+<., >
+# line 91
+<ID, putString>
+# line 91
+<(, >
+# line 91
+<STRING_CONST, "Sys[] object not instance of Object\n", [length: 36] >
+# line 91
+<), >
+# line 91
+<;, >
+# line 92
+<IF, >
+# line 92
+<(, >
+# line 92
+<ID, sys>
+# line 92
+<INSTANCEOF, >
+# line 92
+<ID, Object>
+# line 92
+<[, >
+# line 92
+<], >
+# line 92
+<), >
+# line 92
+<{, >
+# line 93
+<ID, io>
+# line 93
+<., >
+# line 93
+<ID, putString>
+# line 93
+<(, >
+# line 93
+<STRING_CONST, "Sys[] object instance of Object[]\n", [length: 34] >
+# line 93
+<), >
+# line 93
+<;, >
+# line 94
+<ID, io>
+# line 94
+<., >
+# line 94
+<ID, putString>
+# line 94
+<(, >
+# line 94
+<STRING_CONST, "Casting Sys[] object to Object[] object...", [length: 42] >
+# line 94
+<), >
+# line 94
+<;, >
+# line 95
+<ID, Object>
+# line 95
+<[, >
+# line 95
+<], >
+# line 95
+<ID, x>
+# line 95
+<=, >
+# line 95
+<(, >
+# line 95
+<ID, Object>
+# line 95
+<[, >
+# line 95
+<], >
+# line 95
+<), >
+# line 95
+<(, >
+# line 95
+<ID, sys>
+# line 95
+<), >
+# line 95
+<;, >
+# line 96
+<ID, io>
+# line 96
+<., >
+# line 96
+<ID, putString>
+# line 96
+<(, >
+# line 96
+<STRING_CONST, " successful\n", [length: 12] >
+# line 96
+<), >
+# line 96
+<;, >
+# line 97
+<}, >
+# line 98
+<ELSE, >
+# line 99
+<ID, io>
+# line 99
+<., >
+# line 99
+<ID, putString>
+# line 99
+<(, >
+# line 99
+<STRING_CONST, "Sys[] object not instance of Object[]\n", [length: 38] >
+# line 99
+<), >
+# line 99
+<;, >
+# line 100
+<IF, >
+# line 100
+<(, >
+# line 100
+<ID, sys>
+# line 100
+<INSTANCEOF, >
+# line 100
+<ID, Sys>
+# line 100
+<[, >
+# line 100
+<], >
+# line 100
+<), >
+# line 100
+<{, >
+# line 101
+<ID, io>
+# line 101
+<., >
+# line 101
+<ID, putString>
+# line 101
+<(, >
+# line 101
+<STRING_CONST, "Sys[] object instance of Sys[]\n", [length: 31] >
+# line 101
+<), >
+# line 101
+<;, >
+# line 102
+<ID, io>
+# line 102
+<., >
+# line 102
+<ID, putString>
+# line 102
+<(, >
+# line 102
+<STRING_CONST, "Casting Sys[] object to Sys[] object...", [length: 39] >
+# line 102
+<), >
+# line 102
+<;, >
+# line 103
+<ID, Sys>
+# line 103
+<[, >
+# line 103
+<], >
+# line 103
+<ID, x>
+# line 103
+<=, >
+# line 103
+<(, >
+# line 103
+<ID, Sys>
+# line 103
+<[, >
+# line 103
+<], >
+# line 103
+<), >
+# line 103
+<(, >
+# line 103
+<ID, sys>
+# line 103
+<), >
+# line 103
+<;, >
+# line 104
+<ID, io>
+# line 104
+<., >
+# line 104
+<ID, putString>
+# line 104
+<(, >
+# line 104
+<STRING_CONST, " successful\n", [length: 12] >
+# line 104
+<), >
+# line 104
+<;, >
+# line 105
+<}, >
+# line 106
+<ELSE, >
+# line 107
+<ID, io>
+# line 107
+<., >
+# line 107
+<ID, putString>
+# line 107
+<(, >
+# line 107
+<STRING_CONST, "Sys[] object not instance of Sys[]\n", [length: 35] >
+# line 107
+<), >
+# line 107
+<;, >
+# line 111
+<IF, >
+# line 111
+<(, >
+# line 111
+<ID, ints>
+# line 111
+<INSTANCEOF, >
+# line 111
+<ID, Object>
+# line 111
+<), >
+# line 111
+<{, >
+# line 112
+<ID, io>
+# line 112
+<., >
+# line 112
+<ID, putString>
+# line 112
+<(, >
+# line 112
+<STRING_CONST, "int[] object instance of Object\n", [length: 32] >
+# line 112
+<), >
+# line 112
+<;, >
+# line 113
+<ID, io>
+# line 113
+<., >
+# line 113
+<ID, putString>
+# line 113
+<(, >
+# line 113
+<STRING_CONST, "Casting int[] object to Object object...", [length: 40] >
+# line 113
+<), >
+# line 113
+<;, >
+# line 114
+<ID, Object>
+# line 114
+<ID, x>
+# line 114
+<=, >
+# line 114
+<(, >
+# line 114
+<ID, Object>
+# line 114
+<), >
+# line 114
+<(, >
+# line 114
+<ID, ints>
+# line 114
+<), >
+# line 114
+<;, >
+# line 115
+<ID, io>
+# line 115
+<., >
+# line 115
+<ID, putString>
+# line 115
+<(, >
+# line 115
+<STRING_CONST, " successful\n", [length: 12] >
+# line 115
+<), >
+# line 115
+<;, >
+# line 116
+<}, >
+# line 117
+<ELSE, >
+# line 118
+<ID, io>
+# line 118
+<., >
+# line 118
+<ID, putString>
+# line 118
+<(, >
+# line 118
+<STRING_CONST, "int[] object not instance of Object\n", [length: 36] >
+# line 118
+<), >
+# line 118
+<;, >
+# line 119
+<IF, >
+# line 119
+<(, >
+# line 119
+<ID, ints>
+# line 119
+<INSTANCEOF, >
+# line 119
+<ID, int>
+# line 119
+<[, >
+# line 119
+<], >
+# line 119
+<), >
+# line 119
+<{, >
+# line 120
+<ID, io>
+# line 120
+<., >
+# line 120
+<ID, putString>
+# line 120
+<(, >
+# line 120
+<STRING_CONST, "int[] object instance of int[]\n", [length: 31] >
+# line 120
+<), >
+# line 120
+<;, >
+# line 121
+<ID, io>
+# line 121
+<., >
+# line 121
+<ID, putString>
+# line 121
+<(, >
+# line 121
+<STRING_CONST, "Casting int[] object to int[] object...", [length: 39] >
+# line 121
+<), >
+# line 121
+<;, >
+# line 122
+<ID, int>
+# line 122
+<[, >
+# line 122
+<], >
+# line 122
+<ID, x>
+# line 122
+<=, >
+# line 122
+<(, >
+# line 122
+<ID, int>
+# line 122
+<[, >
+# line 122
+<], >
+# line 122
+<), >
+# line 122
+<(, >
+# line 122
+<(, >
+# line 122
+<ID, Object>
+# line 122
+<), >
+# line 122
+<(, >
+# line 122
+<ID, ints>
+# line 122
+<), >
+# line 122
+<), >
+# line 122
+<;, >
+# line 123
+<ID, io>
+# line 123
+<., >
+# line 123
+<ID, putString>
+# line 123
+<(, >
+# line 123
+<STRING_CONST, " successful\n", [length: 12] >
+# line 123
+<), >
+# line 123
+<;, >
+# line 124
+<}, >
+# line 125
+<ELSE, >
+# line 126
+<ID, io>
+# line 126
+<., >
+# line 126
+<ID, putString>
+# line 126
+<(, >
+# line 126
+<STRING_CONST, "int[] object not instance of int[]\n", [length: 35] >
+# line 126
+<), >
+# line 126
+<;, >
+# line 131
+<IF, >
+# line 131
+<(, >
+# line 131
+<ID, bools>
+# line 131
+<INSTANCEOF, >
+# line 131
+<ID, Object>
+# line 131
+<), >
+# line 131
+<{, >
+# line 132
+<ID, io>
+# line 132
+<., >
+# line 132
+<ID, putString>
+# line 132
+<(, >
+# line 132
+<STRING_CONST, "boolean[] object instance of Object\n", [length: 36] >
+# line 132
+<), >
+# line 132
+<;, >
+# line 133
+<ID, io>
+# line 133
+<., >
+# line 133
+<ID, putString>
+# line 133
+<(, >
+# line 133
+<STRING_CONST, "Casting boolean[] object to Object object...", [length: 44] >
+# line 133
+<), >
+# line 133
+<;, >
+# line 134
+<ID, Object>
+# line 134
+<ID, x>
+# line 134
+<=, >
+# line 134
+<(, >
+# line 134
+<ID, Object>
+# line 134
+<), >
+# line 134
+<(, >
+# line 134
+<ID, bools>
+# line 134
+<), >
+# line 134
+<;, >
+# line 135
+<ID, io>
+# line 135
+<., >
+# line 135
+<ID, putString>
+# line 135
+<(, >
+# line 135
+<STRING_CONST, " successful\n", [length: 12] >
+# line 135
+<), >
+# line 135
+<;, >
+# line 136
+<}, >
+# line 137
+<ELSE, >
+# line 138
+<ID, io>
+# line 138
+<., >
+# line 138
+<ID, putString>
+# line 138
+<(, >
+# line 138
+<STRING_CONST, "boolean[] object not instance of Object\n", [length: 40] >
+# line 138
+<), >
+# line 138
+<;, >
+# line 139
+<IF, >
+# line 139
+<(, >
+# line 139
+<ID, bools>
+# line 139
+<INSTANCEOF, >
+# line 139
+<ID, boolean>
+# line 139
+<[, >
+# line 139
+<], >
+# line 139
+<), >
+# line 139
+<{, >
+# line 140
+<ID, io>
+# line 140
+<., >
+# line 140
+<ID, putString>
+# line 140
+<(, >
+# line 140
+<STRING_CONST, "boolean[] object instance of boolean[]\n", [length: 39] >
+# line 140
+<), >
+# line 140
+<;, >
+# line 141
+<ID, io>
+# line 141
+<., >
+# line 141
+<ID, putString>
+# line 141
+<(, >
+# line 141
+<STRING_CONST, "Casting boolean[] object to boolean[] object...", [length: 47] >
+# line 141
+<), >
+# line 141
+<;, >
+# line 142
+<ID, boolean>
+# line 142
+<[, >
+# line 142
+<], >
+# line 142
+<ID, x>
+# line 142
+<=, >
+# line 142
+<(, >
+# line 142
+<ID, boolean>
+# line 142
+<[, >
+# line 142
+<], >
+# line 142
+<), >
+# line 142
+<(, >
+# line 142
+<ID, bools>
+# line 142
+<), >
+# line 142
+<;, >
+# line 143
+<ID, io>
+# line 143
+<., >
+# line 143
+<ID, putString>
+# line 143
+<(, >
+# line 143
+<STRING_CONST, " successful\n", [length: 12] >
+# line 143
+<), >
+# line 143
+<;, >
+# line 144
+<}, >
+# line 145
+<ELSE, >
+# line 146
+<ID, io>
+# line 146
+<., >
+# line 146
+<ID, putString>
+# line 146
+<(, >
+# line 146
+<STRING_CONST, "boolean[] object not instance of boolean[]\n", [length: 43] >
+# line 146
+<), >
+# line 146
+<;, >
+# line 148
+<RETURN, >
+# line 148
+<;, >
+# line 149
+<}, >
+# line 150
+<}, >
+# line 150
+<EOF, >

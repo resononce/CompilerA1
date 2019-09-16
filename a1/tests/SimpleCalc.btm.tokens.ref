@@ -1,0 +1,127 @@
+# SimpleCalc.btm
+# line 1
+<CLASS, >
+# line 1
+<ID, Main>
+# line 1
+<{, >
+# line 2
+<ID, void>
+# line 2
+<ID, main>
+# line 2
+<(, >
+# line 2
+<), >
+# line 2
+<{, >
+# line 3
+<(, >
+# line 3
+<NEW, >
+# line 3
+<ID, TextIO>
+# line 3
+<(, >
+# line 3
+<), >
+# line 3
+<), >
+# line 3
+<., >
+# line 3
+<ID, putString>
+# line 3
+<(, >
+# line 3
+<STRING_CONST, "(3%2+(2*5)-6/3): ", [length: 17] >
+# line 3
+<), >
+# line 3
+<;, >
+# line 4
+<(, >
+# line 4
+<NEW, >
+# line 4
+<ID, TextIO>
+# line 4
+<(, >
+# line 4
+<), >
+# line 4
+<), >
+# line 4
+<., >
+# line 4
+<ID, putInt>
+# line 4
+<(, >
+# line 4
+<(, >
+# line 4
+<INT_CONST, 3>
+# line 4
+<%, >
+# line 4
+<INT_CONST, 2>
+# line 4
+<+, >
+# line 4
+<(, >
+# line 4
+<INT_CONST, 2>
+# line 4
+<*, >
+# line 4
+<INT_CONST, 5>
+# line 4
+<), >
+# line 4
+<-, >
+# line 4
+<INT_CONST, 6>
+# line 4
+</, >
+# line 4
+<INT_CONST, 3>
+# line 4
+<), >
+# line 4
+<), >
+# line 4
+<;, >
+# line 5
+<(, >
+# line 5
+<NEW, >
+# line 5
+<ID, TextIO>
+# line 5
+<(, >
+# line 5
+<), >
+# line 5
+<), >
+# line 5
+<., >
+# line 5
+<ID, putString>
+# line 5
+<(, >
+# line 5
+<STRING_CONST, "\n", [length: 1] >
+# line 5
+<), >
+# line 5
+<;, >
+# line 6
+<RETURN, >
+# line 6
+<;, >
+# line 7
+<}, >
+# line 8
+<}, >
+# line 8
+<EOF, >

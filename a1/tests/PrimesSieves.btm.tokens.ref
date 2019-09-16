@@ -1,0 +1,289 @@
+# PrimesSieves.btm
+# line 4
+<CLASS, >
+# line 4
+<ID, Main>
+# line 4
+<{, >
+# line 6
+<ID, void>
+# line 6
+<ID, main>
+# line 6
+<(, >
+# line 6
+<), >
+# line 6
+<{, >
+# line 8
+<ID, TextIO>
+# line 8
+<ID, io>
+# line 8
+<=, >
+# line 8
+<NEW, >
+# line 8
+<ID, TextIO>
+# line 8
+<(, >
+# line 8
+<), >
+# line 8
+<;, >
+# line 11
+<ID, boolean>
+# line 11
+<[, >
+# line 11
+<], >
+# line 11
+<ID, primes>
+# line 11
+<=, >
+# line 11
+<ID, null>
+# line 11
+<;, >
+# line 13
+<ID, int>
+# line 13
+<ID, n>
+# line 13
+<=, >
+# line 13
+<INT_CONST, 0>
+# line 13
+<;, >
+# line 16
+<WHILE, >
+# line 16
+<(, >
+# line 16
+<ID, n>
+# line 16
+<<, >
+# line 16
+<INT_CONST, 2>
+# line 16
+<), >
+# line 16
+<{, >
+# line 18
+<ID, n>
+# line 18
+<=, >
+# line 18
+<ID, io>
+# line 18
+<., >
+# line 18
+<ID, putString>
+# line 18
+<(, >
+# line 18
+<STRING_CONST, "Enter a number >= 2: ", [length: 21] >
+# line 18
+<), >
+# line 18
+<., >
+# line 18
+<ID, getInt>
+# line 18
+<(, >
+# line 18
+<), >
+# line 18
+<;, >
+# line 20
+<IF, >
+# line 20
+<(, >
+# line 20
+<ID, n>
+# line 20
+<<, >
+# line 20
+<INT_CONST, 2>
+# line 20
+<), >
+# line 21
+<ID, io>
+# line 21
+<., >
+# line 21
+<ID, putString>
+# line 21
+<(, >
+# line 21
+<STRING_CONST, "Error: input < 2\n", [length: 17] >
+# line 21
+<), >
+# line 21
+<;, >
+# line 22
+<}, >
+# line 25
+<ID, primes>
+# line 25
+<=, >
+# line 25
+<NEW, >
+# line 25
+<ID, boolean>
+# line 25
+<[, >
+# line 25
+<ID, n>
+# line 25
+<+, >
+# line 25
+<INT_CONST, 1>
+# line 25
+<], >
+# line 25
+<;, >
+# line 28
+<ID, int>
+# line 28
+<ID, i>
+# line 28
+<=, >
+# line 28
+<INT_CONST, 2>
+# line 28
+<;, >
+# line 29
+<WHILE, >
+# line 29
+<(, >
+# line 29
+<ID, i>
+# line 29
+<<=, >
+# line 29
+<ID, n>
+# line 29
+<), >
+# line 29
+<{, >
+# line 31
+<IF, >
+# line 31
+<(, >
+# line 31
+<!, >
+# line 31
+<ID, primes>
+# line 31
+<[, >
+# line 31
+<ID, i>
+# line 31
+<], >
+# line 31
+<), >
+# line 31
+<{, >
+# line 33
+<ID, io>
+# line 33
+<., >
+# line 33
+<ID, putInt>
+# line 33
+<(, >
+# line 33
+<ID, i>
+# line 33
+<), >
+# line 33
+<., >
+# line 33
+<ID, putString>
+# line 33
+<(, >
+# line 33
+<STRING_CONST, "\n", [length: 1] >
+# line 33
+<), >
+# line 33
+<;, >
+# line 36
+<ID, int>
+# line 36
+<ID, j>
+# line 36
+<=, >
+# line 36
+<ID, i>
+# line 36
+<*, >
+# line 36
+<INT_CONST, 2>
+# line 36
+<;, >
+# line 37
+<WHILE, >
+# line 37
+<(, >
+# line 37
+<ID, j>
+# line 37
+<<=, >
+# line 37
+<ID, n>
+# line 37
+<), >
+# line 37
+<{, >
+# line 38
+<ID, primes>
+# line 38
+<[, >
+# line 38
+<ID, j>
+# line 38
+<], >
+# line 38
+<=, >
+# line 38
+<BOOLEAN_CONST, true>
+# line 38
+<;, >
+# line 39
+<ID, j>
+# line 39
+<=, >
+# line 39
+<ID, j>
+# line 39
+<+, >
+# line 39
+<ID, i>
+# line 39
+<;, >
+# line 40
+<}, >
+# line 41
+<}, >
+# line 43
+<ID, i>
+# line 43
+<=, >
+# line 43
+<ID, i>
+# line 43
+<+, >
+# line 43
+<INT_CONST, 1>
+# line 43
+<;, >
+# line 44
+<}, >
+# line 45
+<}, >
+# line 46
+<}, >
+# line 46
+<EOF, >

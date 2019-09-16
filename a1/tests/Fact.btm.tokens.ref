@@ -1,0 +1,231 @@
+# Fact.btm
+# line 5
+<CLASS, >
+# line 5
+<ID, Main>
+# line 5
+<{, >
+# line 7
+<ID, TextIO>
+# line 7
+<ID, io>
+# line 7
+<=, >
+# line 7
+<NEW, >
+# line 7
+<ID, TextIO>
+# line 7
+<(, >
+# line 7
+<), >
+# line 7
+<;, >
+# line 11
+<ID, void>
+# line 11
+<ID, main>
+# line 11
+<(, >
+# line 11
+<), >
+# line 11
+<{, >
+# line 13
+<ID, io>
+# line 13
+<., >
+# line 13
+<ID, putString>
+# line 13
+<(, >
+# line 13
+<STRING_CONST, "Enter a non-negative number: ", [length: 29] >
+# line 13
+<), >
+# line 13
+<;, >
+# line 14
+<ID, int>
+# line 14
+<ID, x>
+# line 14
+<=, >
+# line 14
+<ID, io>
+# line 14
+<., >
+# line 14
+<ID, getInt>
+# line 14
+<(, >
+# line 14
+<), >
+# line 14
+<;, >
+# line 16
+<IF, >
+# line 16
+<(, >
+# line 16
+<ID, x>
+# line 16
+<<, >
+# line 16
+<INT_CONST, 0>
+# line 16
+<), >
+# line 16
+<{, >
+# line 17
+<ID, io>
+# line 17
+<., >
+# line 17
+<ID, putString>
+# line 17
+<(, >
+# line 17
+<STRING_CONST, "Error: number must be > 0\n", [length: 26] >
+# line 17
+<), >
+# line 17
+<;, >
+# line 18
+<(, >
+# line 18
+<NEW, >
+# line 18
+<ID, Sys>
+# line 18
+<(, >
+# line 18
+<), >
+# line 18
+<), >
+# line 18
+<., >
+# line 18
+<ID, exit>
+# line 18
+<(, >
+# line 18
+<INT_CONST, 1>
+# line 18
+<), >
+# line 18
+<;, >
+# line 19
+<}, >
+# line 20
+<ELSE, >
+# line 20
+<{, >
+# line 23
+<ID, io>
+# line 23
+<., >
+# line 23
+<ID, putInt>
+# line 23
+<(, >
+# line 23
+<ID, fact>
+# line 23
+<(, >
+# line 23
+<ID, x>
+# line 23
+<), >
+# line 23
+<), >
+# line 23
+<., >
+# line 23
+<ID, putString>
+# line 23
+<(, >
+# line 23
+<STRING_CONST, "\n", [length: 1] >
+# line 23
+<), >
+# line 23
+<;, >
+# line 24
+<}, >
+# line 25
+<RETURN, >
+# line 25
+<;, >
+# line 26
+<}, >
+# line 32
+<ID, int>
+# line 32
+<ID, fact>
+# line 32
+<(, >
+# line 32
+<ID, int>
+# line 32
+<ID, n>
+# line 32
+<), >
+# line 32
+<{, >
+# line 34
+<ID, int>
+# line 34
+<ID, result>
+# line 34
+<=, >
+# line 34
+<INT_CONST, 1>
+# line 34
+<;, >
+# line 37
+<IF, >
+# line 37
+<(, >
+# line 37
+<ID, n>
+# line 37
+<>, >
+# line 37
+<INT_CONST, 1>
+# line 37
+<), >
+# line 38
+<ID, result>
+# line 38
+<=, >
+# line 38
+<ID, n>
+# line 38
+<*, >
+# line 38
+<ID, fact>
+# line 38
+<(, >
+# line 38
+<ID, n>
+# line 38
+<-, >
+# line 38
+<INT_CONST, 1>
+# line 38
+<), >
+# line 38
+<;, >
+# line 39
+<RETURN, >
+# line 39
+<ID, result>
+# line 39
+<;, >
+# line 40
+<}, >
+# line 41
+<}, >
+# line 41
+<EOF, >

@@ -1,0 +1,3752 @@
+# VectorTest.btm
+# line 4
+<CLASS, >
+# line 4
+<ID, Main>
+# line 4
+<{, >
+# line 5
+<ID, TextIO>
+# line 5
+<ID, io>
+# line 5
+<=, >
+# line 5
+<NEW, >
+# line 5
+<ID, TextIO>
+# line 5
+<(, >
+# line 5
+<), >
+# line 5
+<;, >
+# line 6
+<ID, Vector>
+# line 6
+<ID, v>
+# line 6
+<=, >
+# line 6
+<NEW, >
+# line 6
+<ID, Vector>
+# line 6
+<(, >
+# line 6
+<), >
+# line 6
+<;, >
+# line 8
+<ID, void>
+# line 8
+<ID, main>
+# line 8
+<(, >
+# line 8
+<), >
+# line 8
+<{, >
+# line 9
+<ID, test1>
+# line 9
+<(, >
+# line 9
+<), >
+# line 9
+<;, >
+# line 10
+<ID, test2>
+# line 10
+<(, >
+# line 10
+<), >
+# line 10
+<;, >
+# line 11
+<RETURN, >
+# line 11
+<;, >
+# line 12
+<}, >
+# line 14
+<ID, void>
+# line 14
+<ID, printVector>
+# line 14
+<(, >
+# line 14
+<), >
+# line 14
+<{, >
+# line 15
+<ID, int>
+# line 15
+<ID, i>
+# line 15
+<=, >
+# line 15
+<INT_CONST, 0>
+# line 15
+<;, >
+# line 16
+<WHILE, >
+# line 16
+<(, >
+# line 16
+<ID, i>
+# line 16
+<<, >
+# line 16
+<ID, v>
+# line 16
+<., >
+# line 16
+<ID, size>
+# line 16
+<(, >
+# line 16
+<), >
+# line 16
+<), >
+# line 16
+<{, >
+# line 17
+<ID, io>
+# line 17
+<., >
+# line 17
+<ID, putString>
+# line 17
+<(, >
+# line 17
+<STRING_CONST, "Element ", [length: 8] >
+# line 17
+<), >
+# line 17
+<., >
+# line 17
+<ID, putInt>
+# line 17
+<(, >
+# line 17
+<ID, i>
+# line 17
+<), >
+# line 17
+<., >
+# line 17
+<ID, putString>
+# line 17
+<(, >
+# line 17
+<STRING_CONST, ": ", [length: 2] >
+# line 17
+<), >
+# line 17
+<;, >
+# line 18
+<IF, >
+# line 18
+<(, >
+# line 18
+<ID, v>
+# line 18
+<., >
+# line 18
+<ID, elementAt>
+# line 18
+<(, >
+# line 18
+<ID, i>
+# line 18
+<), >
+# line 18
+<INSTANCEOF, >
+# line 18
+<ID, Boolean>
+# line 18
+<), >
+# line 18
+<{, >
+# line 19
+<ID, Boolean>
+# line 19
+<ID, b>
+# line 19
+<=, >
+# line 19
+<(, >
+# line 19
+<ID, Boolean>
+# line 19
+<), >
+# line 19
+<(, >
+# line 19
+<ID, v>
+# line 19
+<., >
+# line 19
+<ID, elementAt>
+# line 19
+<(, >
+# line 19
+<ID, i>
+# line 19
+<), >
+# line 19
+<), >
+# line 19
+<;, >
+# line 20
+<ID, io>
+# line 20
+<., >
+# line 20
+<ID, putString>
+# line 20
+<(, >
+# line 20
+<STRING_CONST, "Boolean (", [length: 9] >
+# line 20
+<), >
+# line 20
+<;, >
+# line 21
+<IF, >
+# line 21
+<(, >
+# line 21
+<ID, b>
+# line 21
+<., >
+# line 21
+<ID, booleanValue>
+# line 21
+<(, >
+# line 21
+<), >
+# line 21
+<), >
+# line 22
+<ID, io>
+# line 22
+<., >
+# line 22
+<ID, putString>
+# line 22
+<(, >
+# line 22
+<STRING_CONST, "true)\n", [length: 6] >
+# line 22
+<), >
+# line 22
+<;, >
+# line 23
+<ELSE, >
+# line 24
+<ID, io>
+# line 24
+<., >
+# line 24
+<ID, putString>
+# line 24
+<(, >
+# line 24
+<STRING_CONST, "false)\n", [length: 7] >
+# line 24
+<), >
+# line 24
+<;, >
+# line 25
+<}, >
+# line 26
+<ELSE, >
+# line 26
+<IF, >
+# line 26
+<(, >
+# line 26
+<ID, v>
+# line 26
+<., >
+# line 26
+<ID, elementAt>
+# line 26
+<(, >
+# line 26
+<ID, i>
+# line 26
+<), >
+# line 26
+<INSTANCEOF, >
+# line 26
+<ID, Integer>
+# line 26
+<), >
+# line 26
+<{, >
+# line 27
+<ID, Integer>
+# line 27
+<ID, integer>
+# line 27
+<=, >
+# line 27
+<(, >
+# line 27
+<ID, Integer>
+# line 27
+<), >
+# line 27
+<(, >
+# line 27
+<ID, v>
+# line 27
+<., >
+# line 27
+<ID, elementAt>
+# line 27
+<(, >
+# line 27
+<ID, i>
+# line 27
+<), >
+# line 27
+<), >
+# line 27
+<;, >
+# line 28
+<ID, io>
+# line 28
+<., >
+# line 28
+<ID, putString>
+# line 28
+<(, >
+# line 28
+<STRING_CONST, "Integer (", [length: 9] >
+# line 28
+<), >
+# line 28
+<., >
+# line 28
+<ID, putInt>
+# line 28
+<(, >
+# line 28
+<ID, integer>
+# line 28
+<., >
+# line 28
+<ID, intValue>
+# line 28
+<(, >
+# line 28
+<), >
+# line 28
+<), >
+# line 28
+<., >
+# line 28
+<ID, putString>
+# line 28
+<(, >
+# line 28
+<STRING_CONST, ")\n", [length: 2] >
+# line 28
+<), >
+# line 28
+<;, >
+# line 29
+<}, >
+# line 30
+<ELSE, >
+# line 30
+<IF, >
+# line 30
+<(, >
+# line 30
+<ID, v>
+# line 30
+<., >
+# line 30
+<ID, elementAt>
+# line 30
+<(, >
+# line 30
+<ID, i>
+# line 30
+<), >
+# line 30
+<INSTANCEOF, >
+# line 30
+<ID, String>
+# line 30
+<), >
+# line 30
+<{, >
+# line 31
+<ID, String>
+# line 31
+<ID, s>
+# line 31
+<=, >
+# line 31
+<(, >
+# line 31
+<ID, String>
+# line 31
+<), >
+# line 31
+<(, >
+# line 31
+<ID, v>
+# line 31
+<., >
+# line 31
+<ID, elementAt>
+# line 31
+<(, >
+# line 31
+<ID, i>
+# line 31
+<), >
+# line 31
+<), >
+# line 31
+<;, >
+# line 32
+<ID, io>
+# line 32
+<., >
+# line 32
+<ID, putString>
+# line 32
+<(, >
+# line 32
+<STRING_CONST, "String (", [length: 8] >
+# line 32
+<), >
+# line 32
+<., >
+# line 32
+<ID, putString>
+# line 32
+<(, >
+# line 32
+<ID, s>
+# line 32
+<), >
+# line 32
+<., >
+# line 32
+<ID, putString>
+# line 32
+<(, >
+# line 32
+<STRING_CONST, ")\n", [length: 2] >
+# line 32
+<), >
+# line 32
+<;, >
+# line 33
+<}, >
+# line 34
+<ID, i>
+# line 34
+<=, >
+# line 34
+<ID, i>
+# line 34
+<+, >
+# line 34
+<INT_CONST, 1>
+# line 34
+<;, >
+# line 35
+<}, >
+# line 37
+<RETURN, >
+# line 37
+<;, >
+# line 38
+<}, >
+# line 40
+<ID, void>
+# line 40
+<ID, test1>
+# line 40
+<(, >
+# line 40
+<), >
+# line 40
+<{, >
+# line 41
+<ID, Integer>
+# line 41
+<ID, integer>
+# line 41
+<=, >
+# line 41
+<(, >
+# line 41
+<NEW, >
+# line 41
+<ID, Integer>
+# line 41
+<(, >
+# line 41
+<), >
+# line 41
+<), >
+# line 41
+<., >
+# line 41
+<ID, init>
+# line 41
+<(, >
+# line 41
+<INT_CONST, 5>
+# line 41
+<), >
+# line 41
+<;, >
+# line 42
+<ID, Boolean>
+# line 42
+<ID, b>
+# line 42
+<=, >
+# line 42
+<(, >
+# line 42
+<NEW, >
+# line 42
+<ID, Boolean>
+# line 42
+<(, >
+# line 42
+<), >
+# line 42
+<), >
+# line 42
+<., >
+# line 42
+<ID, init>
+# line 42
+<(, >
+# line 42
+<BOOLEAN_CONST, true>
+# line 42
+<), >
+# line 42
+<;, >
+# line 43
+<ID, String>
+# line 43
+<ID, s>
+# line 43
+<=, >
+# line 43
+<STRING_CONST, "abc", [length: 3] >
+# line 43
+<;, >
+# line 45
+<ID, v>
+# line 45
+<., >
+# line 45
+<ID, addElement>
+# line 45
+<(, >
+# line 45
+<ID, integer>
+# line 45
+<), >
+# line 45
+<;, >
+# line 46
+<ID, io>
+# line 46
+<., >
+# line 46
+<ID, putString>
+# line 46
+<(, >
+# line 46
+<STRING_CONST, "Added Integer (5) to Vector\n", [length: 28] >
+# line 46
+<), >
+# line 46
+<;, >
+# line 48
+<ID, io>
+# line 48
+<., >
+# line 48
+<ID, putString>
+# line 48
+<(, >
+# line 48
+<STRING_CONST, "Printing vector:\n", [length: 17] >
+# line 48
+<), >
+# line 48
+<;, >
+# line 49
+<ID, printVector>
+# line 49
+<(, >
+# line 49
+<), >
+# line 49
+<;, >
+# line 51
+<ID, v>
+# line 51
+<., >
+# line 51
+<ID, addElementAt>
+# line 51
+<(, >
+# line 51
+<ID, b>
+# line 51
+<,, >
+# line 51
+<INT_CONST, 0>
+# line 51
+<), >
+# line 51
+<;, >
+# line 52
+<ID, io>
+# line 52
+<., >
+# line 52
+<ID, putString>
+# line 52
+<(, >
+# line 52
+<STRING_CONST, "Added Boolean (true) to first position (0th) of Vector\n", [length: 55] >
+# line 52
+<), >
+# line 52
+<;, >
+# line 54
+<ID, io>
+# line 54
+<., >
+# line 54
+<ID, putString>
+# line 54
+<(, >
+# line 54
+<STRING_CONST, "Printing vector:\n", [length: 17] >
+# line 54
+<), >
+# line 54
+<;, >
+# line 55
+<ID, printVector>
+# line 55
+<(, >
+# line 55
+<), >
+# line 55
+<;, >
+# line 57
+<ID, v>
+# line 57
+<., >
+# line 57
+<ID, addElement>
+# line 57
+<(, >
+# line 57
+<ID, s>
+# line 57
+<), >
+# line 57
+<;, >
+# line 58
+<ID, io>
+# line 58
+<., >
+# line 58
+<ID, putString>
+# line 58
+<(, >
+# line 58
+<STRING_CONST, "Added String (\"abc\") to end of vector\n", [length: 38] >
+# line 58
+<), >
+# line 58
+<;, >
+# line 60
+<ID, io>
+# line 60
+<., >
+# line 60
+<ID, putString>
+# line 60
+<(, >
+# line 60
+<STRING_CONST, "Printing vector:\n", [length: 17] >
+# line 60
+<), >
+# line 60
+<;, >
+# line 61
+<ID, printVector>
+# line 61
+<(, >
+# line 61
+<), >
+# line 61
+<;, >
+# line 63
+<ID, io>
+# line 63
+<., >
+# line 63
+<ID, putString>
+# line 63
+<(, >
+# line 63
+<STRING_CONST, "Attempting to get Boolean from Vector using elementAt(0)...", [length: 59] >
+# line 63
+<), >
+# line 63
+<;, >
+# line 64
+<ID, Boolean>
+# line 64
+<ID, b2>
+# line 64
+<=, >
+# line 64
+<(, >
+# line 64
+<ID, Boolean>
+# line 64
+<), >
+# line 64
+<(, >
+# line 64
+<ID, v>
+# line 64
+<., >
+# line 64
+<ID, elementAt>
+# line 64
+<(, >
+# line 64
+<INT_CONST, 0>
+# line 64
+<), >
+# line 64
+<), >
+# line 64
+<;, >
+# line 65
+<IF, >
+# line 65
+<(, >
+# line 65
+<ID, b>
+# line 65
+<!=, >
+# line 65
+<ID, b2>
+# line 65
+<), >
+# line 65
+<{, >
+# line 66
+<ID, io>
+# line 66
+<., >
+# line 66
+<ID, putString>
+# line 66
+<(, >
+# line 66
+<STRING_CONST, "Error: first element Boolean does not equal original\n", [length: 53] >
+# line 66
+<), >
+# line 66
+<;, >
+# line 67
+<(, >
+# line 67
+<NEW, >
+# line 67
+<ID, Sys>
+# line 67
+<(, >
+# line 67
+<), >
+# line 67
+<), >
+# line 67
+<., >
+# line 67
+<ID, exit>
+# line 67
+<(, >
+# line 67
+<INT_CONST, 1>
+# line 67
+<), >
+# line 67
+<;, >
+# line 68
+<}, >
+# line 69
+<ELSE, >
+# line 69
+<IF, >
+# line 69
+<(, >
+# line 69
+<!, >
+# line 69
+<ID, v>
+# line 69
+<., >
+# line 69
+<ID, contains>
+# line 69
+<(, >
+# line 69
+<ID, b2>
+# line 69
+<), >
+# line 69
+<), >
+# line 69
+<{, >
+# line 70
+<ID, io>
+# line 70
+<., >
+# line 70
+<ID, putString>
+# line 70
+<(, >
+# line 70
+<STRING_CONST, "Error: Vector contains() failed to find Boolean\n", [length: 48] >
+# line 70
+<), >
+# line 70
+<;, >
+# line 71
+<(, >
+# line 71
+<NEW, >
+# line 71
+<ID, Sys>
+# line 71
+<(, >
+# line 71
+<), >
+# line 71
+<), >
+# line 71
+<., >
+# line 71
+<ID, exit>
+# line 71
+<(, >
+# line 71
+<INT_CONST, 1>
+# line 71
+<), >
+# line 71
+<;, >
+# line 72
+<}, >
+# line 73
+<ID, io>
+# line 73
+<., >
+# line 73
+<ID, putString>
+# line 73
+<(, >
+# line 73
+<STRING_CONST, "successful\n", [length: 11] >
+# line 73
+<), >
+# line 73
+<;, >
+# line 74
+<ID, io>
+# line 74
+<., >
+# line 74
+<ID, putString>
+# line 74
+<(, >
+# line 74
+<STRING_CONST, "Attempting to remove Boolean from Vector using removeElementAt(0)...", [length: 68] >
+# line 74
+<), >
+# line 74
+<;, >
+# line 75
+<ID, v>
+# line 75
+<., >
+# line 75
+<ID, removeElementAt>
+# line 75
+<(, >
+# line 75
+<INT_CONST, 0>
+# line 75
+<), >
+# line 75
+<;, >
+# line 76
+<IF, >
+# line 76
+<(, >
+# line 76
+<ID, v>
+# line 76
+<., >
+# line 76
+<ID, contains>
+# line 76
+<(, >
+# line 76
+<ID, b2>
+# line 76
+<), >
+# line 76
+<), >
+# line 76
+<{, >
+# line 77
+<ID, io>
+# line 77
+<., >
+# line 77
+<ID, putString>
+# line 77
+<(, >
+# line 77
+<STRING_CONST, "Error: tried to remove Boolean and still in the Vector\n", [length: 55] >
+# line 77
+<), >
+# line 77
+<;, >
+# line 78
+<(, >
+# line 78
+<NEW, >
+# line 78
+<ID, Sys>
+# line 78
+<(, >
+# line 78
+<), >
+# line 78
+<), >
+# line 78
+<., >
+# line 78
+<ID, exit>
+# line 78
+<(, >
+# line 78
+<INT_CONST, 1>
+# line 78
+<), >
+# line 78
+<;, >
+# line 79
+<}, >
+# line 80
+<ELSE, >
+# line 80
+<IF, >
+# line 80
+<(, >
+# line 80
+<ID, v>
+# line 80
+<., >
+# line 80
+<ID, size>
+# line 80
+<(, >
+# line 80
+<), >
+# line 80
+<!=, >
+# line 80
+<INT_CONST, 2>
+# line 80
+<), >
+# line 80
+<{, >
+# line 81
+<ID, io>
+# line 81
+<., >
+# line 81
+<ID, putString>
+# line 81
+<(, >
+# line 81
+<STRING_CONST, "Error: size should be 2 after removing Boolean\n", [length: 47] >
+# line 81
+<), >
+# line 81
+<;, >
+# line 82
+<(, >
+# line 82
+<NEW, >
+# line 82
+<ID, Sys>
+# line 82
+<(, >
+# line 82
+<), >
+# line 82
+<), >
+# line 82
+<., >
+# line 82
+<ID, exit>
+# line 82
+<(, >
+# line 82
+<INT_CONST, 1>
+# line 82
+<), >
+# line 82
+<;, >
+# line 83
+<}, >
+# line 84
+<ID, io>
+# line 84
+<., >
+# line 84
+<ID, putString>
+# line 84
+<(, >
+# line 84
+<STRING_CONST, "successful\n", [length: 11] >
+# line 84
+<), >
+# line 84
+<;, >
+# line 86
+<ID, io>
+# line 86
+<., >
+# line 86
+<ID, putString>
+# line 86
+<(, >
+# line 86
+<STRING_CONST, "Attempting to get String from Vector using elementAt(1)...", [length: 58] >
+# line 86
+<), >
+# line 86
+<;, >
+# line 87
+<ID, String>
+# line 87
+<ID, s2>
+# line 87
+<=, >
+# line 87
+<(, >
+# line 87
+<ID, String>
+# line 87
+<), >
+# line 87
+<(, >
+# line 87
+<ID, v>
+# line 87
+<., >
+# line 87
+<ID, elementAt>
+# line 87
+<(, >
+# line 87
+<INT_CONST, 1>
+# line 87
+<), >
+# line 87
+<), >
+# line 87
+<;, >
+# line 88
+<IF, >
+# line 88
+<(, >
+# line 88
+<ID, s>
+# line 88
+<!=, >
+# line 88
+<ID, s2>
+# line 88
+<), >
+# line 88
+<{, >
+# line 89
+<ID, io>
+# line 89
+<., >
+# line 89
+<ID, putString>
+# line 89
+<(, >
+# line 89
+<STRING_CONST, "Error: second element String does not equal original\n", [length: 53] >
+# line 89
+<), >
+# line 89
+<;, >
+# line 90
+<(, >
+# line 90
+<NEW, >
+# line 90
+<ID, Sys>
+# line 90
+<(, >
+# line 90
+<), >
+# line 90
+<), >
+# line 90
+<., >
+# line 90
+<ID, exit>
+# line 90
+<(, >
+# line 90
+<INT_CONST, 1>
+# line 90
+<), >
+# line 90
+<;, >
+# line 91
+<}, >
+# line 92
+<ELSE, >
+# line 92
+<IF, >
+# line 92
+<(, >
+# line 92
+<!, >
+# line 92
+<ID, v>
+# line 92
+<., >
+# line 92
+<ID, contains>
+# line 92
+<(, >
+# line 92
+<ID, s2>
+# line 92
+<), >
+# line 92
+<), >
+# line 92
+<{, >
+# line 93
+<ID, io>
+# line 93
+<., >
+# line 93
+<ID, putString>
+# line 93
+<(, >
+# line 93
+<STRING_CONST, "Error: Vector contains() failed to find String\n", [length: 47] >
+# line 93
+<), >
+# line 93
+<;, >
+# line 94
+<(, >
+# line 94
+<NEW, >
+# line 94
+<ID, Sys>
+# line 94
+<(, >
+# line 94
+<), >
+# line 94
+<), >
+# line 94
+<., >
+# line 94
+<ID, exit>
+# line 94
+<(, >
+# line 94
+<INT_CONST, 1>
+# line 94
+<), >
+# line 94
+<;, >
+# line 95
+<}, >
+# line 96
+<ID, io>
+# line 96
+<., >
+# line 96
+<ID, putString>
+# line 96
+<(, >
+# line 96
+<STRING_CONST, "successful\n", [length: 11] >
+# line 96
+<), >
+# line 96
+<;, >
+# line 97
+<ID, io>
+# line 97
+<., >
+# line 97
+<ID, putString>
+# line 97
+<(, >
+# line 97
+<STRING_CONST, "Attempting to remove String from Vector using removeElementAt(1)...", [length: 67] >
+# line 97
+<), >
+# line 97
+<;, >
+# line 98
+<ID, v>
+# line 98
+<., >
+# line 98
+<ID, removeElementAt>
+# line 98
+<(, >
+# line 98
+<INT_CONST, 1>
+# line 98
+<), >
+# line 98
+<;, >
+# line 99
+<IF, >
+# line 99
+<(, >
+# line 99
+<ID, v>
+# line 99
+<., >
+# line 99
+<ID, contains>
+# line 99
+<(, >
+# line 99
+<ID, s2>
+# line 99
+<), >
+# line 99
+<), >
+# line 99
+<{, >
+# line 100
+<ID, io>
+# line 100
+<., >
+# line 100
+<ID, putString>
+# line 100
+<(, >
+# line 100
+<STRING_CONST, "Error: tried to remove String and still in the Vector\n", [length: 54] >
+# line 100
+<), >
+# line 100
+<;, >
+# line 101
+<(, >
+# line 101
+<NEW, >
+# line 101
+<ID, Sys>
+# line 101
+<(, >
+# line 101
+<), >
+# line 101
+<), >
+# line 101
+<., >
+# line 101
+<ID, exit>
+# line 101
+<(, >
+# line 101
+<INT_CONST, 1>
+# line 101
+<), >
+# line 101
+<;, >
+# line 102
+<}, >
+# line 103
+<ELSE, >
+# line 103
+<IF, >
+# line 103
+<(, >
+# line 103
+<ID, v>
+# line 103
+<., >
+# line 103
+<ID, size>
+# line 103
+<(, >
+# line 103
+<), >
+# line 103
+<!=, >
+# line 103
+<INT_CONST, 1>
+# line 103
+<), >
+# line 103
+<{, >
+# line 104
+<ID, io>
+# line 104
+<., >
+# line 104
+<ID, putString>
+# line 104
+<(, >
+# line 104
+<STRING_CONST, "Error: size should be 1 after removing String\n", [length: 46] >
+# line 104
+<), >
+# line 104
+<;, >
+# line 105
+<(, >
+# line 105
+<NEW, >
+# line 105
+<ID, Sys>
+# line 105
+<(, >
+# line 105
+<), >
+# line 105
+<), >
+# line 105
+<., >
+# line 105
+<ID, exit>
+# line 105
+<(, >
+# line 105
+<INT_CONST, 1>
+# line 105
+<), >
+# line 105
+<;, >
+# line 106
+<}, >
+# line 107
+<ID, io>
+# line 107
+<., >
+# line 107
+<ID, putString>
+# line 107
+<(, >
+# line 107
+<STRING_CONST, "successful\n", [length: 11] >
+# line 107
+<), >
+# line 107
+<;, >
+# line 109
+<ID, io>
+# line 109
+<., >
+# line 109
+<ID, putString>
+# line 109
+<(, >
+# line 109
+<STRING_CONST, "Attempting to get Integer from Vector using elementAt(0)...", [length: 59] >
+# line 109
+<), >
+# line 109
+<;, >
+# line 110
+<ID, Integer>
+# line 110
+<ID, integer2>
+# line 110
+<=, >
+# line 110
+<(, >
+# line 110
+<ID, Integer>
+# line 110
+<), >
+# line 110
+<(, >
+# line 110
+<ID, v>
+# line 110
+<., >
+# line 110
+<ID, elementAt>
+# line 110
+<(, >
+# line 110
+<INT_CONST, 0>
+# line 110
+<), >
+# line 110
+<), >
+# line 110
+<;, >
+# line 111
+<IF, >
+# line 111
+<(, >
+# line 111
+<ID, integer>
+# line 111
+<!=, >
+# line 111
+<ID, integer2>
+# line 111
+<), >
+# line 111
+<{, >
+# line 112
+<ID, io>
+# line 112
+<., >
+# line 112
+<ID, putString>
+# line 112
+<(, >
+# line 112
+<STRING_CONST, "Error: second element Integer does not equal original\n", [length: 54] >
+# line 112
+<), >
+# line 112
+<;, >
+# line 113
+<(, >
+# line 113
+<NEW, >
+# line 113
+<ID, Sys>
+# line 113
+<(, >
+# line 113
+<), >
+# line 113
+<), >
+# line 113
+<., >
+# line 113
+<ID, exit>
+# line 113
+<(, >
+# line 113
+<INT_CONST, 1>
+# line 113
+<), >
+# line 113
+<;, >
+# line 114
+<}, >
+# line 115
+<ELSE, >
+# line 115
+<IF, >
+# line 115
+<(, >
+# line 115
+<!, >
+# line 115
+<ID, v>
+# line 115
+<., >
+# line 115
+<ID, contains>
+# line 115
+<(, >
+# line 115
+<ID, integer2>
+# line 115
+<), >
+# line 115
+<), >
+# line 115
+<{, >
+# line 116
+<ID, io>
+# line 116
+<., >
+# line 116
+<ID, putString>
+# line 116
+<(, >
+# line 116
+<STRING_CONST, "Error: Vector contains() failed to find Integer\n", [length: 48] >
+# line 116
+<), >
+# line 116
+<;, >
+# line 117
+<(, >
+# line 117
+<NEW, >
+# line 117
+<ID, Sys>
+# line 117
+<(, >
+# line 117
+<), >
+# line 117
+<), >
+# line 117
+<., >
+# line 117
+<ID, exit>
+# line 117
+<(, >
+# line 117
+<INT_CONST, 1>
+# line 117
+<), >
+# line 117
+<;, >
+# line 118
+<}, >
+# line 119
+<ID, io>
+# line 119
+<., >
+# line 119
+<ID, putString>
+# line 119
+<(, >
+# line 119
+<STRING_CONST, "successful\n", [length: 11] >
+# line 119
+<), >
+# line 119
+<;, >
+# line 120
+<ID, io>
+# line 120
+<., >
+# line 120
+<ID, putString>
+# line 120
+<(, >
+# line 120
+<STRING_CONST, "Attempting to remove Integer from Vector using removeElementAt(0)...", [length: 68] >
+# line 120
+<), >
+# line 120
+<;, >
+# line 121
+<ID, v>
+# line 121
+<., >
+# line 121
+<ID, removeElementAt>
+# line 121
+<(, >
+# line 121
+<INT_CONST, 0>
+# line 121
+<), >
+# line 121
+<;, >
+# line 122
+<IF, >
+# line 122
+<(, >
+# line 122
+<ID, v>
+# line 122
+<., >
+# line 122
+<ID, contains>
+# line 122
+<(, >
+# line 122
+<ID, integer2>
+# line 122
+<), >
+# line 122
+<), >
+# line 122
+<{, >
+# line 123
+<ID, io>
+# line 123
+<., >
+# line 123
+<ID, putString>
+# line 123
+<(, >
+# line 123
+<STRING_CONST, "Error: tried to remove Integer and still in the Vector\n", [length: 55] >
+# line 123
+<), >
+# line 123
+<;, >
+# line 124
+<(, >
+# line 124
+<NEW, >
+# line 124
+<ID, Sys>
+# line 124
+<(, >
+# line 124
+<), >
+# line 124
+<), >
+# line 124
+<., >
+# line 124
+<ID, exit>
+# line 124
+<(, >
+# line 124
+<INT_CONST, 1>
+# line 124
+<), >
+# line 124
+<;, >
+# line 125
+<}, >
+# line 126
+<ELSE, >
+# line 126
+<IF, >
+# line 126
+<(, >
+# line 126
+<ID, v>
+# line 126
+<., >
+# line 126
+<ID, size>
+# line 126
+<(, >
+# line 126
+<), >
+# line 126
+<!=, >
+# line 126
+<INT_CONST, 0>
+# line 126
+<), >
+# line 126
+<{, >
+# line 127
+<ID, io>
+# line 127
+<., >
+# line 127
+<ID, putString>
+# line 127
+<(, >
+# line 127
+<STRING_CONST, "Error: size should be 0 after removing Integer\n", [length: 47] >
+# line 127
+<), >
+# line 127
+<;, >
+# line 128
+<(, >
+# line 128
+<NEW, >
+# line 128
+<ID, Sys>
+# line 128
+<(, >
+# line 128
+<), >
+# line 128
+<), >
+# line 128
+<., >
+# line 128
+<ID, exit>
+# line 128
+<(, >
+# line 128
+<INT_CONST, 1>
+# line 128
+<), >
+# line 128
+<;, >
+# line 129
+<}, >
+# line 130
+<ID, io>
+# line 130
+<., >
+# line 130
+<ID, putString>
+# line 130
+<(, >
+# line 130
+<STRING_CONST, "successful\n", [length: 11] >
+# line 130
+<), >
+# line 130
+<;, >
+# line 132
+<RETURN, >
+# line 132
+<;, >
+# line 133
+<}, >
+# line 135
+<ID, void>
+# line 135
+<ID, test2>
+# line 135
+<(, >
+# line 135
+<), >
+# line 135
+<{, >
+# line 136
+<ID, int>
+# line 136
+<ID, max>
+# line 136
+<=, >
+# line 136
+<INT_CONST, 25>
+# line 136
+<;, >
+# line 137
+<ID, int>
+# line 137
+<ID, i>
+# line 137
+<=, >
+# line 137
+<ID, max>
+# line 137
+<-, >
+# line 137
+<INT_CONST, 1>
+# line 137
+<;, >
+# line 138
+<ID, io>
+# line 138
+<., >
+# line 138
+<ID, putString>
+# line 138
+<(, >
+# line 138
+<STRING_CONST, "Numbers unsorted:\n", [length: 18] >
+# line 138
+<), >
+# line 138
+<;, >
+# line 139
+<WHILE, >
+# line 139
+<(, >
+# line 139
+<ID, i>
+# line 139
+<>=, >
+# line 139
+<INT_CONST, 0>
+# line 139
+<), >
+# line 139
+<{, >
+# line 140
+<ID, Integer>
+# line 140
+<ID, integer>
+# line 140
+<=, >
+# line 140
+<(, >
+# line 140
+<NEW, >
+# line 140
+<ID, Integer>
+# line 140
+<(, >
+# line 140
+<), >
+# line 140
+<), >
+# line 140
+<., >
+# line 140
+<ID, init>
+# line 140
+<(, >
+# line 140
+<ID, i>
+# line 140
+<), >
+# line 140
+<;, >
+# line 141
+<ID, io>
+# line 141
+<., >
+# line 141
+<ID, putInt>
+# line 141
+<(, >
+# line 141
+<ID, i>
+# line 141
+<), >
+# line 141
+<., >
+# line 141
+<ID, putString>
+# line 141
+<(, >
+# line 141
+<STRING_CONST, "\n", [length: 1] >
+# line 141
+<), >
+# line 141
+<;, >
+# line 142
+<ID, v>
+# line 142
+<., >
+# line 142
+<ID, addElement>
+# line 142
+<(, >
+# line 142
+<ID, integer>
+# line 142
+<), >
+# line 142
+<;, >
+# line 143
+<ID, i>
+# line 143
+<=, >
+# line 143
+<ID, i>
+# line 143
+<-, >
+# line 143
+<INT_CONST, 1>
+# line 143
+<;, >
+# line 144
+<}, >
+# line 146
+<ID, i>
+# line 146
+<=, >
+# line 146
+<INT_CONST, 0>
+# line 146
+<;, >
+# line 147
+<WHILE, >
+# line 147
+<(, >
+# line 147
+<ID, i>
+# line 147
+<<, >
+# line 147
+<ID, max>
+# line 147
+<), >
+# line 147
+<{, >
+# line 148
+<ID, int>
+# line 148
+<ID, j>
+# line 148
+<=, >
+# line 148
+<ID, i>
+# line 148
+<+, >
+# line 148
+<INT_CONST, 1>
+# line 148
+<;, >
+# line 149
+<WHILE, >
+# line 149
+<(, >
+# line 149
+<ID, j>
+# line 149
+<<, >
+# line 149
+<ID, max>
+# line 149
+<), >
+# line 149
+<{, >
+# line 150
+<ID, Integer>
+# line 150
+<ID, n1>
+# line 150
+<=, >
+# line 150
+<(, >
+# line 150
+<ID, Integer>
+# line 150
+<), >
+# line 150
+<(, >
+# line 150
+<ID, v>
+# line 150
+<., >
+# line 150
+<ID, elementAt>
+# line 150
+<(, >
+# line 150
+<ID, i>
+# line 150
+<), >
+# line 150
+<), >
+# line 150
+<;, >
+# line 151
+<ID, Integer>
+# line 151
+<ID, n2>
+# line 151
+<=, >
+# line 151
+<(, >
+# line 151
+<ID, Integer>
+# line 151
+<), >
+# line 151
+<(, >
+# line 151
+<ID, v>
+# line 151
+<., >
+# line 151
+<ID, elementAt>
+# line 151
+<(, >
+# line 151
+<ID, j>
+# line 151
+<), >
+# line 151
+<), >
+# line 151
+<;, >
+# line 152
+<IF, >
+# line 152
+<(, >
+# line 152
+<ID, n1>
+# line 152
+<., >
+# line 152
+<ID, intValue>
+# line 152
+<(, >
+# line 152
+<), >
+# line 152
+<>, >
+# line 152
+<ID, n2>
+# line 152
+<., >
+# line 152
+<ID, intValue>
+# line 152
+<(, >
+# line 152
+<), >
+# line 152
+<), >
+# line 152
+<{, >
+# line 153
+<ID, v>
+# line 153
+<., >
+# line 153
+<ID, removeElementAt>
+# line 153
+<(, >
+# line 153
+<ID, i>
+# line 153
+<), >
+# line 153
+<;, >
+# line 154
+<ID, v>
+# line 154
+<., >
+# line 154
+<ID, addElementAt>
+# line 154
+<(, >
+# line 154
+<ID, n2>
+# line 154
+<,, >
+# line 154
+<ID, i>
+# line 154
+<), >
+# line 154
+<;, >
+# line 155
+<ID, v>
+# line 155
+<., >
+# line 155
+<ID, removeElementAt>
+# line 155
+<(, >
+# line 155
+<ID, j>
+# line 155
+<), >
+# line 155
+<;, >
+# line 156
+<ID, v>
+# line 156
+<., >
+# line 156
+<ID, addElementAt>
+# line 156
+<(, >
+# line 156
+<ID, n1>
+# line 156
+<,, >
+# line 156
+<ID, j>
+# line 156
+<), >
+# line 156
+<;, >
+# line 157
+<}, >
+# line 158
+<ID, j>
+# line 158
+<=, >
+# line 158
+<ID, j>
+# line 158
+<+, >
+# line 158
+<INT_CONST, 1>
+# line 158
+<;, >
+# line 159
+<}, >
+# line 160
+<ID, i>
+# line 160
+<=, >
+# line 160
+<ID, i>
+# line 160
+<+, >
+# line 160
+<INT_CONST, 1>
+# line 160
+<;, >
+# line 161
+<}, >
+# line 163
+<ID, io>
+# line 163
+<., >
+# line 163
+<ID, putString>
+# line 163
+<(, >
+# line 163
+<STRING_CONST, "Numbers sorted:\n", [length: 16] >
+# line 163
+<), >
+# line 163
+<;, >
+# line 164
+<ID, i>
+# line 164
+<=, >
+# line 164
+<INT_CONST, 0>
+# line 164
+<;, >
+# line 165
+<WHILE, >
+# line 165
+<(, >
+# line 165
+<ID, i>
+# line 165
+<<, >
+# line 165
+<ID, max>
+# line 165
+<), >
+# line 165
+<{, >
+# line 166
+<ID, Integer>
+# line 166
+<ID, n>
+# line 166
+<=, >
+# line 166
+<(, >
+# line 166
+<ID, Integer>
+# line 166
+<), >
+# line 166
+<(, >
+# line 166
+<ID, v>
+# line 166
+<., >
+# line 166
+<ID, elementAt>
+# line 166
+<(, >
+# line 166
+<ID, i>
+# line 166
+<), >
+# line 166
+<), >
+# line 166
+<;, >
+# line 167
+<ID, io>
+# line 167
+<., >
+# line 167
+<ID, putInt>
+# line 167
+<(, >
+# line 167
+<ID, n>
+# line 167
+<., >
+# line 167
+<ID, intValue>
+# line 167
+<(, >
+# line 167
+<), >
+# line 167
+<), >
+# line 167
+<., >
+# line 167
+<ID, putString>
+# line 167
+<(, >
+# line 167
+<STRING_CONST, "\n", [length: 1] >
+# line 167
+<), >
+# line 167
+<;, >
+# line 168
+<ID, i>
+# line 168
+<=, >
+# line 168
+<ID, i>
+# line 168
+<+, >
+# line 168
+<INT_CONST, 1>
+# line 168
+<;, >
+# line 169
+<}, >
+# line 171
+<RETURN, >
+# line 171
+<;, >
+# line 172
+<}, >
+# line 173
+<}, >
+# Vector.btm
+# line 5
+<CLASS, >
+# line 5
+<ID, Vector>
+# line 5
+<{, >
+# line 7
+<ID, TextIO>
+# line 7
+<ID, io>
+# line 7
+<=, >
+# line 7
+<NEW, >
+# line 7
+<ID, TextIO>
+# line 7
+<(, >
+# line 7
+<), >
+# line 7
+<;, >
+# line 9
+<ID, Object>
+# line 9
+<[, >
+# line 9
+<], >
+# line 9
+<ID, elements>
+# line 9
+<=, >
+# line 9
+<NEW, >
+# line 9
+<ID, Object>
+# line 9
+<[, >
+# line 9
+<INT_CONST, 10>
+# line 9
+<], >
+# line 9
+<;, >
+# line 11
+<ID, int>
+# line 11
+<ID, size>
+# line 11
+<=, >
+# line 11
+<INT_CONST, 0>
+# line 11
+<;, >
+# line 17
+<ID, void>
+# line 17
+<ID, error>
+# line 17
+<(, >
+# line 17
+<ID, String>
+# line 17
+<ID, message>
+# line 17
+<), >
+# line 17
+<{, >
+# line 18
+<ID, io>
+# line 18
+<., >
+# line 18
+<ID, putString>
+# line 18
+<(, >
+# line 18
+<STRING_CONST, "Vector error: ", [length: 14] >
+# line 18
+<), >
+# line 18
+<., >
+# line 18
+<ID, putString>
+# line 18
+<(, >
+# line 18
+<ID, message>
+# line 18
+<), >
+# line 18
+<., >
+# line 18
+<ID, putString>
+# line 18
+<(, >
+# line 18
+<STRING_CONST, "\n", [length: 1] >
+# line 18
+<), >
+# line 18
+<;, >
+# line 19
+<(, >
+# line 19
+<NEW, >
+# line 19
+<ID, Sys>
+# line 19
+<(, >
+# line 19
+<), >
+# line 19
+<), >
+# line 19
+<., >
+# line 19
+<ID, exit>
+# line 19
+<(, >
+# line 19
+<INT_CONST, 1>
+# line 19
+<), >
+# line 19
+<;, >
+# line 20
+<RETURN, >
+# line 20
+<;, >
+# line 21
+<}, >
+# line 29
+<ID, void>
+# line 29
+<ID, checkIndex>
+# line 29
+<(, >
+# line 29
+<ID, int>
+# line 29
+<ID, i>
+# line 29
+<,, >
+# line 29
+<ID, String>
+# line 29
+<ID, method>
+# line 29
+<,, >
+# line 29
+<ID, boolean>
+# line 29
+<ID, isSizeIncluded>
+# line 29
+<), >
+# line 29
+<{, >
+# line 30
+<IF, >
+# line 30
+<(, >
+# line 30
+<!, >
+# line 30
+<ID, isSizeIncluded>
+# line 30
+<), >
+# line 30
+<{, >
+# line 31
+<IF, >
+# line 31
+<(, >
+# line 31
+<ID, i>
+# line 31
+<<, >
+# line 31
+<INT_CONST, 0>
+# line 31
+<||, >
+# line 31
+<ID, i>
+# line 31
+<>=, >
+# line 31
+<ID, size>
+# line 31
+<), >
+# line 31
+<{, >
+# line 32
+<ID, io>
+# line 32
+<., >
+# line 32
+<ID, putString>
+# line 32
+<(, >
+# line 32
+<STRING_CONST, "Bad index '", [length: 11] >
+# line 32
+<), >
+# line 32
+<., >
+# line 32
+<ID, putInt>
+# line 32
+<(, >
+# line 32
+<ID, i>
+# line 32
+<), >
+# line 32
+<., >
+# line 32
+<ID, putString>
+# line 32
+<(, >
+# line 32
+<STRING_CONST, "'\n", [length: 2] >
+# line 32
+<), >
+# line 32
+<;, >
+# line 33
+<ID, io>
+# line 33
+<., >
+# line 33
+<ID, putString>
+# line 33
+<(, >
+# line 33
+<STRING_CONST, "Index must be >= 0 and < size '", [length: 31] >
+# line 33
+<), >
+# line 33
+<;, >
+# line 34
+<ID, io>
+# line 34
+<., >
+# line 34
+<ID, putInt>
+# line 34
+<(, >
+# line 34
+<ID, size>
+# line 34
+<), >
+# line 34
+<., >
+# line 34
+<ID, putString>
+# line 34
+<(, >
+# line 34
+<STRING_CONST, "'\n", [length: 2] >
+# line 34
+<), >
+# line 34
+<;, >
+# line 35
+<ID, error>
+# line 35
+<(, >
+# line 35
+<STRING_CONST, "index out of bounds in method ", [length: 30] >
+# line 35
+<., >
+# line 35
+<ID, concat>
+# line 35
+<(, >
+# line 35
+<ID, method>
+# line 35
+<), >
+# line 35
+<), >
+# line 35
+<;, >
+# line 36
+<}, >
+# line 37
+<}, >
+# line 38
+<ELSE, >
+# line 38
+<{, >
+# line 39
+<IF, >
+# line 39
+<(, >
+# line 39
+<ID, i>
+# line 39
+<<, >
+# line 39
+<INT_CONST, 0>
+# line 39
+<||, >
+# line 39
+<ID, i>
+# line 39
+<>, >
+# line 39
+<ID, size>
+# line 39
+<), >
+# line 39
+<{, >
+# line 40
+<ID, io>
+# line 40
+<., >
+# line 40
+<ID, putString>
+# line 40
+<(, >
+# line 40
+<STRING_CONST, "Bad index '", [length: 11] >
+# line 40
+<), >
+# line 40
+<., >
+# line 40
+<ID, putInt>
+# line 40
+<(, >
+# line 40
+<ID, i>
+# line 40
+<), >
+# line 40
+<., >
+# line 40
+<ID, putString>
+# line 40
+<(, >
+# line 40
+<STRING_CONST, "'\n", [length: 2] >
+# line 40
+<), >
+# line 40
+<;, >
+# line 41
+<ID, io>
+# line 41
+<., >
+# line 41
+<ID, putString>
+# line 41
+<(, >
+# line 41
+<STRING_CONST, "Index must be >= 0 and <= size '", [length: 32] >
+# line 41
+<), >
+# line 41
+<;, >
+# line 42
+<ID, io>
+# line 42
+<., >
+# line 42
+<ID, putInt>
+# line 42
+<(, >
+# line 42
+<ID, size>
+# line 42
+<), >
+# line 42
+<., >
+# line 42
+<ID, putString>
+# line 42
+<(, >
+# line 42
+<STRING_CONST, "'\n", [length: 2] >
+# line 42
+<), >
+# line 42
+<;, >
+# line 43
+<ID, error>
+# line 43
+<(, >
+# line 43
+<STRING_CONST, "index out of bounds in method ", [length: 30] >
+# line 43
+<., >
+# line 43
+<ID, concat>
+# line 43
+<(, >
+# line 43
+<ID, method>
+# line 43
+<), >
+# line 43
+<), >
+# line 43
+<;, >
+# line 44
+<}, >
+# line 45
+<}, >
+# line 47
+<RETURN, >
+# line 47
+<;, >
+# line 48
+<}, >
+# line 53
+<ID, void>
+# line 53
+<ID, resize>
+# line 53
+<(, >
+# line 53
+<), >
+# line 53
+<{, >
+# line 54
+<ID, Object>
+# line 54
+<[, >
+# line 54
+<], >
+# line 54
+<ID, tmp>
+# line 54
+<=, >
+# line 54
+<NEW, >
+# line 54
+<ID, Object>
+# line 54
+<[, >
+# line 54
+<ID, elements>
+# line 54
+<., >
+# line 54
+<ID, length>
+# line 54
+<*, >
+# line 54
+<INT_CONST, 2>
+# line 54
+<], >
+# line 54
+<;, >
+# line 55
+<ID, int>
+# line 55
+<ID, i>
+# line 55
+<=, >
+# line 55
+<INT_CONST, 0>
+# line 55
+<;, >
+# line 57
+<WHILE, >
+# line 57
+<(, >
+# line 57
+<ID, i>
+# line 57
+<<, >
+# line 57
+<ID, elements>
+# line 57
+<., >
+# line 57
+<ID, length>
+# line 57
+<), >
+# line 57
+<{, >
+# line 58
+<ID, tmp>
+# line 58
+<[, >
+# line 58
+<ID, i>
+# line 58
+<], >
+# line 58
+<=, >
+# line 58
+<ID, elements>
+# line 58
+<[, >
+# line 58
+<ID, i>
+# line 58
+<], >
+# line 58
+<;, >
+# line 59
+<ID, i>
+# line 59
+<=, >
+# line 59
+<ID, i>
+# line 59
+<+, >
+# line 59
+<INT_CONST, 1>
+# line 59
+<;, >
+# line 60
+<}, >
+# line 61
+<ID, elements>
+# line 61
+<=, >
+# line 61
+<ID, tmp>
+# line 61
+<;, >
+# line 63
+<RETURN, >
+# line 63
+<;, >
+# line 64
+<}, >
+# line 69
+<ID, int>
+# line 69
+<ID, size>
+# line 69
+<(, >
+# line 69
+<), >
+# line 69
+<{, >
+# line 70
+<RETURN, >
+# line 70
+<ID, size>
+# line 70
+<;, >
+# line 71
+<}, >
+# line 77
+<ID, boolean>
+# line 77
+<ID, contains>
+# line 77
+<(, >
+# line 77
+<ID, Object>
+# line 77
+<ID, o>
+# line 77
+<), >
+# line 77
+<{, >
+# line 78
+<ID, boolean>
+# line 78
+<ID, found>
+# line 78
+<=, >
+# line 78
+<BOOLEAN_CONST, false>
+# line 78
+<;, >
+# line 79
+<ID, int>
+# line 79
+<ID, i>
+# line 79
+<=, >
+# line 79
+<INT_CONST, 0>
+# line 79
+<;, >
+# line 81
+<WHILE, >
+# line 81
+<(, >
+# line 81
+<ID, i>
+# line 81
+<<, >
+# line 81
+<ID, size>
+# line 81
+<), >
+# line 81
+<{, >
+# line 82
+<IF, >
+# line 82
+<(, >
+# line 82
+<ID, elements>
+# line 82
+<[, >
+# line 82
+<ID, i>
+# line 82
+<], >
+# line 82
+<==, >
+# line 82
+<ID, o>
+# line 82
+<), >
+# line 83
+<ID, found>
+# line 83
+<=, >
+# line 83
+<BOOLEAN_CONST, true>
+# line 83
+<;, >
+# line 84
+<ID, i>
+# line 84
+<=, >
+# line 84
+<ID, i>
+# line 84
+<+, >
+# line 84
+<INT_CONST, 1>
+# line 84
+<;, >
+# line 85
+<}, >
+# line 87
+<RETURN, >
+# line 87
+<ID, found>
+# line 87
+<;, >
+# line 88
+<}, >
+# line 94
+<ID, Object>
+# line 94
+<ID, elementAt>
+# line 94
+<(, >
+# line 94
+<ID, int>
+# line 94
+<ID, i>
+# line 94
+<), >
+# line 94
+<{, >
+# line 95
+<ID, checkIndex>
+# line 95
+<(, >
+# line 95
+<ID, i>
+# line 95
+<,, >
+# line 95
+<STRING_CONST, "elementAt", [length: 9] >
+# line 95
+<,, >
+# line 95
+<BOOLEAN_CONST, false>
+# line 95
+<), >
+# line 95
+<;, >
+# line 96
+<RETURN, >
+# line 96
+<ID, elements>
+# line 96
+<[, >
+# line 96
+<ID, i>
+# line 96
+<], >
+# line 96
+<;, >
+# line 97
+<}, >
+# line 104
+<ID, Vector>
+# line 104
+<ID, addElementAt>
+# line 104
+<(, >
+# line 104
+<ID, Object>
+# line 104
+<ID, o>
+# line 104
+<,, >
+# line 104
+<ID, int>
+# line 104
+<ID, i>
+# line 104
+<), >
+# line 104
+<{, >
+# line 105
+<ID, checkIndex>
+# line 105
+<(, >
+# line 105
+<ID, i>
+# line 105
+<,, >
+# line 105
+<STRING_CONST, "addElementAt", [length: 12] >
+# line 105
+<,, >
+# line 105
+<BOOLEAN_CONST, true>
+# line 105
+<), >
+# line 105
+<;, >
+# line 107
+<IF, >
+# line 107
+<(, >
+# line 107
+<ID, size>
+# line 107
+<==, >
+# line 107
+<ID, elements>
+# line 107
+<., >
+# line 107
+<ID, length>
+# line 107
+<), >
+# line 108
+<ID, resize>
+# line 108
+<(, >
+# line 108
+<), >
+# line 108
+<;, >
+# line 110
+<ID, int>
+# line 110
+<ID, j>
+# line 110
+<=, >
+# line 110
+<ID, size>
+# line 110
+<;, >
+# line 111
+<WHILE, >
+# line 111
+<(, >
+# line 111
+<ID, j>
+# line 111
+<>, >
+# line 111
+<ID, i>
+# line 111
+<), >
+# line 111
+<{, >
+# line 112
+<ID, elements>
+# line 112
+<[, >
+# line 112
+<ID, j>
+# line 112
+<], >
+# line 112
+<=, >
+# line 112
+<ID, elements>
+# line 112
+<[, >
+# line 112
+<ID, j>
+# line 112
+<-, >
+# line 112
+<INT_CONST, 1>
+# line 112
+<], >
+# line 112
+<;, >
+# line 113
+<ID, j>
+# line 113
+<=, >
+# line 113
+<ID, j>
+# line 113
+<-, >
+# line 113
+<INT_CONST, 1>
+# line 113
+<;, >
+# line 114
+<}, >
+# line 115
+<ID, elements>
+# line 115
+<[, >
+# line 115
+<ID, i>
+# line 115
+<], >
+# line 115
+<=, >
+# line 115
+<ID, o>
+# line 115
+<;, >
+# line 116
+<ID, size>
+# line 116
+<=, >
+# line 116
+<ID, size>
+# line 116
+<+, >
+# line 116
+<INT_CONST, 1>
+# line 116
+<;, >
+# line 118
+<RETURN, >
+# line 118
+<ID, this>
+# line 118
+<;, >
+# line 119
+<}, >
+# line 126
+<ID, Vector>
+# line 126
+<ID, setElementAt>
+# line 126
+<(, >
+# line 126
+<ID, Object>
+# line 126
+<ID, o>
+# line 126
+<,, >
+# line 126
+<ID, int>
+# line 126
+<ID, i>
+# line 126
+<), >
+# line 126
+<{, >
+# line 127
+<ID, checkIndex>
+# line 127
+<(, >
+# line 127
+<ID, i>
+# line 127
+<,, >
+# line 127
+<STRING_CONST, "setElementAt", [length: 12] >
+# line 127
+<,, >
+# line 127
+<BOOLEAN_CONST, false>
+# line 127
+<), >
+# line 127
+<;, >
+# line 128
+<ID, addElementAt>
+# line 128
+<(, >
+# line 128
+<ID, o>
+# line 128
+<,, >
+# line 128
+<ID, i>
+# line 128
+<), >
+# line 128
+<;, >
+# line 129
+<ID, removeElementAt>
+# line 129
+<(, >
+# line 129
+<ID, i>
+# line 129
+<+, >
+# line 129
+<INT_CONST, 1>
+# line 129
+<), >
+# line 129
+<;, >
+# line 131
+<RETURN, >
+# line 131
+<ID, this>
+# line 131
+<;, >
+# line 132
+<}, >
+# line 138
+<ID, Vector>
+# line 138
+<ID, removeElementAt>
+# line 138
+<(, >
+# line 138
+<ID, int>
+# line 138
+<ID, i>
+# line 138
+<), >
+# line 138
+<{, >
+# line 139
+<ID, checkIndex>
+# line 139
+<(, >
+# line 139
+<ID, i>
+# line 139
+<,, >
+# line 139
+<STRING_CONST, "removeElementAt", [length: 15] >
+# line 139
+<,, >
+# line 139
+<BOOLEAN_CONST, false>
+# line 139
+<), >
+# line 139
+<;, >
+# line 141
+<ID, int>
+# line 141
+<ID, j>
+# line 141
+<=, >
+# line 141
+<ID, i>
+# line 141
+<;, >
+# line 142
+<WHILE, >
+# line 142
+<(, >
+# line 142
+<ID, j>
+# line 142
+<+, >
+# line 142
+<INT_CONST, 1>
+# line 142
+<<, >
+# line 142
+<ID, size>
+# line 142
+<), >
+# line 142
+<{, >
+# line 143
+<ID, elements>
+# line 143
+<[, >
+# line 143
+<ID, j>
+# line 143
+<], >
+# line 143
+<=, >
+# line 143
+<ID, elements>
+# line 143
+<[, >
+# line 143
+<ID, j>
+# line 143
+<+, >
+# line 143
+<INT_CONST, 1>
+# line 143
+<], >
+# line 143
+<;, >
+# line 144
+<ID, j>
+# line 144
+<=, >
+# line 144
+<ID, j>
+# line 144
+<+, >
+# line 144
+<INT_CONST, 1>
+# line 144
+<;, >
+# line 145
+<}, >
+# line 146
+<ID, size>
+# line 146
+<=, >
+# line 146
+<ID, size>
+# line 146
+<-, >
+# line 146
+<INT_CONST, 1>
+# line 146
+<;, >
+# line 148
+<RETURN, >
+# line 148
+<ID, this>
+# line 148
+<;, >
+# line 149
+<}, >
+# line 155
+<ID, Vector>
+# line 155
+<ID, addElement>
+# line 155
+<(, >
+# line 155
+<ID, Object>
+# line 155
+<ID, o>
+# line 155
+<), >
+# line 155
+<{, >
+# line 156
+<RETURN, >
+# line 156
+<ID, addElementAt>
+# line 156
+<(, >
+# line 156
+<ID, o>
+# line 156
+<,, >
+# line 156
+<ID, size>
+# line 156
+<), >
+# line 156
+<;, >
+# line 157
+<}, >
+# line 163
+<ID, Vector>
+# line 163
+<ID, removeElement>
+# line 163
+<(, >
+# line 163
+<ID, Object>
+# line 163
+<ID, o>
+# line 163
+<), >
+# line 163
+<{, >
+# line 164
+<ID, boolean>
+# line 164
+<ID, removed>
+# line 164
+<=, >
+# line 164
+<BOOLEAN_CONST, false>
+# line 164
+<;, >
+# line 165
+<ID, int>
+# line 165
+<ID, i>
+# line 165
+<=, >
+# line 165
+<INT_CONST, 0>
+# line 165
+<;, >
+# line 167
+<WHILE, >
+# line 167
+<(, >
+# line 167
+<ID, i>
+# line 167
+<<, >
+# line 167
+<ID, size>
+# line 167
+<&&, >
+# line 167
+<!, >
+# line 167
+<ID, removed>
+# line 167
+<), >
+# line 167
+<{, >
+# line 168
+<IF, >
+# line 168
+<(, >
+# line 168
+<ID, elements>
+# line 168
+<[, >
+# line 168
+<ID, i>
+# line 168
+<], >
+# line 168
+<==, >
+# line 168
+<ID, o>
+# line 168
+<), >
+# line 168
+<{, >
+# line 169
+<ID, int>
+# line 169
+<ID, j>
+# line 169
+<=, >
+# line 169
+<ID, i>
+# line 169
+<;, >
+# line 170
+<WHILE, >
+# line 170
+<(, >
+# line 170
+<ID, j>
+# line 170
+<+, >
+# line 170
+<INT_CONST, 1>
+# line 170
+<<, >
+# line 170
+<ID, size>
+# line 170
+<), >
+# line 170
+<{, >
+# line 171
+<ID, elements>
+# line 171
+<[, >
+# line 171
+<ID, j>
+# line 171
+<], >
+# line 171
+<=, >
+# line 171
+<ID, elements>
+# line 171
+<[, >
+# line 171
+<ID, j>
+# line 171
+<+, >
+# line 171
+<INT_CONST, 1>
+# line 171
+<], >
+# line 171
+<;, >
+# line 172
+<}, >
+# line 173
+<ID, size>
+# line 173
+<=, >
+# line 173
+<ID, size>
+# line 173
+<-, >
+# line 173
+<INT_CONST, 1>
+# line 173
+<;, >
+# line 174
+<ID, removed>
+# line 174
+<=, >
+# line 174
+<BOOLEAN_CONST, true>
+# line 174
+<;, >
+# line 175
+<}, >
+# line 176
+<ID, i>
+# line 176
+<=, >
+# line 176
+<ID, i>
+# line 176
+<+, >
+# line 176
+<INT_CONST, 1>
+# line 176
+<;, >
+# line 177
+<}, >
+# line 179
+<IF, >
+# line 179
+<(, >
+# line 179
+<!, >
+# line 179
+<ID, removed>
+# line 179
+<), >
+# line 180
+<ID, error>
+# line 180
+<(, >
+# line 180
+<STRING_CONST, "element not found in vector", [length: 27] >
+# line 180
+<), >
+# line 180
+<;, >
+# line 182
+<RETURN, >
+# line 182
+<ID, this>
+# line 182
+<;, >
+# line 183
+<}, >
+# line 184
+<}, >
+# line 190
+<CLASS, >
+# line 190
+<ID, VectorElement>
+# line 190
+<{, >
+# line 192
+<ID, Object>
+# line 192
+<ID, element>
+# line 192
+<;, >
+# line 194
+<ID, VectorElement>
+# line 194
+<ID, next>
+# line 194
+<;, >
+# line 199
+<ID, Object>
+# line 199
+<ID, getElement>
+# line 199
+<(, >
+# line 199
+<), >
+# line 199
+<{, >
+# line 200
+<RETURN, >
+# line 200
+<ID, element>
+# line 200
+<;, >
+# line 201
+<}, >
+# line 206
+<ID, VectorElement>
+# line 206
+<ID, setElement>
+# line 206
+<(, >
+# line 206
+<ID, Object>
+# line 206
+<ID, o>
+# line 206
+<), >
+# line 206
+<{, >
+# line 207
+<ID, element>
+# line 207
+<=, >
+# line 207
+<ID, o>
+# line 207
+<;, >
+# line 208
+<RETURN, >
+# line 208
+<ID, this>
+# line 208
+<;, >
+# line 209
+<}, >
+# line 214
+<ID, VectorElement>
+# line 214
+<ID, getNext>
+# line 214
+<(, >
+# line 214
+<), >
+# line 214
+<{, >
+# line 215
+<RETURN, >
+# line 215
+<ID, next>
+# line 215
+<;, >
+# line 216
+<}, >
+# line 221
+<ID, VectorElement>
+# line 221
+<ID, setNext>
+# line 221
+<(, >
+# line 221
+<ID, VectorElement>
+# line 221
+<ID, ve>
+# line 221
+<), >
+# line 221
+<{, >
+# line 222
+<ID, next>
+# line 222
+<=, >
+# line 222
+<ID, ve>
+# line 222
+<;, >
+# line 223
+<RETURN, >
+# line 223
+<ID, this>
+# line 223
+<;, >
+# line 224
+<}, >
+# line 225
+<}, >
+# Boolean.btm
+# line 4
+<CLASS, >
+# line 4
+<ID, Boolean>
+# line 4
+<{, >
+# line 5
+<ID, boolean>
+# line 5
+<ID, bool>
+# line 5
+<;, >
+# line 6
+<ID, boolean>
+# line 6
+<ID, booleanValue>
+# line 6
+<(, >
+# line 6
+<), >
+# line 6
+<{, >
+# line 7
+<RETURN, >
+# line 7
+<ID, bool>
+# line 7
+<;, >
+# line 8
+<}, >
+# line 9
+<ID, Boolean>
+# line 9
+<ID, init>
+# line 9
+<(, >
+# line 9
+<ID, boolean>
+# line 9
+<ID, b>
+# line 9
+<), >
+# line 9
+<{, >
+# line 10
+<ID, bool>
+# line 10
+<=, >
+# line 10
+<ID, b>
+# line 10
+<;, >
+# line 11
+<RETURN, >
+# line 11
+<ID, this>
+# line 11
+<;, >
+# line 12
+<}, >
+# line 13
+<}, >
+# Integer.btm
+# line 4
+<CLASS, >
+# line 4
+<ID, Integer>
+# line 4
+<{, >
+# line 5
+<ID, int>
+# line 5
+<ID, num>
+# line 5
+<;, >
+# line 6
+<ID, int>
+# line 6
+<ID, intValue>
+# line 6
+<(, >
+# line 6
+<), >
+# line 6
+<{, >
+# line 7
+<RETURN, >
+# line 7
+<ID, num>
+# line 7
+<;, >
+# line 8
+<}, >
+# line 9
+<ID, Integer>
+# line 9
+<ID, init>
+# line 9
+<(, >
+# line 9
+<ID, int>
+# line 9
+<ID, n>
+# line 9
+<), >
+# line 9
+<{, >
+# line 10
+<ID, num>
+# line 10
+<=, >
+# line 10
+<ID, n>
+# line 10
+<;, >
+# line 11
+<RETURN, >
+# line 11
+<ID, this>
+# line 11
+<;, >
+# line 12
+<}, >
+# line 13
+<}, >
+# line 14
+<EOF, >

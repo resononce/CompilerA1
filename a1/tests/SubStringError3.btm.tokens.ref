@@ -1,0 +1,61 @@
+# SubStringError3.btm
+# line 1
+<CLASS, >
+# line 1
+<ID, Main>
+# line 1
+<{, >
+# line 2
+<ID, void>
+# line 2
+<ID, main>
+# line 2
+<(, >
+# line 2
+<), >
+# line 2
+<{, >
+# line 3
+<ID, String>
+# line 3
+<ID, s>
+# line 3
+<=, >
+# line 3
+<STRING_CONST, "abcd", [length: 4] >
+# line 3
+<;, >
+# line 4
+<ID, String>
+# line 4
+<ID, s2>
+# line 4
+<=, >
+# line 4
+<ID, s>
+# line 4
+<., >
+# line 4
+<ID, substring>
+# line 4
+<(, >
+# line 4
+<INT_CONST, 3>
+# line 4
+<,, >
+# line 4
+<INT_CONST, 2>
+# line 4
+<), >
+# line 4
+<;, >
+# line 5
+<RETURN, >
+# line 5
+<;, >
+# line 6
+<}, >
+# line 7
+<}, >
+# line 7
+<EOF, >

@@ -1,0 +1,71 @@
+# IOWriteError.btm
+# line 1
+<CLASS, >
+# line 1
+<ID, Main>
+# line 1
+<{, >
+# line 2
+<ID, void>
+# line 2
+<ID, main>
+# line 2
+<(, >
+# line 2
+<), >
+# line 2
+<{, >
+# line 3
+<ID, TextIO>
+# line 3
+<ID, io>
+# line 3
+<=, >
+# line 3
+<NEW, >
+# line 3
+<ID, TextIO>
+# line 3
+<(, >
+# line 3
+<), >
+# line 3
+<;, >
+# line 4
+<ID, io>
+# line 4
+<., >
+# line 4
+<ID, writeFile>
+# line 4
+<(, >
+# line 4
+<STRING_CONST, "/bin/ls", [length: 7] >
+# line 4
+<), >
+# line 4
+<;, >
+# line 5
+<ID, io>
+# line 5
+<., >
+# line 5
+<ID, putString>
+# line 5
+<(, >
+# line 5
+<STRING_CONST, "this shouldn't work!!!\n", [length: 23] >
+# line 5
+<), >
+# line 5
+<;, >
+# line 6
+<RETURN, >
+# line 6
+<;, >
+# line 7
+<}, >
+# line 8
+<}, >
+# line 8
+<EOF, >

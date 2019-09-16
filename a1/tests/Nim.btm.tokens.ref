@@ -1,0 +1,527 @@
+# Nim.btm
+# line 4
+<CLASS, >
+# line 4
+<ID, Main>
+# line 4
+<{, >
+# line 6
+<ID, TextIO>
+# line 6
+<ID, io>
+# line 6
+<=, >
+# line 6
+<NEW, >
+# line 6
+<ID, TextIO>
+# line 6
+<(, >
+# line 6
+<), >
+# line 6
+<;, >
+# line 13
+<ID, int>
+# line 13
+<ID, turn>
+# line 13
+<(, >
+# line 13
+<ID, String>
+# line 13
+<ID, name>
+# line 13
+<,, >
+# line 13
+<ID, int>
+# line 13
+<ID, numBeansLeft>
+# line 13
+<), >
+# line 13
+<{, >
+# line 14
+<ID, int>
+# line 14
+<ID, pickedBeans>
+# line 14
+<=, >
+# line 14
+<INT_CONST, 0>
+# line 14
+<;, >
+# line 18
+<WHILE, >
+# line 18
+<(, >
+# line 18
+<BOOLEAN_CONST, true>
+# line 18
+<), >
+# line 18
+<{, >
+# line 20
+<ID, io>
+# line 20
+<., >
+# line 20
+<ID, putString>
+# line 20
+<(, >
+# line 20
+<ID, name>
+# line 20
+<), >
+# line 20
+<., >
+# line 20
+<ID, putString>
+# line 20
+<(, >
+# line 20
+<STRING_CONST, ", how many beans to pick up? (", [length: 30] >
+# line 20
+<), >
+# line 20
+<;, >
+# line 21
+<ID, io>
+# line 21
+<., >
+# line 21
+<ID, putInt>
+# line 21
+<(, >
+# line 21
+<ID, numBeansLeft>
+# line 21
+<), >
+# line 21
+<., >
+# line 21
+<ID, putString>
+# line 21
+<(, >
+# line 21
+<STRING_CONST, " left) ", [length: 7] >
+# line 21
+<), >
+# line 21
+<;, >
+# line 22
+<ID, pickedBeans>
+# line 22
+<=, >
+# line 22
+<ID, io>
+# line 22
+<., >
+# line 22
+<ID, getInt>
+# line 22
+<(, >
+# line 22
+<), >
+# line 22
+<;, >
+# line 25
+<IF, >
+# line 25
+<(, >
+# line 25
+<ID, pickedBeans>
+# line 25
+<<, >
+# line 25
+<INT_CONST, 1>
+# line 25
+<||, >
+# line 25
+<ID, pickedBeans>
+# line 25
+<>, >
+# line 25
+<INT_CONST, 3>
+# line 25
+<), >
+# line 26
+<ID, io>
+# line 26
+<., >
+# line 26
+<ID, putString>
+# line 26
+<(, >
+# line 26
+<STRING_CONST, "number of beans must be 1, 2, or 3\n", [length: 35] >
+# line 26
+<), >
+# line 26
+<;, >
+# line 28
+<ELSE, >
+# line 28
+<IF, >
+# line 28
+<(, >
+# line 28
+<ID, pickedBeans>
+# line 28
+<>, >
+# line 28
+<ID, numBeansLeft>
+# line 28
+<), >
+# line 29
+<ID, io>
+# line 29
+<., >
+# line 29
+<ID, putString>
+# line 29
+<(, >
+# line 29
+<STRING_CONST, "can't pick up more beans than are left\n", [length: 39] >
+# line 29
+<), >
+# line 29
+<;, >
+# line 31
+<ELSE, >
+# line 32
+<RETURN, >
+# line 32
+<ID, pickedBeans>
+# line 32
+<;, >
+# line 33
+<}, >
+# line 36
+<RETURN, >
+# line 36
+<INT_CONST, 0>
+# line 36
+<;, >
+# line 37
+<}, >
+# line 44
+<ID, void>
+# line 44
+<ID, main>
+# line 44
+<(, >
+# line 44
+<), >
+# line 44
+<{, >
+# line 46
+<ID, io>
+# line 46
+<., >
+# line 46
+<ID, putString>
+# line 46
+<(, >
+# line 46
+<STRING_CONST, "Player 1, enter your name: ", [length: 27] >
+# line 46
+<), >
+# line 46
+<;, >
+# line 47
+<ID, String>
+# line 47
+<ID, player1>
+# line 47
+<=, >
+# line 47
+<ID, io>
+# line 47
+<., >
+# line 47
+<ID, getString>
+# line 47
+<(, >
+# line 47
+<), >
+# line 47
+<;, >
+# line 48
+<ID, io>
+# line 48
+<., >
+# line 48
+<ID, putString>
+# line 48
+<(, >
+# line 48
+<STRING_CONST, "Player 2, enter your name: ", [length: 27] >
+# line 48
+<), >
+# line 48
+<;, >
+# line 49
+<ID, String>
+# line 49
+<ID, player2>
+# line 49
+<=, >
+# line 49
+<ID, io>
+# line 49
+<., >
+# line 49
+<ID, getString>
+# line 49
+<(, >
+# line 49
+<), >
+# line 49
+<;, >
+# line 50
+<ID, io>
+# line 50
+<., >
+# line 50
+<ID, putString>
+# line 50
+<(, >
+# line 50
+<STRING_CONST, "How many beans to start? ", [length: 25] >
+# line 50
+<), >
+# line 50
+<;, >
+# line 51
+<ID, int>
+# line 51
+<ID, totalBeans>
+# line 51
+<=, >
+# line 51
+<ID, io>
+# line 51
+<., >
+# line 51
+<ID, getInt>
+# line 51
+<(, >
+# line 51
+<), >
+# line 51
+<;, >
+# line 54
+<WHILE, >
+# line 54
+<(, >
+# line 54
+<ID, totalBeans>
+# line 54
+<<, >
+# line 54
+<INT_CONST, 1>
+# line 54
+<), >
+# line 54
+<{, >
+# line 55
+<ID, io>
+# line 55
+<., >
+# line 55
+<ID, putString>
+# line 55
+<(, >
+# line 55
+<STRING_CONST, "Total beans must be > 0.  How many beans to start? ", [length: 51] >
+# line 55
+<), >
+# line 55
+<;, >
+# line 56
+<ID, totalBeans>
+# line 56
+<=, >
+# line 56
+<ID, io>
+# line 56
+<., >
+# line 56
+<ID, getInt>
+# line 56
+<(, >
+# line 56
+<), >
+# line 56
+<;, >
+# line 57
+<}, >
+# line 60
+<ID, int>
+# line 60
+<ID, numBeansLeft>
+# line 60
+<=, >
+# line 60
+<ID, totalBeans>
+# line 60
+<;, >
+# line 62
+<ID, String>
+# line 62
+<ID, currentPlayer>
+# line 62
+<=, >
+# line 62
+<ID, player1>
+# line 62
+<;, >
+# line 67
+<ID, int>
+# line 67
+<ID, i>
+# line 67
+<=, >
+# line 67
+<INT_CONST, 0>
+# line 67
+<;, >
+# line 68
+<WHILE, >
+# line 68
+<(, >
+# line 68
+<ID, numBeansLeft>
+# line 68
+<>, >
+# line 68
+<INT_CONST, 0>
+# line 68
+<), >
+# line 68
+<{, >
+# line 70
+<ID, int>
+# line 70
+<ID, pickedBeans>
+# line 70
+<=, >
+# line 70
+<ID, turn>
+# line 70
+<(, >
+# line 70
+<ID, currentPlayer>
+# line 70
+<,, >
+# line 70
+<ID, numBeansLeft>
+# line 70
+<), >
+# line 70
+<;, >
+# line 72
+<ID, numBeansLeft>
+# line 72
+<=, >
+# line 72
+<ID, numBeansLeft>
+# line 72
+<-, >
+# line 72
+<ID, pickedBeans>
+# line 72
+<;, >
+# line 75
+<IF, >
+# line 75
+<(, >
+# line 75
+<ID, numBeansLeft>
+# line 75
+<>, >
+# line 75
+<INT_CONST, 0>
+# line 75
+<), >
+# line 75
+<{, >
+# line 77
+<ID, currentPlayer>
+# line 77
+<=, >
+# line 77
+<ID, player2>
+# line 77
+<;, >
+# line 78
+<IF, >
+# line 78
+<(, >
+# line 78
+<ID, i>
+# line 78
+<%, >
+# line 78
+<INT_CONST, 2>
+# line 78
+<==, >
+# line 78
+<INT_CONST, 1>
+# line 78
+<), >
+# line 79
+<ID, currentPlayer>
+# line 79
+<=, >
+# line 79
+<ID, player1>
+# line 79
+<;, >
+# line 80
+<}, >
+# line 82
+<ID, i>
+# line 82
+<=, >
+# line 82
+<ID, i>
+# line 82
+<+, >
+# line 82
+<INT_CONST, 1>
+# line 82
+<;, >
+# line 83
+<}, >
+# line 87
+<ID, io>
+# line 87
+<., >
+# line 87
+<ID, putString>
+# line 87
+<(, >
+# line 87
+<ID, currentPlayer>
+# line 87
+<), >
+# line 87
+<., >
+# line 87
+<ID, putString>
+# line 87
+<(, >
+# line 87
+<STRING_CONST, ", you win!\n", [length: 11] >
+# line 87
+<), >
+# line 87
+<;, >
+# line 88
+<}, >
+# line 89
+<}, >
+# line 89
+<EOF, >

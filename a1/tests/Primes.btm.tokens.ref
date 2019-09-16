@@ -1,0 +1,313 @@
+# Primes.btm
+# line 4
+<CLASS, >
+# line 4
+<ID, Main>
+# line 4
+<{, >
+# line 6
+<ID, TextIO>
+# line 6
+<ID, io>
+# line 6
+<=, >
+# line 6
+<NEW, >
+# line 6
+<ID, TextIO>
+# line 6
+<(, >
+# line 6
+<), >
+# line 6
+<;, >
+# line 10
+<ID, void>
+# line 10
+<ID, main>
+# line 10
+<(, >
+# line 10
+<), >
+# line 10
+<{, >
+# line 12
+<ID, io>
+# line 12
+<., >
+# line 12
+<ID, putString>
+# line 12
+<(, >
+# line 12
+<STRING_CONST, "Enter a positive number greater than 1: ", [length: 40] >
+# line 12
+<), >
+# line 12
+<;, >
+# line 13
+<ID, int>
+# line 13
+<ID, max>
+# line 13
+<=, >
+# line 13
+<ID, io>
+# line 13
+<., >
+# line 13
+<ID, getInt>
+# line 13
+<(, >
+# line 13
+<), >
+# line 13
+<;, >
+# line 15
+<IF, >
+# line 15
+<(, >
+# line 15
+<ID, max>
+# line 15
+<<, >
+# line 15
+<INT_CONST, 2>
+# line 15
+<), >
+# line 15
+<{, >
+# line 16
+<ID, io>
+# line 16
+<., >
+# line 16
+<ID, putString>
+# line 16
+<(, >
+# line 16
+<STRING_CONST, "number must be > 1\n", [length: 19] >
+# line 16
+<), >
+# line 16
+<;, >
+# line 17
+<(, >
+# line 17
+<NEW, >
+# line 17
+<ID, Sys>
+# line 17
+<(, >
+# line 17
+<), >
+# line 17
+<), >
+# line 17
+<., >
+# line 17
+<ID, exit>
+# line 17
+<(, >
+# line 17
+<INT_CONST, 1>
+# line 17
+<), >
+# line 17
+<;, >
+# line 18
+<}, >
+# line 19
+<ELSE, >
+# line 19
+<{, >
+# line 21
+<ID, int>
+# line 21
+<ID, i>
+# line 21
+<=, >
+# line 21
+<INT_CONST, 2>
+# line 21
+<;, >
+# line 22
+<WHILE, >
+# line 22
+<(, >
+# line 22
+<ID, i>
+# line 22
+<<=, >
+# line 22
+<ID, max>
+# line 22
+<), >
+# line 22
+<{, >
+# line 24
+<IF, >
+# line 24
+<(, >
+# line 24
+<ID, isPrime>
+# line 24
+<(, >
+# line 24
+<ID, i>
+# line 24
+<), >
+# line 24
+<), >
+# line 25
+<ID, io>
+# line 25
+<., >
+# line 25
+<ID, putInt>
+# line 25
+<(, >
+# line 25
+<ID, i>
+# line 25
+<), >
+# line 25
+<., >
+# line 25
+<ID, putString>
+# line 25
+<(, >
+# line 25
+<STRING_CONST, " is prime.\n", [length: 11] >
+# line 25
+<), >
+# line 25
+<;, >
+# line 26
+<ID, i>
+# line 26
+<=, >
+# line 26
+<ID, i>
+# line 26
+<+, >
+# line 26
+<INT_CONST, 1>
+# line 26
+<;, >
+# line 27
+<}, >
+# line 28
+<}, >
+# line 29
+<RETURN, >
+# line 29
+<;, >
+# line 30
+<}, >
+# line 36
+<ID, boolean>
+# line 36
+<ID, isPrime>
+# line 36
+<(, >
+# line 36
+<ID, int>
+# line 36
+<ID, n>
+# line 36
+<), >
+# line 36
+<{, >
+# line 37
+<ID, boolean>
+# line 37
+<ID, isPrime>
+# line 37
+<=, >
+# line 37
+<BOOLEAN_CONST, true>
+# line 37
+<;, >
+# line 38
+<ID, int>
+# line 38
+<ID, i>
+# line 38
+<=, >
+# line 38
+<INT_CONST, 2>
+# line 38
+<;, >
+# line 39
+<WHILE, >
+# line 39
+<(, >
+# line 39
+<ID, i>
+# line 39
+<<, >
+# line 39
+<ID, n>
+# line 39
+<-, >
+# line 39
+<INT_CONST, 1>
+# line 39
+<&&, >
+# line 39
+<ID, isPrime>
+# line 39
+<), >
+# line 39
+<{, >
+# line 40
+<IF, >
+# line 40
+<(, >
+# line 40
+<ID, n>
+# line 40
+<%, >
+# line 40
+<ID, i>
+# line 40
+<==, >
+# line 40
+<INT_CONST, 0>
+# line 40
+<), >
+# line 41
+<ID, isPrime>
+# line 41
+<=, >
+# line 41
+<BOOLEAN_CONST, false>
+# line 41
+<;, >
+# line 42
+<ID, i>
+# line 42
+<=, >
+# line 42
+<ID, i>
+# line 42
+<+, >
+# line 42
+<INT_CONST, 1>
+# line 42
+<;, >
+# line 43
+<}, >
+# line 44
+<RETURN, >
+# line 44
+<ID, isPrime>
+# line 44
+<;, >
+# line 45
+<}, >
+# line 46
+<}, >
+# line 46
+<EOF, >

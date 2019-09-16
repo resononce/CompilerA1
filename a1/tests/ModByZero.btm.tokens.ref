@@ -1,0 +1,41 @@
+# ModByZero.btm
+# line 1
+<CLASS, >
+# line 1
+<ID, Main>
+# line 1
+<{, >
+# line 2
+<ID, void>
+# line 2
+<ID, main>
+# line 2
+<(, >
+# line 2
+<), >
+# line 2
+<{, >
+# line 3
+<ID, int>
+# line 3
+<ID, x>
+# line 3
+<=, >
+# line 3
+<INT_CONST, 3>
+# line 3
+<%, >
+# line 3
+<INT_CONST, 0>
+# line 3
+<;, >
+# line 4
+<RETURN, >
+# line 4
+<;, >
+# line 5
+<}, >
+# line 6
+<}, >
+# line 6
+<EOF, >

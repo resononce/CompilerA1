@@ -1,0 +1,857 @@
+# ArrayTest1.btm
+# line 1
+<CLASS, >
+# line 1
+<ID, Main>
+# line 1
+<{, >
+# line 2
+<ID, boolean>
+# line 2
+<[, >
+# line 2
+<], >
+# line 2
+<ID, goo>
+# line 2
+<=, >
+# line 2
+<ID, null>
+# line 2
+<;, >
+# line 4
+<ID, void>
+# line 4
+<ID, printElement>
+# line 4
+<(, >
+# line 4
+<ID, Object>
+# line 4
+<ID, o>
+# line 4
+<,, >
+# line 4
+<ID, int>
+# line 4
+<ID, i>
+# line 4
+<), >
+# line 4
+<{, >
+# line 5
+<(, >
+# line 5
+<NEW, >
+# line 5
+<ID, TextIO>
+# line 5
+<(, >
+# line 5
+<), >
+# line 5
+<), >
+# line 5
+<., >
+# line 5
+<ID, putString>
+# line 5
+<(, >
+# line 5
+<STRING_CONST, "array[", [length: 6] >
+# line 5
+<), >
+# line 5
+<., >
+# line 5
+<ID, putInt>
+# line 5
+<(, >
+# line 5
+<ID, i>
+# line 5
+<), >
+# line 5
+<., >
+# line 5
+<ID, putString>
+# line 5
+<(, >
+# line 5
+<STRING_CONST, "] is ", [length: 5] >
+# line 5
+<), >
+# line 5
+<;, >
+# line 6
+<IF, >
+# line 6
+<(, >
+# line 6
+<ID, o>
+# line 6
+<==, >
+# line 6
+<ID, null>
+# line 6
+<), >
+# line 7
+<(, >
+# line 7
+<NEW, >
+# line 7
+<ID, TextIO>
+# line 7
+<(, >
+# line 7
+<), >
+# line 7
+<), >
+# line 7
+<., >
+# line 7
+<ID, putString>
+# line 7
+<(, >
+# line 7
+<STRING_CONST, "null (error)\n", [length: 13] >
+# line 7
+<), >
+# line 7
+<;, >
+# line 8
+<ELSE, >
+# line 8
+<IF, >
+# line 8
+<(, >
+# line 8
+<!, >
+# line 8
+<(, >
+# line 8
+<ID, o>
+# line 8
+<INSTANCEOF, >
+# line 8
+<ID, String>
+# line 8
+<), >
+# line 8
+<), >
+# line 9
+<(, >
+# line 9
+<NEW, >
+# line 9
+<ID, TextIO>
+# line 9
+<(, >
+# line 9
+<), >
+# line 9
+<), >
+# line 9
+<., >
+# line 9
+<ID, putString>
+# line 9
+<(, >
+# line 9
+<STRING_CONST, "not a string (error)\n", [length: 21] >
+# line 9
+<), >
+# line 9
+<;, >
+# line 10
+<ELSE, >
+# line 11
+<(, >
+# line 11
+<NEW, >
+# line 11
+<ID, TextIO>
+# line 11
+<(, >
+# line 11
+<), >
+# line 11
+<), >
+# line 11
+<., >
+# line 11
+<ID, putString>
+# line 11
+<(, >
+# line 11
+<(, >
+# line 11
+<(, >
+# line 11
+<ID, String>
+# line 11
+<), >
+# line 11
+<(, >
+# line 11
+<ID, o>
+# line 11
+<), >
+# line 11
+<), >
+# line 11
+<), >
+# line 11
+<., >
+# line 11
+<ID, putString>
+# line 11
+<(, >
+# line 11
+<STRING_CONST, "\n", [length: 1] >
+# line 11
+<), >
+# line 11
+<;, >
+# line 12
+<RETURN, >
+# line 12
+<;, >
+# line 13
+<}, >
+# line 15
+<ID, void>
+# line 15
+<ID, main>
+# line 15
+<(, >
+# line 15
+<), >
+# line 15
+<{, >
+# line 16
+<ID, Object>
+# line 16
+<[, >
+# line 16
+<], >
+# line 16
+<ID, array>
+# line 16
+<=, >
+# line 17
+<NEW, >
+# line 17
+<ID, Object>
+# line 17
+<[, >
+# line 17
+<INT_CONST, 5>
+# line 17
+<*, >
+# line 17
+<INT_CONST, 2>
+# line 17
+<], >
+# line 17
+<;, >
+# line 18
+<ID, array>
+# line 18
+<[, >
+# line 18
+<INT_CONST, 0>
+# line 18
+<+, >
+# line 18
+<INT_CONST, 5>
+# line 18
+<], >
+# line 18
+<=, >
+# line 18
+<NEW, >
+# line 18
+<ID, Object>
+# line 18
+<(, >
+# line 18
+<), >
+# line 18
+<;, >
+# line 19
+<ID, String>
+# line 19
+<ID, s>
+# line 19
+<=, >
+# line 19
+<STRING_CONST, "abc", [length: 3] >
+# line 19
+<;, >
+# line 20
+<ID, array>
+# line 20
+<[, >
+# line 20
+<INT_CONST, 0>
+# line 20
+<], >
+# line 20
+<=, >
+# line 20
+<ID, array>
+# line 20
+<[, >
+# line 20
+<INT_CONST, 1>
+# line 20
+<], >
+# line 20
+<=, >
+# line 20
+<ID, array>
+# line 20
+<[, >
+# line 20
+<INT_CONST, 2>
+# line 20
+<], >
+# line 20
+<=, >
+# line 20
+<ID, s>
+# line 20
+<;, >
+# line 21
+<ID, printElement>
+# line 21
+<(, >
+# line 21
+<ID, array>
+# line 21
+<[, >
+# line 21
+<INT_CONST, 0>
+# line 21
+<], >
+# line 21
+<,, >
+# line 21
+<INT_CONST, 0>
+# line 21
+<), >
+# line 21
+<;, >
+# line 22
+<ID, printElement>
+# line 22
+<(, >
+# line 22
+<ID, array>
+# line 22
+<[, >
+# line 22
+<INT_CONST, 1>
+# line 22
+<], >
+# line 22
+<,, >
+# line 22
+<INT_CONST, 1>
+# line 22
+<), >
+# line 22
+<;, >
+# line 23
+<ID, printElement>
+# line 23
+<(, >
+# line 23
+<ID, array>
+# line 23
+<[, >
+# line 23
+<INT_CONST, 2>
+# line 23
+<], >
+# line 23
+<,, >
+# line 23
+<INT_CONST, 2>
+# line 23
+<), >
+# line 23
+<;, >
+# line 24
+<ID, Object>
+# line 24
+<ID, o>
+# line 24
+<=, >
+# line 24
+<ID, array>
+# line 24
+<[, >
+# line 24
+<INT_CONST, 0>
+# line 24
+<], >
+# line 24
+<;, >
+# line 25
+<ID, goo>
+# line 25
+<=, >
+# line 25
+<NEW, >
+# line 25
+<ID, boolean>
+# line 25
+<[, >
+# line 25
+<INT_CONST, 5>
+# line 25
+<*, >
+# line 25
+<INT_CONST, 2>
+# line 25
+<], >
+# line 25
+<;, >
+# line 26
+<ID, foo>
+# line 26
+<(, >
+# line 26
+<NEW, >
+# line 26
+<ID, int>
+# line 26
+<[, >
+# line 26
+<INT_CONST, 10>
+# line 26
+<], >
+# line 26
+<), >
+# line 26
+<;, >
+# line 27
+<ID, String>
+# line 27
+<[, >
+# line 27
+<], >
+# line 27
+<ID, strings>
+# line 27
+<=, >
+# line 27
+<ID, foo>
+# line 27
+<(, >
+# line 27
+<ID, null>
+# line 27
+<), >
+# line 27
+<;, >
+# line 28
+<ID, int>
+# line 28
+<[, >
+# line 28
+<], >
+# line 28
+<ID, array2>
+# line 28
+<=, >
+# line 28
+<ID, null>
+# line 28
+<;, >
+# line 29
+<ID, int>
+# line 29
+<ID, x>
+# line 29
+<=, >
+# line 29
+<ID, array>
+# line 29
+<., >
+# line 29
+<ID, length>
+# line 29
+<;, >
+# line 30
+<ID, strings>
+# line 30
+<=, >
+# line 30
+<NEW, >
+# line 30
+<ID, String>
+# line 30
+<[, >
+# line 30
+<INT_CONST, 10>
+# line 30
+<], >
+# line 30
+<;, >
+# line 31
+<ID, int>
+# line 31
+<ID, i>
+# line 31
+<=, >
+# line 31
+<INT_CONST, 0>
+# line 31
+<;, >
+# line 32
+<WHILE, >
+# line 32
+<(, >
+# line 32
+<ID, i>
+# line 32
+<<, >
+# line 32
+<INT_CONST, 10>
+# line 32
+<), >
+# line 32
+<{, >
+# line 33
+<ID, strings>
+# line 33
+<[, >
+# line 33
+<ID, i>
+# line 33
+<], >
+# line 33
+<=, >
+# line 33
+<STRING_CONST, "abc", [length: 3] >
+# line 33
+<;, >
+# line 34
+<ID, i>
+# line 34
+<=, >
+# line 34
+<ID, i>
+# line 34
+<+, >
+# line 34
+<INT_CONST, 1>
+# line 34
+<;, >
+# line 35
+<}, >
+# line 36
+<ID, strings>
+# line 36
+<[, >
+# line 36
+<INT_CONST, 2>
+# line 36
+<], >
+# line 36
+<=, >
+# line 36
+<(, >
+# line 36
+<ID, strings>
+# line 36
+<[, >
+# line 36
+<INT_CONST, 0>
+# line 36
+<], >
+# line 36
+<., >
+# line 36
+<ID, concat>
+# line 36
+<(, >
+# line 36
+<ID, strings>
+# line 36
+<[, >
+# line 36
+<INT_CONST, 1>
+# line 36
+<], >
+# line 36
+<), >
+# line 36
+<), >
+# line 36
+<., >
+# line 36
+<ID, substring>
+# line 36
+<(, >
+# line 36
+<INT_CONST, 1>
+# line 36
+<,, >
+# line 36
+<INT_CONST, 4>
+# line 36
+<), >
+# line 36
+<;, >
+# line 37
+<(, >
+# line 37
+<NEW, >
+# line 37
+<ID, TextIO>
+# line 37
+<(, >
+# line 37
+<), >
+# line 37
+<), >
+# line 37
+<., >
+# line 37
+<ID, putString>
+# line 37
+<(, >
+# line 37
+<ID, strings>
+# line 37
+<[, >
+# line 37
+<INT_CONST, 2>
+# line 37
+<], >
+# line 37
+<), >
+# line 37
+<., >
+# line 37
+<ID, putString>
+# line 37
+<(, >
+# line 37
+<STRING_CONST, "\n", [length: 1] >
+# line 37
+<), >
+# line 37
+<;, >
+# line 38
+<(, >
+# line 38
+<NEW, >
+# line 38
+<ID, TextIO>
+# line 38
+<(, >
+# line 38
+<), >
+# line 38
+<), >
+# line 38
+<., >
+# line 38
+<ID, putString>
+# line 38
+<(, >
+# line 38
+<STRING_CONST, "(new int[10]).length=", [length: 21] >
+# line 38
+<), >
+# line 38
+<., >
+# line 39
+<ID, putInt>
+# line 39
+<(, >
+# line 39
+<(, >
+# line 39
+<NEW, >
+# line 39
+<ID, int>
+# line 39
+<[, >
+# line 39
+<INT_CONST, 10>
+# line 39
+<], >
+# line 39
+<), >
+# line 39
+<., >
+# line 39
+<ID, length>
+# line 39
+<), >
+# line 39
+<., >
+# line 39
+<ID, putString>
+# line 39
+<(, >
+# line 39
+<STRING_CONST, "\n", [length: 1] >
+# line 39
+<), >
+# line 39
+<;, >
+# line 40
+<RETURN, >
+# line 40
+<;, >
+# line 41
+<}, >
+# line 42
+<ID, String>
+# line 42
+<[, >
+# line 42
+<], >
+# line 42
+<ID, foo>
+# line 42
+<(, >
+# line 42
+<ID, int>
+# line 42
+<[, >
+# line 42
+<], >
+# line 42
+<ID, array>
+# line 42
+<), >
+# line 42
+<{, >
+# line 43
+<IF, >
+# line 43
+<(, >
+# line 43
+<ID, array>
+# line 43
+<!=, >
+# line 43
+<ID, null>
+# line 43
+<), >
+# line 43
+<{, >
+# line 44
+<ID, array>
+# line 44
+<[, >
+# line 44
+<INT_CONST, 3>
+# line 44
+<*, >
+# line 44
+<INT_CONST, 2>
+# line 44
+<], >
+# line 44
+<=, >
+# line 44
+<ID, array>
+# line 44
+<[, >
+# line 44
+<ID, array>
+# line 44
+<[, >
+# line 44
+<INT_CONST, 2>
+# line 44
+<], >
+# line 44
+<], >
+# line 44
+<;, >
+# line 45
+<ID, array>
+# line 45
+<[, >
+# line 45
+<ID, array>
+# line 45
+<[, >
+# line 45
+<INT_CONST, 1>
+# line 45
+<], >
+# line 45
+<], >
+# line 45
+<=, >
+# line 45
+<ID, array>
+# line 45
+<[, >
+# line 45
+<INT_CONST, 3>
+# line 45
+<*, >
+# line 45
+<INT_CONST, 2>
+# line 45
+<], >
+# line 45
+<;, >
+# line 46
+<ID, array>
+# line 46
+<[, >
+# line 46
+<ID, array>
+# line 46
+<[, >
+# line 46
+<INT_CONST, 1>
+# line 46
+<], >
+# line 46
+<], >
+# line 46
+<=, >
+# line 46
+<ID, array>
+# line 46
+<[, >
+# line 46
+<ID, array>
+# line 46
+<[, >
+# line 46
+<INT_CONST, 2>
+# line 46
+<], >
+# line 46
+<], >
+# line 46
+<;, >
+# line 47
+<}, >
+# line 48
+<RETURN, >
+# line 48
+<ID, null>
+# line 48
+<;, >
+# line 49
+<}, >
+# line 50
+<}, >
+# line 50
+<EOF, >

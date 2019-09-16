@@ -1,0 +1,77 @@
+# ClassCastError.btm
+# line 1
+<CLASS, >
+# line 1
+<ID, Main>
+# line 1
+<{, >
+# line 2
+<ID, void>
+# line 2
+<ID, main>
+# line 2
+<(, >
+# line 2
+<), >
+# line 2
+<{, >
+# line 3
+<ID, String>
+# line 3
+<ID, s>
+# line 3
+<=, >
+# line 3
+<STRING_CONST, "abc", [length: 3] >
+# line 3
+<;, >
+# line 4
+<ID, Object>
+# line 4
+<ID, o>
+# line 4
+<=, >
+# line 4
+<(, >
+# line 4
+<ID, Object>
+# line 4
+<), >
+# line 4
+<(, >
+# line 4
+<ID, s>
+# line 4
+<), >
+# line 4
+<;, >
+# line 5
+<ID, TextIO>
+# line 5
+<ID, io>
+# line 5
+<=, >
+# line 5
+<(, >
+# line 5
+<ID, TextIO>
+# line 5
+<), >
+# line 5
+<(, >
+# line 5
+<ID, o>
+# line 5
+<), >
+# line 5
+<;, >
+# line 6
+<RETURN, >
+# line 6
+<;, >
+# line 7
+<}, >
+# line 8
+<}, >
+# line 8
+<EOF, >

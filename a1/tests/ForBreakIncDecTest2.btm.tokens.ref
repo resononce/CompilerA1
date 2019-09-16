@@ -1,0 +1,109 @@
+# ForBreakIncDecTest2.btm
+# line 1
+<CLASS, >
+# line 1
+<ID, Main>
+# line 1
+<{, >
+# line 2
+<ID, void>
+# line 2
+<ID, main>
+# line 2
+<(, >
+# line 2
+<), >
+# line 2
+<{, >
+# line 3
+<ID, int>
+# line 3
+<ID, i>
+# line 3
+<=, >
+# line 3
+<INT_CONST, 0>
+# line 3
+<;, >
+# line 4
+<FOR, >
+# line 4
+<(, >
+# line 4
+<;, >
+# line 4
+<;, >
+# line 4
+<), >
+# line 4
+<{, >
+# line 5
+<IF, >
+# line 5
+<(, >
+# line 5
+<ID, i>
+# line 5
+<>=, >
+# line 5
+<INT_CONST, 100>
+# line 5
+<), >
+# line 6
+<BREAK, >
+# line 6
+<;, >
+# line 7
+<(, >
+# line 7
+<NEW, >
+# line 7
+<ID, TextIO>
+# line 7
+<(, >
+# line 7
+<), >
+# line 7
+<), >
+# line 7
+<., >
+# line 7
+<ID, putInt>
+# line 7
+<(, >
+# line 7
+<++, >
+# line 7
+<ID, i>
+# line 7
+<), >
+# line 7
+<., >
+# line 7
+<ID, putString>
+# line 7
+<(, >
+# line 7
+<STRING_CONST, "\n", [length: 1] >
+# line 7
+<), >
+# line 7
+<;, >
+# line 8
+<ID, i>
+# line 8
+<++, >
+# line 8
+<;, >
+# line 9
+<}, >
+# line 10
+<RETURN, >
+# line 10
+<;, >
+# line 11
+<}, >
+# line 12
+<}, >
+# line 12
+<EOF, >

@@ -1,0 +1,335 @@
+# Fib.btm
+# line 5
+<CLASS, >
+# line 5
+<ID, Main>
+# line 5
+<{, >
+# line 7
+<ID, TextIO>
+# line 7
+<ID, io>
+# line 7
+<=, >
+# line 7
+<NEW, >
+# line 7
+<ID, TextIO>
+# line 7
+<(, >
+# line 7
+<), >
+# line 7
+<;, >
+# line 11
+<ID, void>
+# line 11
+<ID, main>
+# line 11
+<(, >
+# line 11
+<), >
+# line 11
+<{, >
+# line 13
+<ID, int>
+# line 13
+<ID, n>
+# line 13
+<=, >
+# line 13
+<ID, io>
+# line 13
+<., >
+# line 13
+<ID, putString>
+# line 13
+<(, >
+# line 13
+<STRING_CONST, "Enter a non-negative number:  ", [length: 30] >
+# line 13
+<), >
+# line 13
+<., >
+# line 13
+<ID, getInt>
+# line 13
+<(, >
+# line 13
+<), >
+# line 13
+<;, >
+# line 16
+<IF, >
+# line 16
+<(, >
+# line 16
+<ID, n>
+# line 16
+<<, >
+# line 16
+<INT_CONST, 0>
+# line 16
+<), >
+# line 16
+<{, >
+# line 18
+<ID, io>
+# line 18
+<., >
+# line 18
+<ID, putString>
+# line 18
+<(, >
+# line 18
+<STRING_CONST, "Number cannot be negative\n", [length: 26] >
+# line 18
+<), >
+# line 18
+<;, >
+# line 19
+<(, >
+# line 19
+<NEW, >
+# line 19
+<ID, Sys>
+# line 19
+<(, >
+# line 19
+<), >
+# line 19
+<), >
+# line 19
+<., >
+# line 19
+<ID, exit>
+# line 19
+<(, >
+# line 19
+<INT_CONST, 1>
+# line 19
+<), >
+# line 19
+<;, >
+# line 20
+<}, >
+# line 23
+<ID, int>
+# line 23
+<ID, i>
+# line 23
+<=, >
+# line 23
+<INT_CONST, 0>
+# line 23
+<;, >
+# line 24
+<WHILE, >
+# line 24
+<(, >
+# line 24
+<ID, i>
+# line 24
+<<, >
+# line 24
+<ID, n>
+# line 24
+<), >
+# line 24
+<{, >
+# line 26
+<ID, io>
+# line 26
+<., >
+# line 26
+<ID, putString>
+# line 26
+<(, >
+# line 26
+<STRING_CONST, "Fibonacci number ", [length: 17] >
+# line 26
+<), >
+# line 26
+<., >
+# line 26
+<ID, putInt>
+# line 26
+<(, >
+# line 26
+<ID, i>
+# line 26
+<), >
+# line 26
+<., >
+# line 26
+<ID, putString>
+# line 26
+<(, >
+# line 26
+<STRING_CONST, ": ", [length: 2] >
+# line 26
+<), >
+# line 26
+<;, >
+# line 27
+<ID, io>
+# line 27
+<., >
+# line 27
+<ID, putInt>
+# line 27
+<(, >
+# line 27
+<ID, fib>
+# line 27
+<(, >
+# line 27
+<ID, i>
+# line 27
+<), >
+# line 27
+<), >
+# line 27
+<., >
+# line 27
+<ID, putString>
+# line 27
+<(, >
+# line 27
+<STRING_CONST, "\n", [length: 1] >
+# line 27
+<), >
+# line 27
+<;, >
+# line 28
+<ID, i>
+# line 28
+<=, >
+# line 28
+<ID, i>
+# line 28
+<+, >
+# line 28
+<INT_CONST, 1>
+# line 28
+<;, >
+# line 29
+<}, >
+# line 31
+<RETURN, >
+# line 31
+<;, >
+# line 32
+<}, >
+# line 38
+<ID, int>
+# line 38
+<ID, fib>
+# line 38
+<(, >
+# line 38
+<ID, int>
+# line 38
+<ID, n>
+# line 38
+<), >
+# line 38
+<{, >
+# line 39
+<ID, int>
+# line 39
+<ID, result>
+# line 39
+<=, >
+# line 39
+<INT_CONST, 0>
+# line 39
+<;, >
+# line 42
+<IF, >
+# line 42
+<(, >
+# line 42
+<ID, n>
+# line 42
+<==, >
+# line 42
+<INT_CONST, 0>
+# line 42
+<), >
+# line 43
+<ID, result>
+# line 43
+<=, >
+# line 43
+<INT_CONST, 0>
+# line 43
+<;, >
+# line 45
+<ELSE, >
+# line 45
+<IF, >
+# line 45
+<(, >
+# line 45
+<ID, n>
+# line 45
+<==, >
+# line 45
+<INT_CONST, 1>
+# line 45
+<), >
+# line 46
+<ID, result>
+# line 46
+<=, >
+# line 46
+<INT_CONST, 1>
+# line 46
+<;, >
+# line 49
+<ELSE, >
+# line 50
+<ID, result>
+# line 50
+<=, >
+# line 50
+<ID, fib>
+# line 50
+<(, >
+# line 50
+<ID, n>
+# line 50
+<-, >
+# line 50
+<INT_CONST, 1>
+# line 50
+<), >
+# line 50
+<+, >
+# line 50
+<ID, fib>
+# line 50
+<(, >
+# line 50
+<ID, n>
+# line 50
+<-, >
+# line 50
+<INT_CONST, 2>
+# line 50
+<), >
+# line 50
+<;, >
+# line 52
+<RETURN, >
+# line 52
+<ID, result>
+# line 52
+<;, >
+# line 53
+<}, >
+# line 54
+<}, >
+# line 54
+<EOF, >

@@ -1,0 +1,141 @@
+# ArraySizeTooLarge.btm
+# line 1
+<CLASS, >
+# line 1
+<ID, Main>
+# line 1
+<{, >
+# line 2
+<ID, void>
+# line 2
+<ID, main>
+# line 2
+<(, >
+# line 2
+<), >
+# line 2
+<{, >
+# line 3
+<ID, int>
+# line 3
+<ID, i>
+# line 3
+<=, >
+# line 3
+<INT_CONST, 0>
+# line 3
+<;, >
+# line 4
+<ID, int>
+# line 4
+<[, >
+# line 4
+<], >
+# line 4
+<ID, array>
+# line 4
+<=, >
+# line 4
+<NEW, >
+# line 4
+<ID, int>
+# line 4
+<[, >
+# line 4
+<INT_CONST, 1500>
+# line 4
+<], >
+# line 4
+<;, >
+# line 5
+<ID, array>
+# line 5
+<=, >
+# line 5
+<NEW, >
+# line 5
+<ID, int>
+# line 5
+<[, >
+# line 5
+<INT_CONST, 2000>
+# line 5
+<], >
+# line 5
+<;, >
+# line 6
+<FOR, >
+# line 6
+<(, >
+# line 6
+<ID, i>
+# line 6
+<=, >
+# line 6
+<INT_CONST, 1500>
+# line 6
+<;, >
+# line 6
+<ID, i>
+# line 6
+<<, >
+# line 6
+<INT_CONST, 2000>
+# line 6
+<;, >
+# line 6
+<ID, i>
+# line 6
+<++, >
+# line 6
+<), >
+# line 7
+<(, >
+# line 7
+<NEW, >
+# line 7
+<ID, TextIO>
+# line 7
+<(, >
+# line 7
+<), >
+# line 7
+<), >
+# line 7
+<., >
+# line 7
+<ID, putInt>
+# line 7
+<(, >
+# line 7
+<ID, array>
+# line 7
+<[, >
+# line 7
+<ID, i>
+# line 7
+<], >
+# line 7
+<), >
+# line 7
+<., >
+# line 7
+<ID, putString>
+# line 7
+<(, >
+# line 7
+<STRING_CONST, "\n", [length: 1] >
+# line 7
+<), >
+# line 7
+<;, >
+# line 8
+<RETURN, >
+# line 8
+<;, >
+# line 9
+<}, >
+# line 10
+<}, >
+# line 10
+<EOF, >

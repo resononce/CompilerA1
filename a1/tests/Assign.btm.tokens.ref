@@ -1,0 +1,303 @@
+# Assign.btm
+# line 4
+<CLASS, >
+# line 4
+<ID, Main>
+# line 4
+<{, >
+# line 6
+<ID, void>
+# line 6
+<ID, main>
+# line 6
+<(, >
+# line 6
+<), >
+# line 6
+<{, >
+# line 7
+<ID, TextIO>
+# line 7
+<ID, io>
+# line 7
+<=, >
+# line 7
+<NEW, >
+# line 7
+<ID, TextIO>
+# line 7
+<(, >
+# line 7
+<), >
+# line 7
+<;, >
+# line 8
+<ID, int>
+# line 8
+<ID, x>
+# line 8
+<=, >
+# line 8
+<INT_CONST, 0>
+# line 8
+<;, >
+# line 9
+<ID, int>
+# line 9
+<ID, y>
+# line 9
+<=, >
+# line 9
+<INT_CONST, 1>
+# line 9
+<;, >
+# line 10
+<ID, int>
+# line 10
+<ID, z>
+# line 10
+<=, >
+# line 10
+<INT_CONST, 2>
+# line 10
+<;, >
+# line 12
+<ID, io>
+# line 12
+<., >
+# line 12
+<ID, putString>
+# line 12
+<(, >
+# line 12
+<STRING_CONST, "x=", [length: 2] >
+# line 12
+<), >
+# line 12
+<., >
+# line 12
+<ID, putInt>
+# line 12
+<(, >
+# line 12
+<ID, x>
+# line 12
+<), >
+# line 12
+<., >
+# line 12
+<ID, putString>
+# line 12
+<(, >
+# line 12
+<STRING_CONST, "\n", [length: 1] >
+# line 12
+<), >
+# line 12
+<;, >
+# line 13
+<ID, io>
+# line 13
+<., >
+# line 13
+<ID, putString>
+# line 13
+<(, >
+# line 13
+<STRING_CONST, "y=", [length: 2] >
+# line 13
+<), >
+# line 13
+<., >
+# line 13
+<ID, putInt>
+# line 13
+<(, >
+# line 13
+<ID, y>
+# line 13
+<), >
+# line 13
+<., >
+# line 13
+<ID, putString>
+# line 13
+<(, >
+# line 13
+<STRING_CONST, "\n", [length: 1] >
+# line 13
+<), >
+# line 13
+<;, >
+# line 14
+<ID, io>
+# line 14
+<., >
+# line 14
+<ID, putString>
+# line 14
+<(, >
+# line 14
+<STRING_CONST, "z=", [length: 2] >
+# line 14
+<), >
+# line 14
+<., >
+# line 14
+<ID, putInt>
+# line 14
+<(, >
+# line 14
+<ID, z>
+# line 14
+<), >
+# line 14
+<., >
+# line 14
+<ID, putString>
+# line 14
+<(, >
+# line 14
+<STRING_CONST, "\n", [length: 1] >
+# line 14
+<), >
+# line 14
+<;, >
+# line 16
+<ID, io>
+# line 16
+<., >
+# line 16
+<ID, putString>
+# line 16
+<(, >
+# line 16
+<STRING_CONST, "Executing: x = y = z\n", [length: 21] >
+# line 16
+<), >
+# line 16
+<;, >
+# line 17
+<ID, x>
+# line 17
+<=, >
+# line 17
+<ID, y>
+# line 17
+<=, >
+# line 17
+<ID, z>
+# line 17
+<;, >
+# line 19
+<ID, io>
+# line 19
+<., >
+# line 19
+<ID, putString>
+# line 19
+<(, >
+# line 19
+<STRING_CONST, "x=", [length: 2] >
+# line 19
+<), >
+# line 19
+<., >
+# line 19
+<ID, putInt>
+# line 19
+<(, >
+# line 19
+<ID, x>
+# line 19
+<), >
+# line 19
+<., >
+# line 19
+<ID, putString>
+# line 19
+<(, >
+# line 19
+<STRING_CONST, "\n", [length: 1] >
+# line 19
+<), >
+# line 19
+<;, >
+# line 20
+<ID, io>
+# line 20
+<., >
+# line 20
+<ID, putString>
+# line 20
+<(, >
+# line 20
+<STRING_CONST, "y=", [length: 2] >
+# line 20
+<), >
+# line 20
+<., >
+# line 20
+<ID, putInt>
+# line 20
+<(, >
+# line 20
+<ID, y>
+# line 20
+<), >
+# line 20
+<., >
+# line 20
+<ID, putString>
+# line 20
+<(, >
+# line 20
+<STRING_CONST, "\n", [length: 1] >
+# line 20
+<), >
+# line 20
+<;, >
+# line 21
+<ID, io>
+# line 21
+<., >
+# line 21
+<ID, putString>
+# line 21
+<(, >
+# line 21
+<STRING_CONST, "z=", [length: 2] >
+# line 21
+<), >
+# line 21
+<., >
+# line 21
+<ID, putInt>
+# line 21
+<(, >
+# line 21
+<ID, z>
+# line 21
+<), >
+# line 21
+<., >
+# line 21
+<ID, putString>
+# line 21
+<(, >
+# line 21
+<STRING_CONST, "\n", [length: 1] >
+# line 21
+<), >
+# line 21
+<;, >
+# line 23
+<RETURN, >
+# line 23
+<;, >
+# line 24
+<}, >
+# line 25
+<}, >
+# line 25
+<EOF, >

@@ -1,0 +1,521 @@
+# Clone.btm
+# line 1
+<CLASS, >
+# line 1
+<ID, Main>
+# line 1
+<{, >
+# line 2
+<ID, TextIO>
+# line 2
+<ID, io>
+# line 2
+<=, >
+# line 2
+<NEW, >
+# line 2
+<ID, TextIO>
+# line 2
+<(, >
+# line 2
+<), >
+# line 2
+<;, >
+# line 3
+<ID, int>
+# line 3
+<ID, x>
+# line 3
+<;, >
+# line 4
+<ID, int>
+# line 4
+<ID, y>
+# line 4
+<;, >
+# line 5
+<ID, void>
+# line 5
+<ID, setX>
+# line 5
+<(, >
+# line 5
+<ID, int>
+# line 5
+<ID, x>
+# line 5
+<), >
+# line 5
+<{, >
+# line 6
+<ID, this>
+# line 6
+<., >
+# line 6
+<ID, x>
+# line 6
+<=, >
+# line 6
+<ID, x>
+# line 6
+<;, >
+# line 7
+<RETURN, >
+# line 7
+<;, >
+# line 8
+<}, >
+# line 9
+<ID, int>
+# line 9
+<ID, getX>
+# line 9
+<(, >
+# line 9
+<), >
+# line 9
+<{, >
+# line 10
+<RETURN, >
+# line 10
+<ID, x>
+# line 10
+<;, >
+# line 11
+<}, >
+# line 12
+<ID, void>
+# line 12
+<ID, setY>
+# line 12
+<(, >
+# line 12
+<ID, int>
+# line 12
+<ID, y>
+# line 12
+<), >
+# line 12
+<{, >
+# line 13
+<ID, this>
+# line 13
+<., >
+# line 13
+<ID, y>
+# line 13
+<=, >
+# line 13
+<ID, y>
+# line 13
+<;, >
+# line 14
+<RETURN, >
+# line 14
+<;, >
+# line 15
+<}, >
+# line 16
+<ID, int>
+# line 16
+<ID, getY>
+# line 16
+<(, >
+# line 16
+<), >
+# line 16
+<{, >
+# line 17
+<RETURN, >
+# line 17
+<ID, y>
+# line 17
+<;, >
+# line 18
+<}, >
+# line 19
+<ID, void>
+# line 19
+<ID, main>
+# line 19
+<(, >
+# line 19
+<), >
+# line 19
+<{, >
+# line 20
+<ID, io>
+# line 20
+<., >
+# line 20
+<ID, putString>
+# line 20
+<(, >
+# line 20
+<STRING_CONST, "Creating main object (m) and setting X to 5 and Y to 3\n", [length: 55] >
+# line 20
+<), >
+# line 20
+<;, >
+# line 21
+<ID, Main>
+# line 21
+<ID, m>
+# line 21
+<=, >
+# line 21
+<NEW, >
+# line 21
+<ID, Main>
+# line 21
+<(, >
+# line 21
+<), >
+# line 21
+<;, >
+# line 22
+<ID, m>
+# line 22
+<., >
+# line 22
+<ID, setX>
+# line 22
+<(, >
+# line 22
+<INT_CONST, 5>
+# line 22
+<), >
+# line 22
+<;, >
+# line 23
+<ID, m>
+# line 23
+<., >
+# line 23
+<ID, setY>
+# line 23
+<(, >
+# line 23
+<INT_CONST, 3>
+# line 23
+<), >
+# line 23
+<;, >
+# line 24
+<ID, io>
+# line 24
+<., >
+# line 24
+<ID, putString>
+# line 24
+<(, >
+# line 24
+<STRING_CONST, "m.x=", [length: 4] >
+# line 24
+<), >
+# line 24
+<., >
+# line 24
+<ID, putInt>
+# line 24
+<(, >
+# line 24
+<ID, m>
+# line 24
+<., >
+# line 24
+<ID, getX>
+# line 24
+<(, >
+# line 24
+<), >
+# line 24
+<), >
+# line 24
+<., >
+# line 24
+<ID, putString>
+# line 24
+<(, >
+# line 24
+<STRING_CONST, "\n", [length: 1] >
+# line 24
+<), >
+# line 24
+<;, >
+# line 25
+<ID, io>
+# line 25
+<., >
+# line 25
+<ID, putString>
+# line 25
+<(, >
+# line 25
+<STRING_CONST, "m.y=", [length: 4] >
+# line 25
+<), >
+# line 25
+<., >
+# line 25
+<ID, putInt>
+# line 25
+<(, >
+# line 25
+<ID, m>
+# line 25
+<., >
+# line 25
+<ID, getY>
+# line 25
+<(, >
+# line 25
+<), >
+# line 25
+<), >
+# line 25
+<., >
+# line 25
+<ID, putString>
+# line 25
+<(, >
+# line 25
+<STRING_CONST, "\n", [length: 1] >
+# line 25
+<), >
+# line 25
+<;, >
+# line 26
+<ID, io>
+# line 26
+<., >
+# line 26
+<ID, putString>
+# line 26
+<(, >
+# line 26
+<STRING_CONST, "Cloning main object (m2) and setting X to 6\n", [length: 44] >
+# line 26
+<), >
+# line 26
+<;, >
+# line 27
+<ID, Main>
+# line 27
+<ID, m2>
+# line 27
+<=, >
+# line 27
+<(, >
+# line 27
+<ID, Main>
+# line 27
+<), >
+# line 27
+<(, >
+# line 27
+<ID, m>
+# line 27
+<., >
+# line 27
+<ID, clone>
+# line 27
+<(, >
+# line 27
+<), >
+# line 27
+<), >
+# line 27
+<;, >
+# line 28
+<ID, m2>
+# line 28
+<., >
+# line 28
+<ID, setX>
+# line 28
+<(, >
+# line 28
+<INT_CONST, 6>
+# line 28
+<), >
+# line 28
+<;, >
+# line 29
+<ID, io>
+# line 29
+<., >
+# line 29
+<ID, putString>
+# line 29
+<(, >
+# line 29
+<STRING_CONST, "m.x=", [length: 4] >
+# line 29
+<), >
+# line 29
+<., >
+# line 29
+<ID, putInt>
+# line 29
+<(, >
+# line 29
+<ID, m>
+# line 29
+<., >
+# line 29
+<ID, getX>
+# line 29
+<(, >
+# line 29
+<), >
+# line 29
+<), >
+# line 29
+<., >
+# line 29
+<ID, putString>
+# line 29
+<(, >
+# line 29
+<STRING_CONST, "\n", [length: 1] >
+# line 29
+<), >
+# line 29
+<;, >
+# line 30
+<ID, io>
+# line 30
+<., >
+# line 30
+<ID, putString>
+# line 30
+<(, >
+# line 30
+<STRING_CONST, "m.y=", [length: 4] >
+# line 30
+<), >
+# line 30
+<., >
+# line 30
+<ID, putInt>
+# line 30
+<(, >
+# line 30
+<ID, m>
+# line 30
+<., >
+# line 30
+<ID, getY>
+# line 30
+<(, >
+# line 30
+<), >
+# line 30
+<), >
+# line 30
+<., >
+# line 30
+<ID, putString>
+# line 30
+<(, >
+# line 30
+<STRING_CONST, "\n", [length: 1] >
+# line 30
+<), >
+# line 30
+<;, >
+# line 31
+<ID, io>
+# line 31
+<., >
+# line 31
+<ID, putString>
+# line 31
+<(, >
+# line 31
+<STRING_CONST, "m2.x=", [length: 5] >
+# line 31
+<), >
+# line 31
+<., >
+# line 31
+<ID, putInt>
+# line 31
+<(, >
+# line 31
+<ID, m2>
+# line 31
+<., >
+# line 31
+<ID, getX>
+# line 31
+<(, >
+# line 31
+<), >
+# line 31
+<), >
+# line 31
+<., >
+# line 31
+<ID, putString>
+# line 31
+<(, >
+# line 31
+<STRING_CONST, "\n", [length: 1] >
+# line 31
+<), >
+# line 31
+<;, >
+# line 32
+<ID, io>
+# line 32
+<., >
+# line 32
+<ID, putString>
+# line 32
+<(, >
+# line 32
+<STRING_CONST, "m2.y=", [length: 5] >
+# line 32
+<), >
+# line 32
+<., >
+# line 32
+<ID, putInt>
+# line 32
+<(, >
+# line 32
+<ID, m2>
+# line 32
+<., >
+# line 32
+<ID, getY>
+# line 32
+<(, >
+# line 32
+<), >
+# line 32
+<), >
+# line 32
+<., >
+# line 32
+<ID, putString>
+# line 32
+<(, >
+# line 32
+<STRING_CONST, "\n", [length: 1] >
+# line 32
+<), >
+# line 32
+<;, >
+# line 33
+<RETURN, >
+# line 33
+<;, >
+# line 34
+<}, >
+# line 35
+<}, >
+# line 35
+<EOF, >

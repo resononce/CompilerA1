@@ -1,0 +1,1181 @@
+# Strings.btm
+# line 1
+<CLASS, >
+# line 1
+<ID, Main>
+# line 1
+<{, >
+# line 2
+<ID, void>
+# line 2
+<ID, main>
+# line 2
+<(, >
+# line 2
+<), >
+# line 2
+<{, >
+# line 3
+<ID, String>
+# line 3
+<ID, s>
+# line 3
+<=, >
+# line 3
+<STRING_CONST, "abcdefghijklmnopqrstuvwxyz", [length: 26] >
+# line 3
+<;, >
+# line 4
+<ID, String>
+# line 4
+<ID, s2>
+# line 4
+<=, >
+# line 4
+<STRING_CONST, "abcdefghijklmnopqrstuvwxyz", [length: 26] >
+# line 4
+<;, >
+# line 5
+<ID, String>
+# line 5
+<ID, s3>
+# line 5
+<=, >
+# line 5
+<STRING_CONST, "0123456789", [length: 10] >
+# line 5
+<;, >
+# line 7
+<(, >
+# line 7
+<NEW, >
+# line 7
+<ID, TextIO>
+# line 7
+<(, >
+# line 7
+<), >
+# line 7
+<), >
+# line 7
+<., >
+# line 7
+<ID, putString>
+# line 7
+<(, >
+# line 7
+<STRING_CONST, "s: ", [length: 3] >
+# line 7
+<), >
+# line 7
+<., >
+# line 7
+<ID, putString>
+# line 7
+<(, >
+# line 7
+<ID, s>
+# line 7
+<), >
+# line 7
+<., >
+# line 7
+<ID, putString>
+# line 7
+<(, >
+# line 7
+<STRING_CONST, "\n", [length: 1] >
+# line 7
+<), >
+# line 7
+<;, >
+# line 9
+<(, >
+# line 9
+<NEW, >
+# line 9
+<ID, TextIO>
+# line 9
+<(, >
+# line 9
+<), >
+# line 9
+<), >
+# line 9
+<., >
+# line 9
+<ID, putString>
+# line 9
+<(, >
+# line 9
+<STRING_CONST, "s.length(): ", [length: 12] >
+# line 9
+<), >
+# line 9
+<., >
+# line 9
+<ID, putInt>
+# line 9
+<(, >
+# line 9
+<ID, s>
+# line 9
+<., >
+# line 9
+<ID, length>
+# line 9
+<(, >
+# line 9
+<), >
+# line 9
+<), >
+# line 9
+<., >
+# line 9
+<ID, putString>
+# line 9
+<(, >
+# line 9
+<STRING_CONST, "\n", [length: 1] >
+# line 9
+<), >
+# line 9
+<;, >
+# line 11
+<(, >
+# line 11
+<NEW, >
+# line 11
+<ID, TextIO>
+# line 11
+<(, >
+# line 11
+<), >
+# line 11
+<), >
+# line 11
+<., >
+# line 11
+<ID, putString>
+# line 11
+<(, >
+# line 11
+<STRING_CONST, "s2: ", [length: 4] >
+# line 11
+<), >
+# line 11
+<., >
+# line 11
+<ID, putString>
+# line 11
+<(, >
+# line 11
+<ID, s2>
+# line 11
+<), >
+# line 11
+<., >
+# line 11
+<ID, putString>
+# line 11
+<(, >
+# line 11
+<STRING_CONST, "\n", [length: 1] >
+# line 11
+<), >
+# line 11
+<;, >
+# line 12
+<(, >
+# line 12
+<NEW, >
+# line 12
+<ID, TextIO>
+# line 12
+<(, >
+# line 12
+<), >
+# line 12
+<), >
+# line 12
+<., >
+# line 12
+<ID, putString>
+# line 12
+<(, >
+# line 12
+<STRING_CONST, "s2.length(): ", [length: 13] >
+# line 12
+<), >
+# line 12
+<., >
+# line 12
+<ID, putInt>
+# line 12
+<(, >
+# line 12
+<ID, s2>
+# line 12
+<., >
+# line 12
+<ID, length>
+# line 12
+<(, >
+# line 12
+<), >
+# line 12
+<), >
+# line 12
+<., >
+# line 12
+<ID, putString>
+# line 12
+<(, >
+# line 12
+<STRING_CONST, "\n", [length: 1] >
+# line 12
+<), >
+# line 12
+<;, >
+# line 14
+<IF, >
+# line 14
+<(, >
+# line 14
+<ID, s>
+# line 14
+<., >
+# line 14
+<ID, equals>
+# line 14
+<(, >
+# line 14
+<ID, s2>
+# line 14
+<), >
+# line 14
+<), >
+# line 15
+<(, >
+# line 15
+<NEW, >
+# line 15
+<ID, TextIO>
+# line 15
+<(, >
+# line 15
+<), >
+# line 15
+<), >
+# line 15
+<., >
+# line 15
+<ID, putString>
+# line 15
+<(, >
+# line 15
+<STRING_CONST, "s.equals(s2): true\n", [length: 19] >
+# line 15
+<), >
+# line 15
+<;, >
+# line 16
+<ELSE, >
+# line 17
+<(, >
+# line 17
+<NEW, >
+# line 17
+<ID, TextIO>
+# line 17
+<(, >
+# line 17
+<), >
+# line 17
+<), >
+# line 17
+<., >
+# line 17
+<ID, putString>
+# line 17
+<(, >
+# line 17
+<STRING_CONST, "s.equals(s2): false\n", [length: 20] >
+# line 17
+<), >
+# line 17
+<;, >
+# line 18
+<IF, >
+# line 18
+<(, >
+# line 18
+<ID, s2>
+# line 18
+<., >
+# line 18
+<ID, equals>
+# line 18
+<(, >
+# line 18
+<ID, s>
+# line 18
+<), >
+# line 18
+<), >
+# line 19
+<(, >
+# line 19
+<NEW, >
+# line 19
+<ID, TextIO>
+# line 19
+<(, >
+# line 19
+<), >
+# line 19
+<), >
+# line 19
+<., >
+# line 19
+<ID, putString>
+# line 19
+<(, >
+# line 19
+<STRING_CONST, "s2.equals(s): true\n", [length: 19] >
+# line 19
+<), >
+# line 19
+<;, >
+# line 20
+<ELSE, >
+# line 21
+<(, >
+# line 21
+<NEW, >
+# line 21
+<ID, TextIO>
+# line 21
+<(, >
+# line 21
+<), >
+# line 21
+<), >
+# line 21
+<., >
+# line 21
+<ID, putString>
+# line 21
+<(, >
+# line 21
+<STRING_CONST, "s2.equals(s): false\n", [length: 20] >
+# line 21
+<), >
+# line 21
+<;, >
+# line 23
+<(, >
+# line 23
+<NEW, >
+# line 23
+<ID, TextIO>
+# line 23
+<(, >
+# line 23
+<), >
+# line 23
+<), >
+# line 23
+<., >
+# line 23
+<ID, putString>
+# line 23
+<(, >
+# line 23
+<STRING_CONST, "s3: ", [length: 4] >
+# line 23
+<), >
+# line 23
+<., >
+# line 23
+<ID, putString>
+# line 23
+<(, >
+# line 23
+<ID, s3>
+# line 23
+<), >
+# line 23
+<., >
+# line 23
+<ID, putString>
+# line 23
+<(, >
+# line 23
+<STRING_CONST, "\n", [length: 1] >
+# line 23
+<), >
+# line 23
+<;, >
+# line 24
+<(, >
+# line 24
+<NEW, >
+# line 24
+<ID, TextIO>
+# line 24
+<(, >
+# line 24
+<), >
+# line 24
+<), >
+# line 24
+<., >
+# line 24
+<ID, putString>
+# line 24
+<(, >
+# line 24
+<STRING_CONST, "s3.length(): ", [length: 13] >
+# line 24
+<), >
+# line 24
+<., >
+# line 24
+<ID, putInt>
+# line 24
+<(, >
+# line 24
+<ID, s3>
+# line 24
+<., >
+# line 24
+<ID, length>
+# line 24
+<(, >
+# line 24
+<), >
+# line 24
+<), >
+# line 24
+<., >
+# line 24
+<ID, putString>
+# line 24
+<(, >
+# line 24
+<STRING_CONST, "\n", [length: 1] >
+# line 24
+<), >
+# line 24
+<;, >
+# line 26
+<IF, >
+# line 26
+<(, >
+# line 26
+<ID, s>
+# line 26
+<., >
+# line 26
+<ID, equals>
+# line 26
+<(, >
+# line 26
+<ID, s3>
+# line 26
+<), >
+# line 26
+<), >
+# line 27
+<(, >
+# line 27
+<NEW, >
+# line 27
+<ID, TextIO>
+# line 27
+<(, >
+# line 27
+<), >
+# line 27
+<), >
+# line 27
+<., >
+# line 27
+<ID, putString>
+# line 27
+<(, >
+# line 27
+<STRING_CONST, "s.equals(s3): true\n", [length: 19] >
+# line 27
+<), >
+# line 27
+<;, >
+# line 28
+<ELSE, >
+# line 29
+<(, >
+# line 29
+<NEW, >
+# line 29
+<ID, TextIO>
+# line 29
+<(, >
+# line 29
+<), >
+# line 29
+<), >
+# line 29
+<., >
+# line 29
+<ID, putString>
+# line 29
+<(, >
+# line 29
+<STRING_CONST, "s.equals(s3): false\n", [length: 20] >
+# line 29
+<), >
+# line 29
+<;, >
+# line 30
+<IF, >
+# line 30
+<(, >
+# line 30
+<ID, s3>
+# line 30
+<., >
+# line 30
+<ID, equals>
+# line 30
+<(, >
+# line 30
+<ID, s>
+# line 30
+<), >
+# line 30
+<), >
+# line 31
+<(, >
+# line 31
+<NEW, >
+# line 31
+<ID, TextIO>
+# line 31
+<(, >
+# line 31
+<), >
+# line 31
+<), >
+# line 31
+<., >
+# line 31
+<ID, putString>
+# line 31
+<(, >
+# line 31
+<STRING_CONST, "s3.equals(s): true\n", [length: 19] >
+# line 31
+<), >
+# line 31
+<;, >
+# line 32
+<ELSE, >
+# line 33
+<(, >
+# line 33
+<NEW, >
+# line 33
+<ID, TextIO>
+# line 33
+<(, >
+# line 33
+<), >
+# line 33
+<), >
+# line 33
+<., >
+# line 33
+<ID, putString>
+# line 33
+<(, >
+# line 33
+<STRING_CONST, "s3.equals(s): false\n", [length: 20] >
+# line 33
+<), >
+# line 33
+<;, >
+# line 35
+<(, >
+# line 35
+<NEW, >
+# line 35
+<ID, TextIO>
+# line 35
+<(, >
+# line 35
+<), >
+# line 35
+<), >
+# line 35
+<., >
+# line 35
+<ID, putString>
+# line 35
+<(, >
+# line 35
+<STRING_CONST, "s.concat(s2): ", [length: 14] >
+# line 35
+<), >
+# line 35
+<., >
+# line 35
+<ID, putString>
+# line 35
+<(, >
+# line 35
+<ID, s>
+# line 35
+<., >
+# line 35
+<ID, concat>
+# line 35
+<(, >
+# line 35
+<ID, s2>
+# line 35
+<), >
+# line 35
+<), >
+# line 35
+<., >
+# line 35
+<ID, putString>
+# line 35
+<(, >
+# line 35
+<STRING_CONST, "\n", [length: 1] >
+# line 35
+<), >
+# line 35
+<;, >
+# line 36
+<(, >
+# line 36
+<NEW, >
+# line 36
+<ID, TextIO>
+# line 36
+<(, >
+# line 36
+<), >
+# line 36
+<), >
+# line 36
+<., >
+# line 36
+<ID, putString>
+# line 36
+<(, >
+# line 36
+<STRING_CONST, "s2.concat(s): ", [length: 14] >
+# line 36
+<), >
+# line 36
+<., >
+# line 36
+<ID, putString>
+# line 36
+<(, >
+# line 36
+<ID, s2>
+# line 36
+<., >
+# line 36
+<ID, concat>
+# line 36
+<(, >
+# line 36
+<ID, s>
+# line 36
+<), >
+# line 36
+<), >
+# line 36
+<., >
+# line 36
+<ID, putString>
+# line 36
+<(, >
+# line 36
+<STRING_CONST, "\n", [length: 1] >
+# line 36
+<), >
+# line 36
+<;, >
+# line 38
+<(, >
+# line 38
+<NEW, >
+# line 38
+<ID, TextIO>
+# line 38
+<(, >
+# line 38
+<), >
+# line 38
+<), >
+# line 38
+<., >
+# line 38
+<ID, putString>
+# line 38
+<(, >
+# line 38
+<STRING_CONST, "s.concat(s3): ", [length: 14] >
+# line 38
+<), >
+# line 38
+<., >
+# line 38
+<ID, putString>
+# line 38
+<(, >
+# line 38
+<ID, s>
+# line 38
+<., >
+# line 38
+<ID, concat>
+# line 38
+<(, >
+# line 38
+<ID, s3>
+# line 38
+<), >
+# line 38
+<), >
+# line 38
+<., >
+# line 38
+<ID, putString>
+# line 38
+<(, >
+# line 38
+<STRING_CONST, "\n", [length: 1] >
+# line 38
+<), >
+# line 38
+<;, >
+# line 39
+<(, >
+# line 39
+<NEW, >
+# line 39
+<ID, TextIO>
+# line 39
+<(, >
+# line 39
+<), >
+# line 39
+<), >
+# line 39
+<., >
+# line 39
+<ID, putString>
+# line 39
+<(, >
+# line 39
+<STRING_CONST, "s3.concat(s): ", [length: 14] >
+# line 39
+<), >
+# line 39
+<., >
+# line 39
+<ID, putString>
+# line 39
+<(, >
+# line 39
+<ID, s3>
+# line 39
+<., >
+# line 39
+<ID, concat>
+# line 39
+<(, >
+# line 39
+<ID, s>
+# line 39
+<), >
+# line 39
+<), >
+# line 39
+<., >
+# line 39
+<ID, putString>
+# line 39
+<(, >
+# line 39
+<STRING_CONST, "\n", [length: 1] >
+# line 39
+<), >
+# line 39
+<;, >
+# line 43
+<(, >
+# line 43
+<NEW, >
+# line 43
+<ID, TextIO>
+# line 43
+<(, >
+# line 43
+<), >
+# line 43
+<), >
+# line 43
+<., >
+# line 43
+<ID, putString>
+# line 43
+<(, >
+# line 43
+<STRING_CONST, "s.substring(0, 0): ", [length: 19] >
+# line 43
+<), >
+# line 43
+<., >
+# line 43
+<ID, putString>
+# line 43
+<(, >
+# line 43
+<ID, s>
+# line 43
+<., >
+# line 43
+<ID, substring>
+# line 43
+<(, >
+# line 43
+<INT_CONST, 0>
+# line 43
+<,, >
+# line 43
+<INT_CONST, 0>
+# line 43
+<), >
+# line 43
+<), >
+# line 43
+<., >
+# line 43
+<ID, putString>
+# line 43
+<(, >
+# line 43
+<STRING_CONST, "\n", [length: 1] >
+# line 43
+<), >
+# line 43
+<;, >
+# line 44
+<(, >
+# line 44
+<NEW, >
+# line 44
+<ID, TextIO>
+# line 44
+<(, >
+# line 44
+<), >
+# line 44
+<), >
+# line 44
+<., >
+# line 44
+<ID, putString>
+# line 44
+<(, >
+# line 44
+<STRING_CONST, "s.substring(2, 8): ", [length: 19] >
+# line 44
+<), >
+# line 44
+<., >
+# line 44
+<ID, putString>
+# line 44
+<(, >
+# line 44
+<ID, s>
+# line 44
+<., >
+# line 44
+<ID, substring>
+# line 44
+<(, >
+# line 44
+<INT_CONST, 2>
+# line 44
+<,, >
+# line 44
+<INT_CONST, 8>
+# line 44
+<), >
+# line 44
+<), >
+# line 44
+<., >
+# line 44
+<ID, putString>
+# line 44
+<(, >
+# line 44
+<STRING_CONST, "\n", [length: 1] >
+# line 44
+<), >
+# line 44
+<;, >
+# line 45
+<(, >
+# line 45
+<NEW, >
+# line 45
+<ID, TextIO>
+# line 45
+<(, >
+# line 45
+<), >
+# line 45
+<), >
+# line 45
+<., >
+# line 45
+<ID, putString>
+# line 45
+<(, >
+# line 45
+<STRING_CONST, "s2.substring(1, 2): ", [length: 20] >
+# line 45
+<), >
+# line 45
+<., >
+# line 45
+<ID, putString>
+# line 45
+<(, >
+# line 45
+<ID, s2>
+# line 45
+<., >
+# line 45
+<ID, substring>
+# line 45
+<(, >
+# line 45
+<INT_CONST, 1>
+# line 45
+<,, >
+# line 45
+<INT_CONST, 2>
+# line 45
+<), >
+# line 45
+<), >
+# line 45
+<., >
+# line 45
+<ID, putString>
+# line 45
+<(, >
+# line 45
+<STRING_CONST, "\n", [length: 1] >
+# line 45
+<), >
+# line 45
+<;, >
+# line 46
+<(, >
+# line 46
+<NEW, >
+# line 46
+<ID, TextIO>
+# line 46
+<(, >
+# line 46
+<), >
+# line 46
+<), >
+# line 46
+<., >
+# line 46
+<ID, putString>
+# line 46
+<(, >
+# line 46
+<STRING_CONST, "s2.substring(1, 7): ", [length: 20] >
+# line 46
+<), >
+# line 46
+<., >
+# line 46
+<ID, putString>
+# line 46
+<(, >
+# line 46
+<ID, s2>
+# line 46
+<., >
+# line 46
+<ID, substring>
+# line 46
+<(, >
+# line 46
+<INT_CONST, 1>
+# line 46
+<,, >
+# line 46
+<INT_CONST, 7>
+# line 46
+<), >
+# line 46
+<), >
+# line 46
+<., >
+# line 46
+<ID, putString>
+# line 46
+<(, >
+# line 46
+<STRING_CONST, "\n", [length: 1] >
+# line 46
+<), >
+# line 46
+<;, >
+# line 47
+<(, >
+# line 47
+<NEW, >
+# line 47
+<ID, TextIO>
+# line 47
+<(, >
+# line 47
+<), >
+# line 47
+<), >
+# line 47
+<., >
+# line 47
+<ID, putString>
+# line 47
+<(, >
+# line 47
+<STRING_CONST, "s3.substring(2, 7): ", [length: 20] >
+# line 47
+<), >
+# line 47
+<., >
+# line 47
+<ID, putString>
+# line 47
+<(, >
+# line 47
+<ID, s3>
+# line 47
+<., >
+# line 47
+<ID, substring>
+# line 47
+<(, >
+# line 47
+<INT_CONST, 2>
+# line 47
+<,, >
+# line 47
+<INT_CONST, 7>
+# line 47
+<), >
+# line 47
+<), >
+# line 47
+<., >
+# line 47
+<ID, putString>
+# line 47
+<(, >
+# line 47
+<STRING_CONST, "\n", [length: 1] >
+# line 47
+<), >
+# line 47
+<;, >
+# line 48
+<(, >
+# line 48
+<NEW, >
+# line 48
+<ID, TextIO>
+# line 48
+<(, >
+# line 48
+<), >
+# line 48
+<), >
+# line 48
+<., >
+# line 48
+<ID, putString>
+# line 48
+<(, >
+# line 48
+<STRING_CONST, "s3.substring(1, 10): ", [length: 21] >
+# line 48
+<), >
+# line 48
+<., >
+# line 48
+<ID, putString>
+# line 48
+<(, >
+# line 48
+<ID, s3>
+# line 48
+<., >
+# line 48
+<ID, substring>
+# line 48
+<(, >
+# line 48
+<INT_CONST, 1>
+# line 48
+<,, >
+# line 48
+<INT_CONST, 10>
+# line 48
+<), >
+# line 48
+<), >
+# line 48
+<., >
+# line 48
+<ID, putString>
+# line 48
+<(, >
+# line 48
+<STRING_CONST, "\n", [length: 1] >
+# line 48
+<), >
+# line 48
+<;, >
+# line 50
+<RETURN, >
+# line 50
+<;, >
+# line 51
+<}, >
+# line 52
+<}, >
+# line 52
+<EOF, >

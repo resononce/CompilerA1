@@ -1,0 +1,1369 @@
+# TicTacToe.btm
+# line 3
+<CLASS, >
+# line 3
+<ID, Main>
+# line 3
+<{, >
+# line 4
+<ID, TextIO>
+# line 4
+<ID, io>
+# line 4
+<=, >
+# line 4
+<NEW, >
+# line 4
+<ID, TextIO>
+# line 4
+<(, >
+# line 4
+<), >
+# line 4
+<;, >
+# line 5
+<ID, int>
+# line 5
+<ID, player>
+# line 5
+<=, >
+# line 5
+<INT_CONST, 1>
+# line 5
+<;, >
+# line 6
+<ID, int>
+# line 6
+<[, >
+# line 6
+<], >
+# line 6
+<ID, board>
+# line 6
+<=, >
+# line 6
+<NEW, >
+# line 6
+<ID, int>
+# line 6
+<[, >
+# line 6
+<INT_CONST, 9>
+# line 6
+<], >
+# line 6
+<;, >
+# line 9
+<ID, void>
+# line 9
+<ID, main>
+# line 9
+<(, >
+# line 9
+<), >
+# line 9
+<{, >
+# line 11
+<ID, io>
+# line 11
+<., >
+# line 11
+<ID, putString>
+# line 11
+<(, >
+# line 11
+<STRING_CONST, "*** Tic Tac Toe ***\n", [length: 20] >
+# line 11
+<), >
+# line 11
+<;, >
+# line 14
+<WHILE, >
+# line 14
+<(, >
+# line 14
+<BOOLEAN_CONST, true>
+# line 14
+<), >
+# line 14
+<{, >
+# line 16
+<ID, printBoard>
+# line 16
+<(, >
+# line 16
+<), >
+# line 16
+<;, >
+# line 19
+<ID, getMove>
+# line 19
+<(, >
+# line 19
+<), >
+# line 19
+<;, >
+# line 22
+<IF, >
+# line 22
+<(, >
+# line 22
+<ID, isGameOver>
+# line 22
+<(, >
+# line 22
+<), >
+# line 22
+<), >
+# line 22
+<{, >
+# line 24
+<IF, >
+# line 24
+<(, >
+# line 24
+<ID, isDraw>
+# line 24
+<(, >
+# line 24
+<), >
+# line 24
+<), >
+# line 24
+<{, >
+# line 25
+<ID, printBoard>
+# line 25
+<(, >
+# line 25
+<), >
+# line 25
+<;, >
+# line 26
+<ID, io>
+# line 26
+<., >
+# line 26
+<ID, putString>
+# line 26
+<(, >
+# line 26
+<STRING_CONST, "Game is a draw\n", [length: 15] >
+# line 26
+<), >
+# line 26
+<;, >
+# line 27
+<BREAK, >
+# line 27
+<;, >
+# line 28
+<}, >
+# line 29
+<ELSE, >
+# line 29
+<{, >
+# line 30
+<ID, printBoard>
+# line 30
+<(, >
+# line 30
+<), >
+# line 30
+<;, >
+# line 31
+<ID, io>
+# line 31
+<., >
+# line 31
+<ID, putString>
+# line 31
+<(, >
+# line 31
+<STRING_CONST, "Player ", [length: 7] >
+# line 31
+<), >
+# line 31
+<., >
+# line 31
+<ID, putInt>
+# line 31
+<(, >
+# line 31
+<ID, player>
+# line 31
+<), >
+# line 31
+<., >
+# line 31
+<ID, putString>
+# line 31
+<(, >
+# line 31
+<STRING_CONST, " wins!\n", [length: 7] >
+# line 31
+<), >
+# line 31
+<;, >
+# line 32
+<BREAK, >
+# line 32
+<;, >
+# line 33
+<}, >
+# line 34
+<}, >
+# line 37
+<IF, >
+# line 37
+<(, >
+# line 37
+<ID, player>
+# line 37
+<==, >
+# line 37
+<INT_CONST, 1>
+# line 37
+<), >
+# line 38
+<ID, player>
+# line 38
+<=, >
+# line 38
+<INT_CONST, 2>
+# line 38
+<;, >
+# line 39
+<ELSE, >
+# line 40
+<ID, player>
+# line 40
+<=, >
+# line 40
+<INT_CONST, 1>
+# line 40
+<;, >
+# line 41
+<}, >
+# line 42
+<}, >
+# line 46
+<ID, boolean>
+# line 46
+<ID, isGameOver>
+# line 46
+<(, >
+# line 46
+<), >
+# line 46
+<{, >
+# line 48
+<IF, >
+# line 48
+<(, >
+# line 48
+<ID, wasGameWon>
+# line 48
+<(, >
+# line 48
+<), >
+# line 48
+<), >
+# line 49
+<RETURN, >
+# line 49
+<BOOLEAN_CONST, true>
+# line 49
+<;, >
+# line 51
+<ELSE, >
+# line 51
+<IF, >
+# line 51
+<(, >
+# line 51
+<ID, isDraw>
+# line 51
+<(, >
+# line 51
+<), >
+# line 51
+<), >
+# line 52
+<RETURN, >
+# line 52
+<BOOLEAN_CONST, true>
+# line 52
+<;, >
+# line 54
+<RETURN, >
+# line 54
+<BOOLEAN_CONST, false>
+# line 54
+<;, >
+# line 55
+<}, >
+# line 60
+<ID, boolean>
+# line 60
+<ID, wasGameWon>
+# line 60
+<(, >
+# line 60
+<), >
+# line 60
+<{, >
+# line 62
+<IF, >
+# line 62
+<(, >
+# line 62
+<(, >
+# line 62
+<ID, board>
+# line 62
+<[, >
+# line 62
+<INT_CONST, 0>
+# line 62
+<], >
+# line 62
+<==, >
+# line 62
+<ID, board>
+# line 62
+<[, >
+# line 62
+<INT_CONST, 1>
+# line 62
+<], >
+# line 62
+<&&, >
+# line 62
+<ID, board>
+# line 62
+<[, >
+# line 62
+<INT_CONST, 1>
+# line 62
+<], >
+# line 62
+<==, >
+# line 62
+<ID, board>
+# line 62
+<[, >
+# line 62
+<INT_CONST, 2>
+# line 62
+<], >
+# line 62
+<&&, >
+# line 62
+<ID, board>
+# line 62
+<[, >
+# line 62
+<INT_CONST, 0>
+# line 62
+<], >
+# line 62
+<!=, >
+# line 62
+<INT_CONST, 0>
+# line 62
+<), >
+# line 62
+<||, >
+# line 63
+<(, >
+# line 63
+<ID, board>
+# line 63
+<[, >
+# line 63
+<INT_CONST, 3>
+# line 63
+<], >
+# line 63
+<==, >
+# line 63
+<ID, board>
+# line 63
+<[, >
+# line 63
+<INT_CONST, 4>
+# line 63
+<], >
+# line 63
+<&&, >
+# line 63
+<ID, board>
+# line 63
+<[, >
+# line 63
+<INT_CONST, 4>
+# line 63
+<], >
+# line 63
+<==, >
+# line 63
+<ID, board>
+# line 63
+<[, >
+# line 63
+<INT_CONST, 5>
+# line 63
+<], >
+# line 63
+<&&, >
+# line 63
+<ID, board>
+# line 63
+<[, >
+# line 63
+<INT_CONST, 3>
+# line 63
+<], >
+# line 63
+<!=, >
+# line 63
+<INT_CONST, 0>
+# line 63
+<), >
+# line 63
+<||, >
+# line 64
+<(, >
+# line 64
+<ID, board>
+# line 64
+<[, >
+# line 64
+<INT_CONST, 6>
+# line 64
+<], >
+# line 64
+<==, >
+# line 64
+<ID, board>
+# line 64
+<[, >
+# line 64
+<INT_CONST, 7>
+# line 64
+<], >
+# line 64
+<&&, >
+# line 64
+<ID, board>
+# line 64
+<[, >
+# line 64
+<INT_CONST, 7>
+# line 64
+<], >
+# line 64
+<==, >
+# line 64
+<ID, board>
+# line 64
+<[, >
+# line 64
+<INT_CONST, 8>
+# line 64
+<], >
+# line 64
+<&&, >
+# line 64
+<ID, board>
+# line 64
+<[, >
+# line 64
+<INT_CONST, 6>
+# line 64
+<], >
+# line 64
+<!=, >
+# line 64
+<INT_CONST, 0>
+# line 64
+<), >
+# line 64
+<), >
+# line 64
+<{, >
+# line 65
+<RETURN, >
+# line 65
+<BOOLEAN_CONST, true>
+# line 65
+<;, >
+# line 66
+<}, >
+# line 68
+<ELSE, >
+# line 68
+<IF, >
+# line 68
+<(, >
+# line 68
+<(, >
+# line 68
+<ID, board>
+# line 68
+<[, >
+# line 68
+<INT_CONST, 0>
+# line 68
+<], >
+# line 68
+<==, >
+# line 68
+<ID, board>
+# line 68
+<[, >
+# line 68
+<INT_CONST, 3>
+# line 68
+<], >
+# line 68
+<&&, >
+# line 68
+<ID, board>
+# line 68
+<[, >
+# line 68
+<INT_CONST, 3>
+# line 68
+<], >
+# line 68
+<==, >
+# line 68
+<ID, board>
+# line 68
+<[, >
+# line 68
+<INT_CONST, 6>
+# line 68
+<], >
+# line 68
+<&&, >
+# line 68
+<ID, board>
+# line 68
+<[, >
+# line 68
+<INT_CONST, 0>
+# line 68
+<], >
+# line 68
+<!=, >
+# line 68
+<INT_CONST, 0>
+# line 68
+<), >
+# line 68
+<||, >
+# line 69
+<(, >
+# line 69
+<ID, board>
+# line 69
+<[, >
+# line 69
+<INT_CONST, 1>
+# line 69
+<], >
+# line 69
+<==, >
+# line 69
+<ID, board>
+# line 69
+<[, >
+# line 69
+<INT_CONST, 4>
+# line 69
+<], >
+# line 69
+<&&, >
+# line 69
+<ID, board>
+# line 69
+<[, >
+# line 69
+<INT_CONST, 4>
+# line 69
+<], >
+# line 69
+<==, >
+# line 69
+<ID, board>
+# line 69
+<[, >
+# line 69
+<INT_CONST, 7>
+# line 69
+<], >
+# line 69
+<&&, >
+# line 69
+<ID, board>
+# line 69
+<[, >
+# line 69
+<INT_CONST, 1>
+# line 69
+<], >
+# line 69
+<!=, >
+# line 69
+<INT_CONST, 0>
+# line 69
+<), >
+# line 69
+<||, >
+# line 70
+<(, >
+# line 70
+<ID, board>
+# line 70
+<[, >
+# line 70
+<INT_CONST, 2>
+# line 70
+<], >
+# line 70
+<==, >
+# line 70
+<ID, board>
+# line 70
+<[, >
+# line 70
+<INT_CONST, 5>
+# line 70
+<], >
+# line 70
+<&&, >
+# line 70
+<ID, board>
+# line 70
+<[, >
+# line 70
+<INT_CONST, 5>
+# line 70
+<], >
+# line 70
+<==, >
+# line 70
+<ID, board>
+# line 70
+<[, >
+# line 70
+<INT_CONST, 8>
+# line 70
+<], >
+# line 70
+<&&, >
+# line 70
+<ID, board>
+# line 70
+<[, >
+# line 70
+<INT_CONST, 2>
+# line 70
+<], >
+# line 70
+<!=, >
+# line 70
+<INT_CONST, 0>
+# line 70
+<), >
+# line 70
+<), >
+# line 70
+<{, >
+# line 71
+<RETURN, >
+# line 71
+<BOOLEAN_CONST, true>
+# line 71
+<;, >
+# line 72
+<}, >
+# line 74
+<ELSE, >
+# line 74
+<IF, >
+# line 74
+<(, >
+# line 74
+<(, >
+# line 74
+<ID, board>
+# line 74
+<[, >
+# line 74
+<INT_CONST, 0>
+# line 74
+<], >
+# line 74
+<==, >
+# line 74
+<ID, board>
+# line 74
+<[, >
+# line 74
+<INT_CONST, 4>
+# line 74
+<], >
+# line 74
+<&&, >
+# line 74
+<ID, board>
+# line 74
+<[, >
+# line 74
+<INT_CONST, 4>
+# line 74
+<], >
+# line 74
+<==, >
+# line 74
+<ID, board>
+# line 74
+<[, >
+# line 74
+<INT_CONST, 8>
+# line 74
+<], >
+# line 74
+<&&, >
+# line 74
+<ID, board>
+# line 74
+<[, >
+# line 74
+<INT_CONST, 0>
+# line 74
+<], >
+# line 74
+<!=, >
+# line 74
+<INT_CONST, 0>
+# line 74
+<), >
+# line 74
+<||, >
+# line 75
+<(, >
+# line 75
+<ID, board>
+# line 75
+<[, >
+# line 75
+<INT_CONST, 2>
+# line 75
+<], >
+# line 75
+<==, >
+# line 75
+<ID, board>
+# line 75
+<[, >
+# line 75
+<INT_CONST, 4>
+# line 75
+<], >
+# line 75
+<&&, >
+# line 75
+<ID, board>
+# line 75
+<[, >
+# line 75
+<INT_CONST, 4>
+# line 75
+<], >
+# line 75
+<==, >
+# line 75
+<ID, board>
+# line 75
+<[, >
+# line 75
+<INT_CONST, 6>
+# line 75
+<], >
+# line 75
+<&&, >
+# line 75
+<ID, board>
+# line 75
+<[, >
+# line 75
+<INT_CONST, 2>
+# line 75
+<], >
+# line 75
+<!=, >
+# line 75
+<INT_CONST, 0>
+# line 75
+<), >
+# line 75
+<), >
+# line 75
+<{, >
+# line 76
+<RETURN, >
+# line 76
+<BOOLEAN_CONST, true>
+# line 76
+<;, >
+# line 77
+<}, >
+# line 79
+<RETURN, >
+# line 79
+<BOOLEAN_CONST, false>
+# line 79
+<;, >
+# line 80
+<}, >
+# line 85
+<ID, boolean>
+# line 85
+<ID, isDraw>
+# line 85
+<(, >
+# line 85
+<), >
+# line 85
+<{, >
+# line 86
+<ID, int>
+# line 86
+<ID, i>
+# line 86
+<=, >
+# line 86
+<INT_CONST, 0>
+# line 86
+<;, >
+# line 88
+<IF, >
+# line 88
+<(, >
+# line 88
+<ID, wasGameWon>
+# line 88
+<(, >
+# line 88
+<), >
+# line 88
+<), >
+# line 89
+<RETURN, >
+# line 89
+<BOOLEAN_CONST, false>
+# line 89
+<;, >
+# line 91
+<FOR, >
+# line 91
+<(, >
+# line 91
+<ID, i>
+# line 91
+<=, >
+# line 91
+<INT_CONST, 0>
+# line 91
+<;, >
+# line 91
+<ID, i>
+# line 91
+<<, >
+# line 91
+<INT_CONST, 9>
+# line 91
+<;, >
+# line 91
+<ID, i>
+# line 91
+<++, >
+# line 91
+<), >
+# line 91
+<{, >
+# line 93
+<IF, >
+# line 93
+<(, >
+# line 93
+<ID, board>
+# line 93
+<[, >
+# line 93
+<ID, i>
+# line 93
+<], >
+# line 93
+<==, >
+# line 93
+<INT_CONST, 0>
+# line 93
+<), >
+# line 94
+<RETURN, >
+# line 94
+<BOOLEAN_CONST, false>
+# line 94
+<;, >
+# line 95
+<}, >
+# line 97
+<RETURN, >
+# line 97
+<BOOLEAN_CONST, true>
+# line 97
+<;, >
+# line 98
+<}, >
+# line 101
+<ID, void>
+# line 101
+<ID, printBoard>
+# line 101
+<(, >
+# line 101
+<), >
+# line 101
+<{, >
+# line 102
+<ID, int>
+# line 102
+<ID, i>
+# line 102
+<=, >
+# line 102
+<INT_CONST, 0>
+# line 102
+<;, >
+# line 103
+<ID, io>
+# line 103
+<., >
+# line 103
+<ID, putString>
+# line 103
+<(, >
+# line 103
+<STRING_CONST, "\n", [length: 1] >
+# line 103
+<), >
+# line 103
+<;, >
+# line 104
+<FOR, >
+# line 104
+<(, >
+# line 104
+<ID, i>
+# line 104
+<=, >
+# line 104
+<INT_CONST, 0>
+# line 104
+<;, >
+# line 104
+<ID, i>
+# line 104
+<<, >
+# line 104
+<INT_CONST, 9>
+# line 104
+<;, >
+# line 104
+<ID, i>
+# line 104
+<++, >
+# line 104
+<), >
+# line 104
+<{, >
+# line 105
+<ID, printSquare>
+# line 105
+<(, >
+# line 105
+<ID, i>
+# line 105
+<), >
+# line 105
+<;, >
+# line 106
+<ID, io>
+# line 106
+<., >
+# line 106
+<ID, putString>
+# line 106
+<(, >
+# line 106
+<STRING_CONST, " ", [length: 1] >
+# line 106
+<), >
+# line 106
+<;, >
+# line 107
+<IF, >
+# line 107
+<(, >
+# line 107
+<ID, i>
+# line 107
+<%, >
+# line 107
+<INT_CONST, 3>
+# line 107
+<==, >
+# line 107
+<INT_CONST, 2>
+# line 107
+<), >
+# line 108
+<ID, io>
+# line 108
+<., >
+# line 108
+<ID, putString>
+# line 108
+<(, >
+# line 108
+<STRING_CONST, "\n", [length: 1] >
+# line 108
+<), >
+# line 108
+<;, >
+# line 109
+<}, >
+# line 110
+<ID, io>
+# line 110
+<., >
+# line 110
+<ID, putString>
+# line 110
+<(, >
+# line 110
+<STRING_CONST, "\n", [length: 1] >
+# line 110
+<), >
+# line 110
+<;, >
+# line 111
+<}, >
+# line 115
+<ID, void>
+# line 115
+<ID, printSquare>
+# line 115
+<(, >
+# line 115
+<ID, int>
+# line 115
+<ID, position>
+# line 115
+<), >
+# line 115
+<{, >
+# line 117
+<IF, >
+# line 117
+<(, >
+# line 117
+<ID, board>
+# line 117
+<[, >
+# line 117
+<ID, position>
+# line 117
+<], >
+# line 117
+<==, >
+# line 117
+<INT_CONST, 0>
+# line 117
+<), >
+# line 118
+<ID, io>
+# line 118
+<., >
+# line 118
+<ID, putInt>
+# line 118
+<(, >
+# line 118
+<(, >
+# line 118
+<ID, position>
+# line 118
+<+, >
+# line 118
+<INT_CONST, 1>
+# line 118
+<), >
+# line 118
+<), >
+# line 118
+<;, >
+# line 120
+<ELSE, >
+# line 120
+<IF, >
+# line 120
+<(, >
+# line 120
+<ID, board>
+# line 120
+<[, >
+# line 120
+<ID, position>
+# line 120
+<], >
+# line 120
+<==, >
+# line 120
+<INT_CONST, 1>
+# line 120
+<), >
+# line 121
+<ID, io>
+# line 121
+<., >
+# line 121
+<ID, putString>
+# line 121
+<(, >
+# line 121
+<STRING_CONST, "X", [length: 1] >
+# line 121
+<), >
+# line 121
+<;, >
+# line 123
+<ELSE, >
+# line 124
+<ID, io>
+# line 124
+<., >
+# line 124
+<ID, putString>
+# line 124
+<(, >
+# line 124
+<STRING_CONST, "O", [length: 1] >
+# line 124
+<), >
+# line 124
+<;, >
+# line 125
+<}, >
+# line 130
+<ID, void>
+# line 130
+<ID, getMove>
+# line 130
+<(, >
+# line 130
+<), >
+# line 130
+<{, >
+# line 132
+<WHILE, >
+# line 132
+<(, >
+# line 132
+<BOOLEAN_CONST, true>
+# line 132
+<), >
+# line 132
+<{, >
+# line 134
+<ID, io>
+# line 134
+<., >
+# line 134
+<ID, putString>
+# line 134
+<(, >
+# line 134
+<STRING_CONST, "Player ", [length: 7] >
+# line 134
+<), >
+# line 134
+<., >
+# line 134
+<ID, putInt>
+# line 134
+<(, >
+# line 134
+<ID, player>
+# line 134
+<), >
+# line 134
+<., >
+# line 134
+<ID, putString>
+# line 134
+<(, >
+# line 134
+<STRING_CONST, ", enter a position (1-9): ", [length: 26] >
+# line 134
+<), >
+# line 134
+<;, >
+# line 136
+<ID, int>
+# line 136
+<ID, position>
+# line 136
+<=, >
+# line 136
+<ID, io>
+# line 136
+<., >
+# line 136
+<ID, getInt>
+# line 136
+<(, >
+# line 136
+<), >
+# line 136
+<;, >
+# line 138
+<IF, >
+# line 138
+<(, >
+# line 138
+<ID, position>
+# line 138
+<<, >
+# line 138
+<INT_CONST, 1>
+# line 138
+<||, >
+# line 138
+<ID, position>
+# line 138
+<>, >
+# line 138
+<INT_CONST, 9>
+# line 138
+<), >
+# line 138
+<{, >
+# line 140
+<ID, io>
+# line 140
+<., >
+# line 140
+<ID, putString>
+# line 140
+<(, >
+# line 140
+<STRING_CONST, "Position must be between 1 and 9.\n", [length: 34] >
+# line 140
+<), >
+# line 140
+<;, >
+# line 141
+<}, >
+# line 143
+<ELSE, >
+# line 143
+<IF, >
+# line 143
+<(, >
+# line 143
+<ID, board>
+# line 143
+<[, >
+# line 143
+<(, >
+# line 143
+<ID, position>
+# line 143
+<-, >
+# line 143
+<INT_CONST, 1>
+# line 143
+<), >
+# line 143
+<], >
+# line 143
+<!=, >
+# line 143
+<INT_CONST, 0>
+# line 143
+<), >
+# line 143
+<{, >
+# line 145
+<ID, io>
+# line 145
+<., >
+# line 145
+<ID, putString>
+# line 145
+<(, >
+# line 145
+<STRING_CONST, "Position already taken.\n", [length: 24] >
+# line 145
+<), >
+# line 145
+<;, >
+# line 146
+<}, >
+# line 148
+<ELSE, >
+# line 148
+<{, >
+# line 149
+<ID, board>
+# line 149
+<[, >
+# line 149
+<(, >
+# line 149
+<ID, position>
+# line 149
+<-, >
+# line 149
+<INT_CONST, 1>
+# line 149
+<), >
+# line 149
+<], >
+# line 149
+<=, >
+# line 149
+<ID, player>
+# line 149
+<;, >
+# line 151
+<BREAK, >
+# line 151
+<;, >
+# line 152
+<}, >
+# line 153
+<}, >
+# line 154
+<}, >
+# line 155
+<}, >
+# line 155
+<EOF, >
