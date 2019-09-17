@@ -156,7 +156,15 @@ PARSER_BEGIN(Lexer)
        * */
      private static int computeLengthAndCheck(Token token) {
 
-      /* To be completed */
+      int length = token.length(); //can't find token class definition so this probably
+				   //isn't right
+
+      
+
+
+
+
+	/* To be completed */
       
       return -1;
     }
@@ -178,13 +186,13 @@ TOKEN : /* KEYWORDS and SPECIAL SYMBOLS */
   < CLASS: "class" >
 }
 
-TOKEN : /* CONSTANTS - FIXME: broken, only match "Foo", "Goo", or "Zoo" */
+TOKEN : /* CONSTANTS - FIXME: these three should be fine but look over*/
 {
-  < INT_CONST: "Foo" >
+  < INT_CONST: (["0"-"9"])+ >
 |
-  < BOOLEAN_CONST: "Goo" >
+  < BOOLEAN_CONST: ("false" | "true") >
 |
-  < STRING_CONST: "Zoo" >
+  < STRING_CONST: ("\"([a-zA-Z0-9])*\"") >
 }
 
 TOKEN : /* IDs - FIXME: broken, only match "Boo" */
