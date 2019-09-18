@@ -15,15 +15,27 @@ public interface LexerConstants {
   /** RegularExpression Id. */
   int EXTENDS = 2;
   /** RegularExpression Id. */
-  int NEW = 3;
+  int DO = 3;
   /** RegularExpression Id. */
-  int INT_CONST = 28;
+  int WHILE = 4;
   /** RegularExpression Id. */
-  int BOOLEAN_CONST = 29;
+  int ELSE_IF = 5;
   /** RegularExpression Id. */
-  int STRING_CONST = 30;
+  int IF = 6;
   /** RegularExpression Id. */
-  int ID = 31;
+  int ELSE = 7;
+  /** RegularExpression Id. */
+  int FOR = 8;
+  /** RegularExpression Id. */
+  int NEW = 9;
+  /** RegularExpression Id. */
+  int INT_CONST = 41;
+  /** RegularExpression Id. */
+  int BOOLEAN_CONST = 42;
+  /** RegularExpression Id. */
+  int STRING_CONST = 43;
+  /** RegularExpression Id. */
+  int ID = 44;
 
   /** Lexical state. */
   int DEFAULT = 0;
@@ -33,6 +45,12 @@ public interface LexerConstants {
     "<EOF>",
     "\"class\"",
     "\"extends\"",
+    "\"do\"",
+    "\"while\"",
+    "\"else if\"",
+    "\"if\"",
+    "\"else\"",
+    "\"for\"",
     "\"new\"",
     "\"<=\"",
     "\">=\"",
@@ -58,6 +76,13 @@ public interface LexerConstants {
     "\"$\"",
     "\"%\"",
     "\"^\"",
+    "\";\"",
+    "\".\"",
+    "\",\"",
+    "\"\\\"\"",
+    "\"\\\'\"",
+    "\"?\"",
+    "\"~\"",
     "<INT_CONST>",
     "<BOOLEAN_CONST>",
     "<STRING_CONST>",

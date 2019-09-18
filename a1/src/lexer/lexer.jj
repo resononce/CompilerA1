@@ -179,6 +179,18 @@ TOKEN : /* KEYWORDS and SPECIAL SYMBOLS others include brackets/parens/math symb
   |
   < EXTENDS: "extends" >
   |
+  < DO: "do" >
+  |
+  < WHILE: "while" >
+  |
+  < ELSE_IF: "else if" >
+  |
+  < IF: "if" >
+  |
+  < ELSE: "else" >
+  |
+  < FOR: "for" >
+  |
   < NEW: "new" >
   |
   < "<=" >
@@ -228,6 +240,20 @@ TOKEN : /* KEYWORDS and SPECIAL SYMBOLS others include brackets/parens/math symb
   < "%" >
   |
   < "^" >
+  |
+  < ";" >
+  |
+  < "." >
+  |
+  < "," >
+  |
+  < "\"" >
+  |
+  < "\'" >
+  |
+  < "?" >
+  |
+  < "~" >
 }
 
 TOKEN : /* CONSTANTS - FIXME: these three should be fine but look over*/
