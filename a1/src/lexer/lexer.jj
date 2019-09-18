@@ -226,19 +226,19 @@ TOKEN : /* KEYWORDS and SPECIAL SYMBOLS others include brackets/parens/math symb
   < "*" >
   |
   < "<" >
-  |
+  | 
   < ">" >
-  |
+  | 
   < "!" >
-  |
+  | 
   < "@" >
-  |
+  | 
   < "#" >
-  |
+  | 
   < "$" >
-  |
+  | 
   < "%" >
-  |
+  | 
   < "^" >
   |
   < ";" >
