@@ -155,10 +155,6 @@ PARSER_BEGIN(Lexer)
        *     characters.
        * */
      private static int computeLengthAndCheck(Token token) {
-
-      int length = token.length(); //can't find token class definition so this probably
-				   //isn't right
-
       
 
 
@@ -197,21 +193,21 @@ TOKEN : /* KEYWORDS and SPECIAL SYMBOLS others include brackets/parens/math symb
   |
   < NOTEQUAL: "!=" >
   |
-  < LPAREN: "\(" >
+  < LPAREN: "(" >
   |
-  < RPAREN: "\)" >
+  < RPAREN: ")" >
   |
-  < LBRACKET: "\{">
+  < LBRACKET: "{">
   |
-  < RBRACKET: "\}">
+  < RBRACKET: "}">
   |
-  < LSQBRACKET: "\[">
+  < LSQBRACKET: "[">
   |
   < RSQBRACKET: "]">
   |
   < ASSIGN: "=" >
   |
-  < PLUS: "\+" >
+  < PLUS: "+" >
   |
   < MINUS: "-" >
   |
@@ -219,7 +215,7 @@ TOKEN : /* KEYWORDS and SPECIAL SYMBOLS others include brackets/parens/math symb
   |
   < BSLASH: "\\" >
   |
-  < MULT: "\*" >
+  < MULT: "*" >
   |
   < LT: "<" >
   | 
@@ -236,8 +232,6 @@ TOKEN : /* KEYWORDS and SPECIAL SYMBOLS others include brackets/parens/math symb
   < PERCENT: "%" >
   | 
   < EXPONENT: "^" >
-  | 
-  < NOT: "!" >
 }
 
 TOKEN : /* CONSTANTS - FIXME: these three should be fine but look over*/
