@@ -156,13 +156,9 @@ PARSER_BEGIN(Lexer)
        * */
      private static int computeLengthAndCheck(Token token) {
       
-
-
-
-
-	/* To be completed */
-      
-      return -1;
+       String tkImage = token.toString();
+       int len = tkImage.length();
+      return len;
     }
 
   }
@@ -185,11 +181,11 @@ TOKEN : /* KEYWORDS and SPECIAL SYMBOLS others include brackets/parens/math symb
   |
   < NEW: "new" >
   |
-  < LTE: "<=" >
+  < <=: "<=" >
   |
-  < GTE: ">=" >
+  < <=: ">=" >
   |
-  < EQUAL: "==" >
+  < ==: "==" >
   |
   < NOTEQUAL: "!=" >
   |
@@ -240,7 +236,7 @@ TOKEN : /* CONSTANTS - FIXME: these three should be fine but look over*/
 |
   < BOOLEAN_CONST: ("false" | "true") >
 |
-  < STRING_CONST: ("\"([a-zA-Z0-9])*\"") >
+  < STRING_CONST: "\""(["a"-"z""A"-"Z""0"-"9"])*"\"" >
 }
 
 TOKEN : /* IDs - FIXME: broken, only match "Boo" includes "void" "main" class names etc.*/
