@@ -197,21 +197,21 @@ TOKEN : /* KEYWORDS and SPECIAL SYMBOLS others include brackets/parens/math symb
   |
   < NOTEQUAL: "!=" >
   |
-  < LPAREN: "(" >
+  < LPAREN: "\(" >
   |
-  < RPAREN: ")" >
+  < RPAREN: "\)" >
   |
-  < LBRACKET: "{">
+  < LBRACKET: "\{">
   |
-  < RBRACKET: "}">
+  < RBRACKET: "\}">
   |
-  < LSQBRACKET: "[">
+  < LSQBRACKET: "\[">
   |
   < RSQBRACKET: "]">
   |
   < ASSIGN: "=" >
   |
-  < PLUS: "+" >
+  < PLUS: "\+" >
   |
   < MINUS: "-" >
   |
@@ -219,7 +219,7 @@ TOKEN : /* KEYWORDS and SPECIAL SYMBOLS others include brackets/parens/math symb
   |
   < BSLASH: "\\" >
   |
-  < MULT: "*" >
+  < MULT: "\*" >
   |
   < LT: "<" >
   | 
