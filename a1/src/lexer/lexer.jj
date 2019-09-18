@@ -181,53 +181,53 @@ TOKEN : /* KEYWORDS and SPECIAL SYMBOLS others include brackets/parens/math symb
   |
   < NEW: "new" >
   |
-  < <= : "<=" >
+  < "<=" >
   |
-  < >=: ">=" >
+  < ">=" >
   |
-  < ==: "==" >
+  < "==" >
   |
-  < !=: "!=" >
+  < "!=" >
   |
-  < (: "(" >
+  < "(" >
   |
-  < ): ")" >
+  < ")" >
   |
-  < {: "{">
+  < "{">
   |
-  < }: "}">
+  < "}">
   |
-  < [: "[">
+  < "[">
   |
-  < ]: "]">
+  < "]">
   |
-  < =: "=" >
+  < "=" >
   |
-  < +: "+" >
+  < "+" >
   |
-  < -: "-" >
+  < "-" >
   |
-  < /: "/" >
+  < "/" >
   |
-  < \: "\\" >
+  < "\\" >
   |
-  < *: "*" >
+  < "*" >
   |
-  < <: "<" >
-  | 
-  < >: ">" >
-  | 
-  < !: "!" >
-  | 
-  < @: "@" >
-  | 
-  < #: "#" >
-  | 
-  < $: "$" >
-  | 
-  < %: "%" >
-  | 
-  < ^: "^" >
+  < "<" >
+  |
+  < ">" >
+  |
+  < "!" >
+  |
+  < "@" >
+  |
+  < "#" >
+  |
+  < "$" >
+  |
+  < "%" >
+  |
+  < "^" >
 }
 
 TOKEN : /* CONSTANTS - FIXME: these three should be fine but look over*/
@@ -236,7 +236,7 @@ TOKEN : /* CONSTANTS - FIXME: these three should be fine but look over*/
 |
   < BOOLEAN_CONST: ("false" | "true") >
 |
-  < STRING_CONST: "\""(["a"-"z""A"-"Z""0"-"9"])*"\"" >
+  < STRING_CONST: "\""(["a"-"z","A"-"Z","0"-"9"])*"\"" >
 }
 
 TOKEN : /* IDs - FIXME: broken, only match "Boo" includes "void" "main" class names etc.*/

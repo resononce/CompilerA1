@@ -126,13 +126,9 @@
        * */
      private static int computeLengthAndCheck(Token token) {
 
-
-
-
-
-        /* To be completed */
-
-      return -1;
+       String tkImage = token.toString();
+       int len = tkImage.length();
+      return len;
     }
 
   static private boolean jj_initialized_once = false;

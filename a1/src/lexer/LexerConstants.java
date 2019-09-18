@@ -17,54 +17,6 @@ public interface LexerConstants {
   /** RegularExpression Id. */
   int NEW = 3;
   /** RegularExpression Id. */
-  int LTE = 4;
-  /** RegularExpression Id. */
-  int GTE = 5;
-  /** RegularExpression Id. */
-  int EQUAL = 6;
-  /** RegularExpression Id. */
-  int NOTEQUAL = 7;
-  /** RegularExpression Id. */
-  int LPAREN = 8;
-  /** RegularExpression Id. */
-  int RPAREN = 9;
-  /** RegularExpression Id. */
-  int LBRACKET = 10;
-  /** RegularExpression Id. */
-  int RBRACKET = 11;
-  /** RegularExpression Id. */
-  int LSQBRACKET = 12;
-  /** RegularExpression Id. */
-  int RSQBRACKET = 13;
-  /** RegularExpression Id. */
-  int ASSIGN = 14;
-  /** RegularExpression Id. */
-  int PLUS = 15;
-  /** RegularExpression Id. */
-  int MINUS = 16;
-  /** RegularExpression Id. */
-  int FSLASH = 17;
-  /** RegularExpression Id. */
-  int BSLASH = 18;
-  /** RegularExpression Id. */
-  int MULT = 19;
-  /** RegularExpression Id. */
-  int LT = 20;
-  /** RegularExpression Id. */
-  int GT = 21;
-  /** RegularExpression Id. */
-  int NOT = 22;
-  /** RegularExpression Id. */
-  int AT = 23;
-  /** RegularExpression Id. */
-  int HASHTAG = 24;
-  /** RegularExpression Id. */
-  int DSIGN = 25;
-  /** RegularExpression Id. */
-  int PERCENT = 26;
-  /** RegularExpression Id. */
-  int EXPONENT = 27;
-  /** RegularExpression Id. */
   int INT_CONST = 28;
   /** RegularExpression Id. */
   int BOOLEAN_CONST = 29;
@@ -108,7 +60,7 @@ public interface LexerConstants {
     "\"^\"",
     "<INT_CONST>",
     "<BOOLEAN_CONST>",
-    "\"\\\"([a-zA-Z0-9])*\\\"\"",
+    "<STRING_CONST>",
     "\"Boo\"",
   };
 
