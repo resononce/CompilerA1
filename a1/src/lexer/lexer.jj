@@ -181,53 +181,53 @@ TOKEN : /* KEYWORDS and SPECIAL SYMBOLS others include brackets/parens/math symb
   |
   < NEW: "new" >
   |
-  < <=: "<=" >
+  < <= : "<=" >
   |
-  < <=: ">=" >
+  < >=: ">=" >
   |
   < ==: "==" >
   |
-  < NOTEQUAL: "!=" >
+  < !=: "!=" >
   |
-  < LPAREN: "(" >
+  < (: "(" >
   |
-  < RPAREN: ")" >
+  < ): ")" >
   |
-  < LBRACKET: "{">
+  < {: "{">
   |
-  < RBRACKET: "}">
+  < }: "}">
   |
-  < LSQBRACKET: "[">
+  < [: "[">
   |
-  < RSQBRACKET: "]">
+  < ]: "]">
   |
-  < ASSIGN: "=" >
+  < =: "=" >
   |
-  < PLUS: "+" >
+  < +: "+" >
   |
-  < MINUS: "-" >
+  < -: "-" >
   |
-  < FSLASH: "/" >
+  < /: "/" >
   |
-  < BSLASH: "\\" >
+  < \: "\\" >
   |
-  < MULT: "*" >
+  < *: "*" >
   |
-  < LT: "<" >
+  < <: "<" >
   | 
-  < GT: ">" >
+  < >: ">" >
   | 
-  < NOT: "!" >
+  < !: "!" >
   | 
-  < AT: "@" >
+  < @: "@" >
   | 
-  < HASHTAG: "#" >
+  < #: "#" >
   | 
-  < DSIGN: "$" >
+  < $: "$" >
   | 
-  < PERCENT: "%" >
+  < %: "%" >
   | 
-  < EXPONENT: "^" >
+  < ^: "^" >
 }
 
 TOKEN : /* CONSTANTS - FIXME: these three should be fine but look over*/
