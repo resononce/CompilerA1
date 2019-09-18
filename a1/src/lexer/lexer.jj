@@ -184,16 +184,60 @@ TOKEN_MGR_DECLS :
 TOKEN : /* KEYWORDS and SPECIAL SYMBOLS others include brackets/parens/math symbols/etc */
 {
   < CLASS: "class" >
-|
+  |
   < EXTENDS: "extends" >
-|
+  |
   < NEW: "new" >
-|
-  < =: "=" >
-|
-  < +: "+" >
-|
-  < <: "<" >
+  |
+  < LTE: "<=" >
+  |
+  < GTE: ">=" >
+  |
+  < EQUAL: "==" >
+  |
+  < NOTEQUAL: "!=" >
+  |
+  < LPAREN: "(" >
+  |
+  < RPAREN: ")" >
+  |
+  < LBRACKET: "{">
+  |
+  < RBRACKET: "}">
+  |
+  < LSQBRACKET: "[">
+  |
+  < RSQBRACKET: "]">
+  |
+  < ASSIGN: "=" >
+  |
+  < PLUS: "+" >
+  |
+  < MINUS: "-" >
+  |
+  < FSLASH: "/" >
+  |
+  < BSLASH: "\\" >
+  |
+  < MULT: "*" >
+  |
+  < LT: "<" >
+  | 
+  < GT: ">" >
+  | 
+  < NOT: "!" >
+  | 
+  < AT: "@" >
+  | 
+  < HASHTAG: "#" >
+  | 
+  < DSIGN: "$" >
+  | 
+  < PERCENT: "%" >
+  | 
+  < EXPONENT: "^" >
+  | 
+  < NOT: "!" >
 }
 
 TOKEN : /* CONSTANTS - FIXME: these three should be fine but look over*/
