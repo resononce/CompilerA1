@@ -86,7 +86,7 @@ public interface LexerConstants {
     "<INT_CONST>",
     "<BOOLEAN_CONST>",
     "<STRING_CONST>",
-    "\"Boo\"",
+    "<ID>",
   };
 
 }

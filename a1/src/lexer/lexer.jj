@@ -271,7 +271,7 @@ TOKEN : /* CONSTANTS - FIXME: these three should be fine but look over*/
 
 TOKEN : /* IDs - FIXME: broken, only match "Boo" includes "void" "main" class names etc.*/
 {
-  < ID: "Boo" >
+  < ID: ["A"-"Z","a"-"z"](["a"-"z","A"-"Z","0"-"9","_"])* >
 }
 
 <*>
