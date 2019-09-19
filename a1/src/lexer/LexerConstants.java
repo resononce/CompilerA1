@@ -86,6 +86,9 @@ public interface LexerConstants {
     "<BOOLEAN_CONST>",
     "<STRING_CONST>",
     "<ID>",
+    "<token of kind 44>",
+    "<token of kind 45>",
+    "<token of kind 46>",
   };
 
 }
