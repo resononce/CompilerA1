@@ -290,7 +290,7 @@ TOKEN : /* CONSTANTS - FIXME: these three should be fine but look over*/
 |
   < BOOLEAN_CONST: ("false" | "true") >
 |
-  < STRING_CONST: "\""(["a"-"z","A"-"Z","0"-"9","\\n","\t", "\"", "\\","\f"])*"\"" >
+  < STRING_CONST: "\""(["a"-"z","A"-"Z","0"-"9","\n","\t", "\"", "\\","\f"])*"\"" >
       { 
         if (image.length() > MAX_STRING_LENGTH)
         {
@@ -298,7 +298,8 @@ TOKEN : /* CONSTANTS - FIXME: these three should be fine but look over*/
                             Lexer.getCurrFilename(),
                             JavaCharStream.getBeginLine(),
                             "String constant is too long");
-        } else if (image.toString().contains("\n")) 
+        } 
+        else if (image.toString().contains("\n")) 
         {
           errorHandler.register(errorHandler.LEX_ERROR,
                                 Lexer.getCurrFilename(),
