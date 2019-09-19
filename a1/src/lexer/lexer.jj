@@ -220,6 +220,12 @@ TOKEN : /* KEYWORDS and SPECIAL SYMBOLS others include brackets/parens/math symb
   < "/" >
   |
   < "/*" >
+    {
+      errorHandler.register(errorHandler.LEX_ERROR,
+                            Lexer.getCurrFilename(),
+                            JavaCharStream.getBeginLine(),
+                            "Unterminated multi-line comment starting with /*");
+    }
   |
   < "*" >
   |
@@ -228,8 +234,24 @@ TOKEN : /* KEYWORDS and SPECIAL SYMBOLS others include brackets/parens/math symb
   < ">" >
   | 
   < "!" >
-  | 
+  |
+  < "\\"(~["n","f","t","\"","\\"]) > 
+    {
+      errorHandler.register(errorHandler.LEX_ERROR,
+                            Lexer.getCurrFilename(),
+                            JavaCharStream.getBeginLine(),
+                            "Illegal escape character: " + image.toString());
+    }
+  |
   < "%" >
+  |
+  < ("&"|"?"|"@") > 
+    {
+      errorHandler.register(errorHandler.LEX_ERROR,
+                            Lexer.getCurrFilename(),
+                            JavaCharStream.getBeginLine(),
+                            "Unsupported character: "+  image.toString());
+    }
   | 
   < ";" >
   |
@@ -240,15 +262,50 @@ TOKEN : /* KEYWORDS and SPECIAL SYMBOLS others include brackets/parens/math symb
   < "||" >
   |
   < "&&" >
+  |
+  < "\"" >
+    {
+      errorHandler.register(errorHandler.LEX_ERROR,
+                            Lexer.getCurrFilename(),
+                            JavaCharStream.getBeginLine(),
+                            "Unterminated string starting with \"");
+    }
 }
 
 TOKEN : /* CONSTANTS - FIXME: these three should be fine but look over*/
 {
   < INT_CONST: (["0"-"9"])+ >
+      {
+        try 
+        {
+          Integer.valueOf(image.toString());
+        } catch (Exception e)
+        {
+          errorHandler.register(errorHandler.LEX_ERROR,
+                                Lexer.getCurrFilename(),
+                                JavaCharStream.getBeginLine(),
+                                "Integer exceeds maximum value allowed: " + image.toString());
+        }
+      }
 |
   < BOOLEAN_CONST: ("false" | "true") >
 |
-  < STRING_CONST: "\""(["a"-"z","A"-"Z","0"-"9","\n","\t", "\"", "\\","\f"])*"\"" >
+  < STRING_CONST: "\""(["a"-"z","A"-"Z","0"-"9","\\n","\t", "\"", "\\","\f"])*"\"" >
+      { 
+        if (image.length() > MAX_STRING_LENGTH)
+        {
+           errorHandler.register(errorHandler.LEX_ERROR,
+                            Lexer.getCurrFilename(),
+                            JavaCharStream.getBeginLine(),
+                            "String constant is too long");
+        } else if (image.toString().contains("\n")) 
+        {
+          errorHandler.register(errorHandler.LEX_ERROR,
+                                Lexer.getCurrFilename(),
+                                JavaCharStream.getBeginLine(),
+                                "String spans more than one line");
+        }
+      }
 }
 
 TOKEN : /* IDs - FIXME: broken, only match "Boo" includes "void" "main" class names etc.*/
