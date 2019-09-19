@@ -179,8 +179,6 @@ TOKEN : /* KEYWORDS and SPECIAL SYMBOLS others include brackets/parens/math symb
   |
   < EXTENDS: "extends" >
   |
-  < DO: "do" >
-  |
   < WHILE: "while" >
   |
   < IF: "if" >
