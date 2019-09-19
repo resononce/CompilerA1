@@ -191,6 +191,16 @@ TOKEN : /* KEYWORDS and SPECIAL SYMBOLS others include brackets/parens/math symb
   |
   < NEW: "new" >
   |
+  < RETURN: "return" >
+  |
+  < WHILE: "while">
+  |
+  < FOR: "for" >
+  |
+  < ELSE: "else" >
+  |
+  < IF: "if" >
+  |
   < "<=" >
   |
   < ">=" >
@@ -268,7 +278,7 @@ TOKEN : /* IDs - FIXME: broken, only match "Boo" includes "void" "main" class na
 
 SKIP :
 {
-  <"//">
+
 }
 
 <*>
