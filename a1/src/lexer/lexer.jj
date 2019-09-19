@@ -193,14 +193,6 @@ TOKEN : /* KEYWORDS and SPECIAL SYMBOLS others include brackets/parens/math symb
   |
   < RETURN: "return" >
   |
-  < WHILE: "while">
-  |
-  < FOR: "for" >
-  |
-  < ELSE: "else" >
-  |
-  < IF: "if" >
-  |
   < "<=" >
   |
   < ">=" >
@@ -268,17 +260,12 @@ TOKEN : /* CONSTANTS - FIXME: these three should be fine but look over*/
 |
   < BOOLEAN_CONST: ("false" | "true") >
 |
-  < STRING_CONST: "\""(["a"-"z","A"-"Z","0"-"9"])*"\"" >
+  < STRING_CONST: "\""(["a"-"z","A"-"Z","0"-"9","\n","\t", "\"", "\\","\f"])*"\"" >
 }
 
 TOKEN : /* IDs - FIXME: broken, only match "Boo" includes "void" "main" class names etc.*/
 {
   < ID: ["A"-"Z","a"-"z"](["a"-"z","A"-"Z","0"-"9","_"])* >
-}
-
-SKIP :
-{
-
 }
 
 <*>
