@@ -168,6 +168,7 @@ TOKEN_MGR_DECLS :
 {
     // Use this for error handling
     public static ErrorHandler errorHandler = new ErrorHandler();
+    public static final int MAX_STRING_LENGTH = 5000;
 
 }
 
@@ -309,7 +310,7 @@ TOKEN : /* CONSTANTS - FIXME: these three should be fine but look over*/
       }
 }
 
-TOKEN : /* IDs - FIXME: broken, only match "Boo" includes "void" "main" class names etc.*/
+TOKEN : /* IDs - FIXME: broken, only match "Boo" / includes "void" "main" class names etc.*/
 {
   < ID: ["A"-"Z","a"-"z"](["a"-"z","A"-"Z","0"-"9","_"])* >
 }
@@ -317,8 +318,10 @@ TOKEN : /* IDs - FIXME: broken, only match "Boo" includes "void" "main" class na
 <*> 
 SKIP: {
   < " " | "\t" | "\r" | "\n" | "\r\n" >
-| <"//" (~["\n","\r"])* ("\n"|"\r"|"\r\n") >
-| <"/*"(~[""])*  "*""/" >
+  | 
+  <"//" (~["\n","\r"])* ("\n"|"\r"|"\r\n") >
+  | 
+  <"/*" ((~[" "]) | ([" "]))* "*/" >
 }
 
 <*>

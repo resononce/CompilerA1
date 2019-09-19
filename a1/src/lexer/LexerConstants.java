@@ -27,13 +27,13 @@ public interface LexerConstants {
   /** RegularExpression Id. */
   int RETURN = 8;
   /** RegularExpression Id. */
-  int INT_CONST = 34;
+  int INT_CONST = 37;
   /** RegularExpression Id. */
-  int BOOLEAN_CONST = 35;
+  int BOOLEAN_CONST = 38;
   /** RegularExpression Id. */
-  int STRING_CONST = 36;
+  int STRING_CONST = 39;
   /** RegularExpression Id. */
-  int ID = 37;
+  int ID = 40;
 
   /** Lexical state. */
   int DEFAULT = 0;
@@ -68,21 +68,22 @@ public interface LexerConstants {
     "\"<\"",
     "\">\"",
     "\"!\"",
+    "<token of kind 28>",
     "\"%\"",
+    "<token of kind 30>",
     "\";\"",
     "\".\"",
     "\",\"",
     "\"||\"",
     "\"&&\"",
+    "\"\\\"\"",
     "<INT_CONST>",
     "<BOOLEAN_CONST>",
     "<STRING_CONST>",
     "<ID>",
-    "<token of kind 38>",
-    "<token of kind 39>",
-    "<token of kind 40>",
     "<token of kind 41>",
     "<token of kind 42>",
+    "<token of kind 43>",
   };
 
 }
