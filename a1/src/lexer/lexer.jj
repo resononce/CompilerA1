@@ -1,4 +1,4 @@
-/* THIS IS Isaac Conlon's CODE FOR BITKRAKEN
+/* 
 
    Bantam Java Compiler and Language Toolset.
 
@@ -174,7 +174,8 @@ TOKEN_MGR_DECLS :
 
 /* modify/add your lexer rules below */
 
-TOKEN : /* KEYWORDS and SPECIAL SYMBOLS others include brackets/parens/math symbols/etc */
+TOKEN : /* KEYWORDS and SPECIAL SYMBOLS others include brackets/parens/math 
+        symbols/etc */
 {
   < CLASS: "class" >
   |
@@ -223,9 +224,9 @@ TOKEN : /* KEYWORDS and SPECIAL SYMBOLS others include brackets/parens/math symb
   < "/*" >
     {
       errorHandler.register(errorHandler.LEX_ERROR,
-                            Lexer.getCurrFilename(),
-                            JavaCharStream.getBeginLine(),
-                            "Unterminated multi-line comment starting with /*");
+                        Lexer.getCurrFilename(),
+                        JavaCharStream.getBeginLine(),
+                        "Unterminated multi-line comment starting with /*");
     }
   |
   < "*" >
@@ -285,7 +286,8 @@ TOKEN : /* CONSTANTS - FIXME: these three should be fine but look over*/
           errorHandler.register(errorHandler.LEX_ERROR,
                                 Lexer.getCurrFilename(),
                                 JavaCharStream.getBeginLine(),
-                                "Integer exceeds maximum value allowed: " + image.toString());
+                                "Integer exceeds maximum value allowed: " 
+                                + image.toString());
         }
       }
 |
@@ -309,7 +311,8 @@ TOKEN : /* CONSTANTS - FIXME: these three should be fine but look over*/
       }
 }
 
-TOKEN : /* IDs - FIXME: broken, only match "Boo" / includes "void" "main" class names etc.*/
+TOKEN : /* IDs - FIXME: broken, only match "Boo"
+       includes "void" "main" class names etc.*/
 {
   < ID: ["A"-"Z","a"-"z"](["a"-"z","A"-"Z","0"-"9","_"])* >
 }
