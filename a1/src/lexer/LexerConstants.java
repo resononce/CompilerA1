@@ -27,13 +27,15 @@ public interface LexerConstants {
   /** RegularExpression Id. */
   int NEW = 8;
   /** RegularExpression Id. */
-  int INT_CONST = 43;
+  int RETURN = 9;
   /** RegularExpression Id. */
-  int BOOLEAN_CONST = 44;
+  int INT_CONST = 40;
   /** RegularExpression Id. */
-  int STRING_CONST = 45;
+  int BOOLEAN_CONST = 41;
   /** RegularExpression Id. */
-  int ID = 46;
+  int STRING_CONST = 42;
+  /** RegularExpression Id. */
+  int ID = 43;
 
   /** Lexical state. */
   int DEFAULT = 0;
@@ -49,6 +51,7 @@ public interface LexerConstants {
     "\"else\"",
     "\"for\"",
     "\"new\"",
+    "\"return\"",
     "\"<=\"",
     "\">=\"",
     "\"==\"",
@@ -68,7 +71,6 @@ public interface LexerConstants {
     "\"<\"",
     "\">\"",
     "\"!\"",
-    "\"@\"",
     "\"#\"",
     "\"$\"",
     "\"%\"",
@@ -77,9 +79,6 @@ public interface LexerConstants {
     "\":\"",
     "\".\"",
     "\",\"",
-    "\"\\\"\"",
-    "\"\\\'\"",
-    "\"?\"",
     "\"~\"",
     "\"||\"",
     "\"&&\"",
