@@ -157,8 +157,29 @@ PARSER_BEGIN(Lexer)
        * */
      private static int computeLengthAndCheck(Token token) {
       
-       String tkImage = token.toString();
-       int len = tkImage.length();
+      String tkImage = token.toString();
+      int len = tkImage.length();
+      if(tkImage.charAt(0) == '"'){
+        len--;
+      }
+      if(tkImage.charAt(tkImage.length() - 1) == '"'){
+        len--;
+      }
+      for(int i = 0; i < tkImage.length() - 1; i++){
+        if(tkImage.charAt(i) == '\\' ){
+          System.out.println("found an escape character");
+          len--;
+          i++;
+        }else if(tkImage.charAt(i) == '\n' && tkImage.charAt(i) == '\r'){
+          len--;
+        }else if(tkImage.charAt(i) == '\n'){
+          len--;
+        }else if(tkImage.charAt(i) == '\t'){
+          len--;
+        }else if(tkImage.charAt(i) == '\r'){
+          len--;
+        }
+      }
       return len;
     }
 
@@ -322,7 +343,11 @@ TOKEN : /* CONSTANTS - FIXME: these three should be fine but look over*/
         }
         else if (image.toString().contains("\\")) 
         {
+<<<<<<< HEAD
           for(int i = 0; i < image.toString().length(); i++)
+=======
+          for(int i = 0; i < image.length(); i++)
+>>>>>>> master
           {
             if (image.charAt(i) == '\\')
             {
