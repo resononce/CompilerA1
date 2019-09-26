@@ -337,6 +337,7 @@ TOKEN : /* CONSTANTS - FIXME: these three should be fine but look over*/
           }
         }
       }
+}
 
 TOKEN: /* IDs - FIXME: broken, only match "Boo"
        includes "void" "main" class names etc.*/
