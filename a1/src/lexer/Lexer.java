@@ -127,7 +127,6 @@
      private static int computeLengthAndCheck(Token token) {
 
        String tkImage = token.toString();
-       tkImage = tkImage.substring(1,tkImage.length - 1); //length of string constant
        int len = tkImage.length();
       return len;
     }
