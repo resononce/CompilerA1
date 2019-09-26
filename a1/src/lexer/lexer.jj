@@ -156,9 +156,21 @@ PARSER_BEGIN(Lexer)
        *     characters.
        * */
      private static int computeLengthAndCheck(Token token) {
-      
-       String tkImage = token.toString();
-       int len = tkImage.length();
+      String tkImage = token.toString();
+      int len = tkImage.length();
+      if(tkImage.charAt(0) == '"'){
+        len--;
+      }
+      if(tkImage.charAt(tkImage.length() - 1) == '"'){
+        len--;
+      }
+      for(int i = 0; i < tkImage.length() - 1; i++){
+        if(tkImage.charAt(i) == '\\'){
+          System.out.println("found an escape character");
+          len--;
+          i++;
+        }
+      }
       return len;
     }
 
@@ -320,13 +332,6 @@ TOKEN : /* CONSTANTS - FIXME: these three should be fine but look over*/
                                 JavaCharStream.getBeginLine(),
                                 "String spans more than one line");
         }
-        else if () 
-        {
-          errorHandler.register(errorHandler.LEX_ERROR,
-                            Lexer.getCurrFilename(),
-                            JavaCharStream.getBeginLine(),
-                            "Illegal escape character: " + image.toString());
-        }
       }
 }
 
@@ -336,13 +341,13 @@ TOKEN : /* IDs - FIXME: broken, only match "Boo"
   < ID: ["A"-"Z","a"-"z"](["a"-"z","A"-"Z","0"-"9","_"])* >
 }
 
-<*> 
+
 SKIP: {
   < " " | "\t" | "\r" | "\n" | "\r\n" >
   | 
   <"//" (~["\n","\r"])* ("\n"|"\r"|"\r\n") >
   | 
-  <"/*" ((~[" "]) | ([" "]))* "*/" >
+  <"/*" ((~["*"]) | "*"~["/"])* "*/" >
 }
 
 <*>

@@ -27,13 +27,77 @@ public interface LexerConstants {
   /** RegularExpression Id. */
   int RETURN = 8;
   /** RegularExpression Id. */
-  int INT_CONST = 37;
+  int LTE = 9;
   /** RegularExpression Id. */
-  int BOOLEAN_CONST = 38;
+  int GTE = 10;
   /** RegularExpression Id. */
-  int STRING_CONST = 39;
+  int EQUAL = 11;
   /** RegularExpression Id. */
-  int ID = 40;
+  int NOT_EQUAL = 12;
+  /** RegularExpression Id. */
+  int LPAREN = 13;
+  /** RegularExpression Id. */
+  int RPAREN = 14;
+  /** RegularExpression Id. */
+  int LBRACKET = 15;
+  /** RegularExpression Id. */
+  int RBRACKET = 16;
+  /** RegularExpression Id. */
+  int LBRACE = 17;
+  /** RegularExpression Id. */
+  int RBRACE = 18;
+  /** RegularExpression Id. */
+  int ASSIGN = 19;
+  /** RegularExpression Id. */
+  int PLUS = 20;
+  /** RegularExpression Id. */
+  int INCREMENT = 21;
+  /** RegularExpression Id. */
+  int SUB = 22;
+  /** RegularExpression Id. */
+  int DECREMENT = 23;
+  /** RegularExpression Id. */
+  int DIV = 24;
+  /** RegularExpression Id. */
+  int MULTICOMMENT = 25;
+  /** RegularExpression Id. */
+  int TIMES = 26;
+  /** RegularExpression Id. */
+  int LT = 27;
+  /** RegularExpression Id. */
+  int GT = 28;
+  /** RegularExpression Id. */
+  int NOT = 29;
+  /** RegularExpression Id. */
+  int MOD = 30;
+  /** RegularExpression Id. */
+  int UNSUPPORTED = 31;
+  /** RegularExpression Id. */
+  int SEMICOLON = 32;
+  /** RegularExpression Id. */
+  int PERIOD = 33;
+  /** RegularExpression Id. */
+  int COMMA = 34;
+  /** RegularExpression Id. */
+  int OR = 35;
+  /** RegularExpression Id. */
+  int AND = 36;
+  /** RegularExpression Id. */
+  int SINGLE_QUOTE = 37;
+  /** RegularExpression Id. */
+  int BREAK = 38;
+  /** RegularExpression Id. */
+  int INSTANCEOF = 39;
+  /** RegularExpression Id. */
+  int SWITCH = 40;
+  /** RegularExpression Id. */
+  int INT_CONST = 41;
+  /** RegularExpression Id. */
+  int BOOLEAN_CONST = 42;
+  /** RegularExpression Id. */
+  int STRING_CONST = 43;
+  /** RegularExpression Id. */
+  int ID = 44;
 
   /** Lexical state. */
   int DEFAULT = 0;
@@ -61,29 +125,33 @@ public interface LexerConstants {
     "\"]\"",
     "\"=\"",
     "\"+\"",
+    "\"++\"",
     "\"-\"",
+    "\"--\"",
     "\"/\"",
     "\"/*\"",
     "\"*\"",
     "\"<\"",
     "\">\"",
     "\"!\"",
-    "<token of kind 28>",
     "\"%\"",
-    "<token of kind 30>",
+    "<UNSUPPORTED>",
     "\";\"",
     "\".\"",
     "\",\"",
     "\"||\"",
     "\"&&\"",
     "\"\\\"\"",
+    "\"break\"",
+    "\"instanceof\"",
+    "\"switch\"",
     "<INT_CONST>",
     "<BOOLEAN_CONST>",
     "<STRING_CONST>",
     "<ID>",
-    "<token of kind 41>",
-    "<token of kind 42>",
-    "<token of kind 43>",
+    "<token of kind 45>",
+    "<token of kind 46>",
+    "<token of kind 47>",
   };
 
 }
