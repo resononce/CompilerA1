@@ -320,21 +320,12 @@ TOKEN : /* CONSTANTS - FIXME: these three should be fine but look over*/
                                 JavaCharStream.getBeginLine(),
                                 "String spans more than one line");
         }
-        else if (image.toString().contains("\\")) 
+        else if () 
         {
-          for(int i = 0; i < image.length; i++)
-          {
-            if (image.charAt(i) == '\\')
-            {
-              if(!(image.charAt(i+1) == 'n' | image.charAt(i+1) == 'f' |image.charAt(i+1) == 't' |image.charAt(i+1) == '\"' |image.charAt(i+1) == '\\'))
-              {
-                errorHandler.register(errorHandler.LEX_ERROR,
+          errorHandler.register(errorHandler.LEX_ERROR,
                             Lexer.getCurrFilename(),
                             JavaCharStream.getBeginLine(),
                             "Illegal escape character: " + image.toString());
-              }
-            }
-          }
         }
       }
 }

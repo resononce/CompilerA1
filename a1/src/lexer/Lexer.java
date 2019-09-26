@@ -125,9 +125,21 @@
        *     characters.
        * */
      private static int computeLengthAndCheck(Token token) {
-
-       String tkImage = token.toString();
-       int len = tkImage.length();
+      String tkImage = token.toString();
+      int len = tkImage.length();
+      if(tkImage.charAt(0) == '"'){
+        len--;
+      }
+      if(tkImage.charAt(tkImage.length() - 1) == '"'){
+        len--;
+      }
+      for(int i = 0; i < tkImage.length() - 1; i++){
+        if(tkImage.charAt(i) == '\u005c\u005c'){
+          System.out.println("found an escape character");
+          len--;
+          i++;
+        }
+      }
       return len;
     }
 
@@ -285,7 +297,7 @@
   /** Generate ParseException. */
   static public ParseException generateParseException() {
     jj_expentries.clear();
-    boolean[] la1tokens = new boolean[44];
+    boolean[] la1tokens = new boolean[48];
     if (jj_kind >= 0) {
       la1tokens[jj_kind] = true;
       jj_kind = -1;
@@ -302,7 +314,7 @@
         }
       }
     }
-    for (int i = 0; i < 44; i++) {
+    for (int i = 0; i < 48; i++) {
       if (la1tokens[i]) {
         jj_expentry = new int[1];
         jj_expentry[0] = i;
