@@ -1,2 +1,2 @@
-java -classpath "C:\Users\lopeze37\Desktop\CompilerA1\a1\src" Main %*
+java -classpath "C:\Users\conloi24\Documents\CompilerA1\a1\src" Main %*
     

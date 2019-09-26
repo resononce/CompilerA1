@@ -322,21 +322,22 @@ TOKEN : /* CONSTANTS - FIXME: these three should be fine but look over*/
         }
         else if (image.toString().contains("\\")) 
         {
-          for(int i = 0; i < image.length; i++)
+          for(int i = 0; i < image.toString().length(); i++)
           {
             if (image.charAt(i) == '\\')
             {
-              if(!(image.charAt(i+1) == 'n' | image.charAt(i+1) == 'f' |image.charAt(i+1) == 't' |image.charAt(i+1) == '\"' |image.charAt(i+1) == '\\'))
+              if(image.charAt(i+1) != 'n' && image.charAt(i+1) != 'f' && image.charAt(i+1) != 't' && image.charAt(i+1) != '\"' && image.charAt(i+1) != '\\' && image.charAt(i+1) != ' ')
               {
                 errorHandler.register(errorHandler.LEX_ERROR,
                             Lexer.getCurrFilename(),
                             JavaCharStream.getBeginLine(),
-                            "Illegal escape character: " + image.toString());
+                            "Illegal escape character: " + image.charAt(i) + image.charAt(i+1));
               }
             }
           }
         }
       }
+}
 
 TOKEN: /* IDs - FIXME: broken, only match "Boo"
        includes "void" "main" class names etc.*/
