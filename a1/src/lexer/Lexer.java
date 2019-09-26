@@ -126,8 +126,21 @@
        * */
      private static int computeLengthAndCheck(Token token) {
 
-       String tkImage = token.toString();
-       int len = tkImage.length();
+      String tkImage = token.toString();
+      int len = tkImage.length();
+      if(tkImage.charAt(0) == '"'){
+        len--;
+      }
+      if(tkImage.charAt(tkImage.length() - 1) == '"'){
+        len--;
+      }
+      for(int i = 0; i < tkImage.length() - 1; i++){
+        if(tkImage.charAt(i) == '\u005c\u005c' ){
+          System.out.println("found an escape character");
+          len--;
+          i++;
+        }
+      }
       return len;
     }
 

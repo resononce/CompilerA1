@@ -971,7 +971,7 @@ static void TokenLexicalActions(Token matchedToken)
         }
         else if (image.toString().contains("\u005c\u005c"))
         {
-          for(int i = 0; i < image.length; i++)
+          for(int i = 0; i < image.length(); i++)
           {
             if (image.charAt(i) == '\u005c\u005c')
             {
