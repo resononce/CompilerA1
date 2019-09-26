@@ -294,7 +294,7 @@ TOKEN : /* CONSTANTS - FIXME: these three should be fine but look over*/
 |
   < BOOLEAN_CONST: ("false" | "true") >
 |
-  < STRING_CONST: "\"" ((~["\"", ";"]) | ["\""])* "\"">
+  < STRING_CONST: "\"" (~["\\","\""] | "\\"~[" "] | "\\ ")*"\"">
       { 
         if (image.length() > MAX_STRING_LENGTH)
         {
