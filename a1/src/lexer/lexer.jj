@@ -194,35 +194,39 @@ TOKEN : /* KEYWORDS and SPECIAL SYMBOLS others include brackets/parens/math
   |
   < RETURN: "return" >
   |
-  < "<=" >
+  < LTE: "<=" >
   |
-  < ">=" >
+  < GTE: ">=" >
   |
-  < "==" >
+  < EQUAL: "==" >
   |
-  < "!=" >
+  < NOT_EQUAL: "!=" >
   |
-  < "(" >
+  < LPAREN: "(" >
   |
-  < ")" >
+  < RPAREN: ")" >
   |
-  < "{">
+  < LBRACKET: "{">
   |
-  < "}">
+  < RBRACKET: "}">
   |
-  < "[">
+  < LBRACE: "[">
   |
-  < "]">
+  < RBRACE: "]">
   |
-  < "=" >
+  < ASSIGN: "=" >
   |
-  < "+" >
+  < PLUS: "+" >
   |
-  < "-" >
+  <INCREMENT: "++">
   |
-  < "/" >
+  < SUB: "-" >
   |
-  < "/*" >
+  <DECREMENT: "--">
+  |
+  < DIV: "/" >
+  |
+  < MULTICOMMENT: "/*" >
     {
       errorHandler.register(errorHandler.LEX_ERROR,
                         Lexer.getCurrFilename(),
@@ -230,25 +234,25 @@ TOKEN : /* KEYWORDS and SPECIAL SYMBOLS others include brackets/parens/math
                         "Unterminated multi-line comment starting with /*");
     }
   |
-  < "*" >
+  < TIMES: "*" >
   |
-  < "<" >
+  < LT: "<" >
   | 
-  < ">" >
+  < GT: ">" >
   | 
-  < "!" >
+  < NOT: "!" >
   |
-  < "\\"(~["n","f","t","\"","\\"]) > 
+  /*< "\\"(~["n","f","t","\"","\\"]) > 
     {
       errorHandler.register(errorHandler.LEX_ERROR,
                             Lexer.getCurrFilename(),
                             JavaCharStream.getBeginLine(),
                             "Illegal escape character: " + image.toString());
     }
+  |*/
+  < MOD: "%" >
   |
-  < "%" >
-  |
-  < ("&"|"?"|"@") > 
+  < UNSUPPORTED: ("&"|"?"|"@") > 
     {
       errorHandler.register(errorHandler.LEX_ERROR,
                             Lexer.getCurrFilename(),
@@ -256,23 +260,29 @@ TOKEN : /* KEYWORDS and SPECIAL SYMBOLS others include brackets/parens/math
                             "Unsupported character: "+  image.toString());
     }
   | 
-  < ";" >
+  < SEMICOLON: ";" >
   |
-  < "." >
+  < PERIOD: "." >
   |
-  < "," >
+  < COMMA: "," >
   |
-  < "||" >
+  < OR : "||" >
   |
-  < "&&" >
+  < AND: "&&" >
   |
-  < "\"" >
+  < SINGLE_QUOTE: "\"" >
     {
       errorHandler.register(errorHandler.LEX_ERROR,
                             Lexer.getCurrFilename(),
                             JavaCharStream.getBeginLine(),
                             "Unterminated string starting with \"");
     }
+  |
+  <BREAK: "break">
+  |
+  <INSTANCEOF: "instanceof">
+  |
+  <SWITCH: "switch">
 }
 
 TOKEN : /* CONSTANTS - FIXME: these three should be fine but look over*/
@@ -309,6 +319,13 @@ TOKEN : /* CONSTANTS - FIXME: these three should be fine but look over*/
                                 Lexer.getCurrFilename(),
                                 JavaCharStream.getBeginLine(),
                                 "String spans more than one line");
+        }
+        else if () 
+        {
+          errorHandler.register(errorHandler.LEX_ERROR,
+                            Lexer.getCurrFilename(),
+                            JavaCharStream.getBeginLine(),
+                            "Illegal escape character: " + image.toString());
         }
       }
 }
