@@ -953,39 +953,6 @@ static void TokenLexicalActions(Token matchedToken)
                                 + image.toString());
         }
          break;
-      case 43 :
-        image.append(input_stream.GetSuffix(jjimageLen + (lengthOfMatch = jjmatchedPos + 1)));
-        if (image.length() > MAX_STRING_LENGTH)
-        {
-           errorHandler.register(errorHandler.LEX_ERROR,
-                            Lexer.getCurrFilename(),
-                            JavaCharStream.getBeginLine(),
-                            "String constant is too long");
-        }
-        else if (image.toString().contains("\u005cn"))
-        {
-          errorHandler.register(errorHandler.LEX_ERROR,
-                                Lexer.getCurrFilename(),
-                                JavaCharStream.getBeginLine(),
-                                "String spans more than one line");
-        }
-        else if (image.toString().contains("\u005c\u005c"))
-        {
-          for(int i = 0; i < image.toString().length(); i++)
-          {
-            if (image.charAt(i) == '\u005c\u005c')
-            {
-              if(image.charAt(i+1) != 'n' && image.charAt(i+1) != 'f' && image.charAt(i+1) != 't' && image.charAt(i+1) != '\u005c"' && image.charAt(i+1) != '\u005c\u005c' && image.charAt(i+1) != ' ')
-              {
-                errorHandler.register(errorHandler.LEX_ERROR,
-                            Lexer.getCurrFilename(),
-                            JavaCharStream.getBeginLine(),
-                            "Illegal escape character: " + image.charAt(i) + image.charAt(i+1));
-              }
-            }
-          }
-        }
-         break;
       default :
          break;
    }
