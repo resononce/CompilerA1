@@ -156,9 +156,17 @@ PARSER_BEGIN(Lexer)
        *     characters.
        * */
      private static int computeLengthAndCheck(Token token) {
-      
+
       String tkImage = token.toString();
       int len = tkImage.length();
+      if (tkImage.length() > MAX_STRING_LENGTH)
+      {
+        errorHandler.register(errorHandler.LEX_ERROR,
+                              Lexer.getCurrFilename(),
+                              JavaCharStream.getBeginLine(),
+                              "String constant is too long");
+      }
+
       if(tkImage.charAt(0) == '"'){
         len--;
       }
@@ -172,13 +180,26 @@ PARSER_BEGIN(Lexer)
           i++;
         }else if(tkImage.charAt(i) == '\n' && tkImage.charAt(i) == '\r'){
           len--;
+          /*errorHandler.register(errorHandler.LEX_ERROR,
+                                Lexer.getCurrFilename(),
+                                JavaCharStream.getBeginLine(),
+                                "String spans more than one line");*/ //not sure if in this "elseif" or next
         }else if(tkImage.charAt(i) == '\n'){
           len--;
         }else if(tkImage.charAt(i) == '\t'){
           len--;
-        }else if(tkImage.charAt(i) == '\r'){
+        }/*else if(tkImage.charAt(i) == '\\'){
           len--;
-        }
+        }else if(tkImage.charAt(i) == '\"'){
+          len--;
+        }*/else if(tkImage.charAt(i) == '\r'){
+          len--;
+        }/*else{
+          errorHandler.register(errorHandler.LEX_ERROR,
+                            Lexer.getCurrFilename(),
+                            JavaCharStream.getBeginLine(),
+                            "Illegal escape character: " + image.charAt(i) + image.charAt(i+1));
+        }*/
       }
       return len;
     }
@@ -326,7 +347,7 @@ TOKEN : /* CONSTANTS - FIXME: these three should be fine but look over*/
   < BOOLEAN_CONST: ("false" | "true") >
 |
   < STRING_CONST: "\"" (~["\\","\""] | "\\"~[" "] | "\\ ")*"\"">
-      { 
+      /*{ 
         if (image.length() > MAX_STRING_LENGTH)
         {
            errorHandler.register(errorHandler.LEX_ERROR,
@@ -343,11 +364,7 @@ TOKEN : /* CONSTANTS - FIXME: these three should be fine but look over*/
         }
         else if (image.toString().contains("\\")) 
         {
-<<<<<<< HEAD
           for(int i = 0; i < image.toString().length(); i++)
-=======
-          for(int i = 0; i < image.length(); i++)
->>>>>>> master
           {
             if (image.charAt(i) == '\\')
             {
@@ -361,7 +378,7 @@ TOKEN : /* CONSTANTS - FIXME: these three should be fine but look over*/
             }
           }
         }
-      }
+      }*/
 }
 
 TOKEN: /* IDs - FIXME: broken, only match "Boo"
