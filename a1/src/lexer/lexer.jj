@@ -161,7 +161,7 @@ PARSER_BEGIN(Lexer)
       int len = tkImage.length();
       if (tkImage.length() > MAX_STRING_LENGTH)
       {
-        errorHandler.register(errorHandler.LEX_ERROR,
+        token_source.errorHandler.register(token_source.errorHandler.LEX_ERROR,
                               Lexer.getCurrFilename(),
                               JavaCharStream.getBeginLine(),
                               "String constant is too long");
@@ -178,28 +178,34 @@ PARSER_BEGIN(Lexer)
           System.out.println("found an escape character");
           len--;
           i++;
-        }else if(tkImage.charAt(i) == '\n' && tkImage.charAt(i) == '\r'){
+          if(tkImage.charAt(i) != 'n' && tkImage.charAt(i) != 'f' && tkImage.charAt(i) != 't' && tkImage.charAt(i) != '\"' && tkImage.charAt(i) != '\\' && tkImage.charAt(i) != ' ')
+          {
+            token_source.errorHandler.register(token_source.errorHandler.LEX_ERROR,
+                            Lexer.getCurrFilename(),
+                            JavaCharStream.getBeginLine(),
+                            "Illegal escape character: " + tkImage.charAt(i-1) + tkImage.charAt(i));
+          }
+        }//else if(tkImage.charAt(i) == '\n' && tkImage.charAt(i) == '\r'){
+          //len--;
+          //token_source.errorHandler.register(token_source.errorHandler.LEX_ERROR,
+            //                    Lexer.getCurrFilename(),
+              //                  JavaCharStream.getBeginLine(),
+                //                "String spans more than one line"); //not sure if in this "elseif" or next
+        /*}*/else if(tkImage.charAt(i) == '\n'){
           len--;
-          /*errorHandler.register(errorHandler.LEX_ERROR,
+          token_source.errorHandler.register(token_source.errorHandler.LEX_ERROR,
                                 Lexer.getCurrFilename(),
                                 JavaCharStream.getBeginLine(),
-                                "String spans more than one line");*/ //not sure if in this "elseif" or next
-        }else if(tkImage.charAt(i) == '\n'){
-          len--;
+                                "String spans more than one line");
         }else if(tkImage.charAt(i) == '\t'){
           len--;
-        }/*else if(tkImage.charAt(i) == '\\'){
+        }else if(tkImage.charAt(i) == '\\'){
           len--;
         }else if(tkImage.charAt(i) == '\"'){
           len--;
-        }*/else if(tkImage.charAt(i) == '\r'){
+        }else if(tkImage.charAt(i) == '\r'){
           len--;
-        }/*else{
-          errorHandler.register(errorHandler.LEX_ERROR,
-                            Lexer.getCurrFilename(),
-                            JavaCharStream.getBeginLine(),
-                            "Illegal escape character: " + image.charAt(i) + image.charAt(i+1));
-        }*/
+        }
       }
       return len;
     }
