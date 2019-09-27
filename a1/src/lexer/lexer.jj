@@ -185,13 +185,9 @@ PARSER_BEGIN(Lexer)
                             JavaCharStream.getBeginLine(),
                             "Illegal escape character: " + tkImage.charAt(i-1) + tkImage.charAt(i));
           }
-        }//else if(tkImage.charAt(i) == '\n' && tkImage.charAt(i) == '\r'){
+        }/*else if(tkImage.charAt(i) == '\n' && tkImage.charAt(i) == '\r'){
           //len--;
-          //token_source.errorHandler.register(token_source.errorHandler.LEX_ERROR,
-            //                    Lexer.getCurrFilename(),
-              //                  JavaCharStream.getBeginLine(),
-                //                "String spans more than one line"); //not sure if in this "elseif" or next
-        /*}*/else if(tkImage.charAt(i) == '\n'){
+        }*/else if(tkImage.charAt(i) == '\n'){
           len--;
           token_source.errorHandler.register(token_source.errorHandler.LEX_ERROR,
                                 Lexer.getCurrFilename(),
@@ -290,14 +286,6 @@ TOKEN : /* KEYWORDS and SPECIAL SYMBOLS others include brackets/parens/math
   | 
   < NOT: "!" >
   |
-  /*< "\\"(~["n","f","t","\"","\\"]) > 
-    {
-      errorHandler.register(errorHandler.LEX_ERROR,
-                            Lexer.getCurrFilename(),
-                            JavaCharStream.getBeginLine(),
-                            "Illegal escape character: " + image.toString());
-    }
-  |*/
   < MOD: "%" >
   |
   < UNSUPPORTED: ("&"|"?"|"@") > 
@@ -353,38 +341,6 @@ TOKEN : /* CONSTANTS - FIXME: these three should be fine but look over*/
   < BOOLEAN_CONST: ("false" | "true") >
 |
   < STRING_CONST: "\"" (~["\\","\""] | "\\"~[" "] | "\\ ")*"\"">
-      /*{ 
-        if (image.length() > MAX_STRING_LENGTH)
-        {
-           errorHandler.register(errorHandler.LEX_ERROR,
-                            Lexer.getCurrFilename(),
-                            JavaCharStream.getBeginLine(),
-                            "String constant is too long");
-        } 
-        else if (image.toString().contains("\n")) 
-        {
-          errorHandler.register(errorHandler.LEX_ERROR,
-                                Lexer.getCurrFilename(),
-                                JavaCharStream.getBeginLine(),
-                                "String spans more than one line");
-        }
-        else if (image.toString().contains("\\")) 
-        {
-          for(int i = 0; i < image.toString().length(); i++)
-          {
-            if (image.charAt(i) == '\\')
-            {
-              if(image.charAt(i+1) != 'n' && image.charAt(i+1) != 'f' && image.charAt(i+1) != 't' && image.charAt(i+1) != '\"' && image.charAt(i+1) != '\\' && image.charAt(i+1) != ' ')
-              {
-                errorHandler.register(errorHandler.LEX_ERROR,
-                            Lexer.getCurrFilename(),
-                            JavaCharStream.getBeginLine(),
-                            "Illegal escape character: " + image.charAt(i) + image.charAt(i+1));
-              }
-            }
-          }
-        }
-      }*/
 }
 
 TOKEN: /* IDs - FIXME: broken, only match "Boo"
