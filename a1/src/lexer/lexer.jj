@@ -179,19 +179,15 @@ PARSER_BEGIN(Lexer)
                             "Illegal escape character: " + tkImage.charAt(i-1) + tkImage.charAt(i));
           }
         }else if(tkImage.charAt(i) == '\n'){
-          len--;
+          len--;       
           token_source.errorHandler.register(token_source.errorHandler.LEX_ERROR,
                                 Lexer.getCurrFilename(),
                                 JavaCharStream.getBeginLine(),
                                 "String spans more than one line");
-        }else if(tkImage.charAt(i) == '\t'){
-          len--;
+        }else if(tkImage.charAt(i) == '\t'){        
         }else if(tkImage.charAt(i) == '\\'){
-          len--;
         }else if(tkImage.charAt(i) == '\"'){
-          len--;
         }else if(tkImage.charAt(i) == '\r'){
-          len--;
         }
       }
       if (tkImage.length() > MAX_STRING_LENGTH)

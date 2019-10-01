@@ -154,26 +154,16 @@
                             JavaCharStream.getBeginLine(),
                             "Illegal escape character: " + tkImage.charAt(i-1) + tkImage.charAt(i));
           }
-        }//else if(tkImage.charAt(i) == '\n' && tkImage.charAt(i) == '\r'){
-          //len--;
-          //token_source.errorHandler.register(token_source.errorHandler.LEX_ERROR,
-            //                    Lexer.getCurrFilename(),
-              //                  JavaCharStream.getBeginLine(),
-                //                "String spans more than one line"); //not sure if in this "elseif" or next
-        /*}*/else if(tkImage.charAt(i) == '\u005cn'){
+        }else if(tkImage.charAt(i) == '\u005cn'){
           len--;
           token_source.errorHandler.register(token_source.errorHandler.LEX_ERROR,
                                 Lexer.getCurrFilename(),
                                 JavaCharStream.getBeginLine(),
                                 "String spans more than one line");
         }else if(tkImage.charAt(i) == '\u005ct'){
-          len--;
         }else if(tkImage.charAt(i) == '\u005c\u005c'){
-          len--;
         }else if(tkImage.charAt(i) == '\u005c"'){
-          len--;
         }else if(tkImage.charAt(i) == '\u005cr'){
-          len--;
         }
       }
       return len;
