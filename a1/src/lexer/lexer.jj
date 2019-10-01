@@ -159,14 +159,7 @@ PARSER_BEGIN(Lexer)
 
       String tkImage = token.toString();
       int len = tkImage.length();
-      if (tkImage.length() > MAX_STRING_LENGTH)
-      {
-        token_source.errorHandler.register(token_source.errorHandler.LEX_ERROR,
-                              Lexer.getCurrFilename(),
-                              JavaCharStream.getBeginLine(),
-                              "String constant is too long");
-      }
-
+      
       if(tkImage.charAt(0) == '"'){
         len--;
       }
@@ -185,9 +178,7 @@ PARSER_BEGIN(Lexer)
                             JavaCharStream.getBeginLine(),
                             "Illegal escape character: " + tkImage.charAt(i-1) + tkImage.charAt(i));
           }
-        }/*else if(tkImage.charAt(i) == '\n' && tkImage.charAt(i) == '\r'){
-          //len--;
-        }*/else if(tkImage.charAt(i) == '\n'){
+        }else if(tkImage.charAt(i) == '\n'){
           len--;
           token_source.errorHandler.register(token_source.errorHandler.LEX_ERROR,
                                 Lexer.getCurrFilename(),
@@ -202,6 +193,13 @@ PARSER_BEGIN(Lexer)
         }else if(tkImage.charAt(i) == '\r'){
           len--;
         }
+      }
+      if (tkImage.length() > MAX_STRING_LENGTH)
+      {
+        token_source.errorHandler.register(token_source.errorHandler.LEX_ERROR,
+                              Lexer.getCurrFilename(),
+                              JavaCharStream.getBeginLine(),
+                              "String constant is too long");
       }
       return len;
     }
