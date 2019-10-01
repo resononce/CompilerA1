@@ -128,13 +128,6 @@
 
       String tkImage = token.toString();
       int len = tkImage.length();
-      if (tkImage.length() > MAX_STRING_LENGTH)
-      {
-        token_source.errorHandler.register(token_source.errorHandler.LEX_ERROR,
-                              Lexer.getCurrFilename(),
-                              JavaCharStream.getBeginLine(),
-                              "String constant is too long");
-      }
 
       if(tkImage.charAt(0) == '"'){
         len--;
@@ -165,6 +158,13 @@
         }else if(tkImage.charAt(i) == '\u005c"'){
         }else if(tkImage.charAt(i) == '\u005cr'){
         }
+      }
+      if (tkImage.length() > MAX_STRING_LENGTH)
+      {
+        token_source.errorHandler.register(token_source.errorHandler.LEX_ERROR,
+                              Lexer.getCurrFilename(),
+                              JavaCharStream.getBeginLine(),
+                              "String constant is too long");
       }
       return len;
     }
