@@ -126,8 +126,56 @@
        * */
      private static int computeLengthAndCheck(Token token) {
 
-       String tkImage = token.toString();
-       int len = tkImage.length();
+      String tkImage = token.toString();
+      int len = tkImage.length();
+      if (tkImage.length() > MAX_STRING_LENGTH)
+      {
+        token_source.errorHandler.register(token_source.errorHandler.LEX_ERROR,
+                              Lexer.getCurrFilename(),
+                              JavaCharStream.getBeginLine(),
+                              "String constant is too long");
+      }
+
+      if(tkImage.charAt(0) == '"'){
+        len--;
+      }
+      if(tkImage.charAt(tkImage.length() - 1) == '"'){
+        len--;
+      }
+      for(int i = 0; i < tkImage.length() - 1; i++){
+        if(tkImage.charAt(i) == '\u005c\u005c' ){
+          System.out.println("found an escape character");
+          len--;
+          i++;
+          if(tkImage.charAt(i) != 'n' && tkImage.charAt(i) != 'f' && tkImage.charAt(i) != 't' && tkImage.charAt(i) != '\u005c"' && tkImage.charAt(i) != '\u005c\u005c' && tkImage.charAt(i) != ' ')
+          {
+            token_source.errorHandler.register(token_source.errorHandler.LEX_ERROR,
+                            Lexer.getCurrFilename(),
+                            JavaCharStream.getBeginLine(),
+                            "Illegal escape character: " + tkImage.charAt(i-1) + tkImage.charAt(i));
+          }
+        }//else if(tkImage.charAt(i) == '\n' && tkImage.charAt(i) == '\r'){
+          //len--;
+          //token_source.errorHandler.register(token_source.errorHandler.LEX_ERROR,
+            //                    Lexer.getCurrFilename(),
+              //                  JavaCharStream.getBeginLine(),
+                //                "String spans more than one line"); //not sure if in this "elseif" or next
+        /*}*/else if(tkImage.charAt(i) == '\u005cn'){
+          len--;
+          token_source.errorHandler.register(token_source.errorHandler.LEX_ERROR,
+                                Lexer.getCurrFilename(),
+                                JavaCharStream.getBeginLine(),
+                                "String spans more than one line");
+        }else if(tkImage.charAt(i) == '\u005ct'){
+          len--;
+        }else if(tkImage.charAt(i) == '\u005c\u005c'){
+          len--;
+        }else if(tkImage.charAt(i) == '\u005c"'){
+          len--;
+        }else if(tkImage.charAt(i) == '\u005cr'){
+          len--;
+        }
+      }
       return len;
     }
 
