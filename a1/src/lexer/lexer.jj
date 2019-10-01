@@ -185,25 +185,19 @@ PARSER_BEGIN(Lexer)
                             JavaCharStream.getBeginLine(),
                             "Illegal escape character: " + tkImage.charAt(i-1) + tkImage.charAt(i));
           }
-        }/*else if(tkImage.charAt(i) == '\n' && tkImage.charAt(i) == '\r'){
-          //len--;
-        }*/else if(tkImage.charAt(i) == '\n'){
-          len--;
+        }else if(tkImage.charAt(i) == '\n'){
+          len--;       
           token_source.errorHandler.register(token_source.errorHandler.LEX_ERROR,
                                 Lexer.getCurrFilename(),
                                 JavaCharStream.getBeginLine(),
                                 "String spans more than one line");
-        }else if(tkImage.charAt(i) == '\t'){
-          len--;
+        }else if(tkImage.charAt(i) == '\t'){        
         }else if(tkImage.charAt(i) == '\\'){
-          len--;
         }else if(tkImage.charAt(i) == '\"'){
-          len--;
         }else if(tkImage.charAt(i) == '\r'){
-          len--;
         }
       }
-      return len;
+      return len; 
     }
 
   }
